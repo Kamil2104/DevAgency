@@ -6,9 +6,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --light-weight: 200;
-  --medium-weight: 400;
-  --large-weight: 700;
+  --regular: 200;
+  --medium: 400;
+  --semi-bold: 550;
+  --bold: 700;
 }
 
 body {

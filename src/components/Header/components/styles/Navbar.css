@@ -14,7 +14,7 @@ nav span {
 
 nav button {
     font-size: 20px;
-    font-weight: medium;
+    font-weight: var(--medium);
 
     padding: .75em 1.15em;
 

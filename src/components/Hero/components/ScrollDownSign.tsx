@@ -1,6 +1,6 @@
 import "./styles/ScrollDownSign.css";
 
-const ScrollDownSign = () => {
+const ScrollDownSign: React.FC = () => {
   return (
     <svg
       width="43"

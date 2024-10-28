@@ -1,0 +1,41 @@
+.solomon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100dvh;
+    width: 100%;
+}
+
+.solomon .solomonContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    min-height: calc(75dvh - 10em);
+    width: calc(1265px - 6em);
+
+    padding: 5em 3em;
+
+    border-radius: 2em;
+    background-color: #202020;
+}
+
+.solomon .solomonContent .leftColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: auto;
+    height: calc(75dvh - 10em);
+    width: 50%;
+}
+
+.solomon .solomonContent .rightColumn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: calc(75dvh - 10em);
+    width: 50%;
+}

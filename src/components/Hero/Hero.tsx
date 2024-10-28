@@ -6,7 +6,7 @@ import BackgroundVideo from './assets/HeroBackgroundVideo.mp4'
 
 import './Hero.css'
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section className='hero'>
       <video autoPlay loop muted playsInline className="heroVideo"> <source src={BackgroundVideo} type="video/mp4" /> Your browser does not support the video tag. </video>

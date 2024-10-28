@@ -18,3 +18,16 @@ body {
 
   background-color: #131313;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100dvh;
+}

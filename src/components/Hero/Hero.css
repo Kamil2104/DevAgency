@@ -1,6 +1,4 @@
 .hero {
-    position: absolute;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,9 +23,6 @@
     gap: 8em;
 
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .hero .heroContent .firstRow {

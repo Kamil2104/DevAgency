@@ -5,6 +5,7 @@ header {
     align-items: center;
 
     height: 10dvh;
+    width: calc(100% - 6em);
 
     color: #F4F4F4;
     background-color: #131313;

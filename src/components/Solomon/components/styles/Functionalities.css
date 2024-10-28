@@ -1,0 +1,33 @@
+.functionalities {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3.25em;
+    width: 95%;
+}
+
+.functionalities .functionalityCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5em;
+    height: fit-content;
+    width: 45%;
+}
+
+.functionalities .functionalityCard h3 {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: var(--semi-medium);
+    color: #F4F4F4;
+}
+
+.functionalities .functionalityCard p {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: var(--regular);
+    color: #E3E3E3;
+
+    margin-top: .5em;
+}

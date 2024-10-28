@@ -1,6 +1,6 @@
 import './styles/BigLogo.css'
 
-const BigLogo = () => {
+const BigLogo: React.FC = () => {
   return (
     <section className='bigLogo'>
       <svg viewBox="0 0 429 159" fill="none" xmlns="http://www.w3.org/2000/svg" className='bigLogoFirstPart'>

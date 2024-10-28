@@ -7,6 +7,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   --regular: 200;
+  --semi-medium: 300;
   --medium: 400;
   --semi-bold: 550;
   --bold: 700;
@@ -14,4 +15,6 @@
 
 body {
   margin: 0;
+
+  background-color: #131313;
 }

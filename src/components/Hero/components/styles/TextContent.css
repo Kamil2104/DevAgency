@@ -1,0 +1,9 @@
+.hero .heroContent .textContent p {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: var(--semi-medium);
+    font-size: 20px;
+
+    color: white;
+
+    margin: 0;
+}

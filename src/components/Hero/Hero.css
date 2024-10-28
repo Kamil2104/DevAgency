@@ -1,0 +1,48 @@
+.hero {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90dvh;
+    width: 100%;
+}
+
+.hero .heroVideo {
+    width: 100dvw;
+    height: 90dvh;
+    object-fit: cover;
+
+    z-index: -1;
+}
+
+.hero .heroContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 8em;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .heroContent .firstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+}
+
+.hero .heroContent .secondRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 1265px;
+}

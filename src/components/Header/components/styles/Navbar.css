@@ -7,13 +7,14 @@ nav {
 }
 
 nav span {
-    font-size: 20px;
+    font-size: 16px;
 
     cursor: pointer;
 }
 
 nav button {
-    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
     font-weight: var(--medium);
 
     padding: .75em 1.15em;

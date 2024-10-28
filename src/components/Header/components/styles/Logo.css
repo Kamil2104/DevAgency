@@ -1,6 +1,6 @@
-header p {
-    font-family: "Syne", sans-serif;;
-    font-size: 20px;
+svg.logo {
+    width: 120px;
+    height: 20px;
 
-    margin: 0;
+    cursor: pointer;
 }

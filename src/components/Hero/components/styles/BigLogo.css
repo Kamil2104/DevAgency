@@ -1,0 +1,20 @@
+.bigLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 5em;
+}
+
+.bigLogo svg {
+    min-width: 429px;
+    min-height: 159px;
+}
+
+.bigLogo svg.bigLogoSecondPart {
+    transform: translate(-12%, 55%);
+
+    min-width: 833px;
+    min-height: 204px;
+}

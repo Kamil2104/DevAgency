@@ -1,0 +1,23 @@
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1265px;
+    gap: 1em;
+
+    color: #F1F1F1;
+}
+
+.aboutUs .firstRow {
+    width: 100%;
+}
+
+.aboutUs .secondRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+}

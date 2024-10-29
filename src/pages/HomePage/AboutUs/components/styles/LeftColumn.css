@@ -1,0 +1,35 @@
+.aboutUs .secondRow .leftColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5em;
+    width: 50%;
+}
+
+.aboutUs .secondRow .leftColumn h2 {
+    font-size: 50px;
+    font-weight: var(--semi-bold);
+
+    line-height: 1;
+}
+
+.aboutUs .secondRow .leftColumn h2.gradientedHeading {
+    background: linear-gradient(
+        to right,
+        #5E71FE 0%,
+        #7E8DFE 47%,
+        #B8C1FF 94%
+    );
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutUs .secondRow .leftColumn .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+}

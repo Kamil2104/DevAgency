@@ -2,7 +2,7 @@ import React from 'react'
 
 import Title from './components/Title'
 import Cards from './components/Cards'
-import WhiteButton from '../../../components/WhiteButton'
+import Button from '../../../components/Button'
 
 import { BoostCard } from './interfaces/interfaces'
 
@@ -30,8 +30,8 @@ const Boosts: React.FC = () => {
   return (
     <section className='boosts'>
       <Title />
-      <Cards boostCards={cards}/>
-      <WhiteButton text='Learn more' />
+      <Cards boostCards={cards} />
+      <Button text='Learn more' stroke='#1D1D1D' />
     </section>
   )
 }

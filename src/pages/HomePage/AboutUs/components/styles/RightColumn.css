@@ -1,0 +1,28 @@
+.aboutUs .secondRow .rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3em;
+    width: 50%;
+}
+
+.aboutUs .secondRow .rightColumn p {
+    width: 92%;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--medium);
+    font-size: 18px;
+}
+
+.aboutUs .secondRow .rightColumn button.originalBtn {
+    font-weight: var(--semi-bold);
+    font-size: 16px;
+
+    padding: .5em 1em;
+
+    color: #F4F4F4;
+    background-color: transparent;
+
+    border: .15em solid #F4F4F4;
+}

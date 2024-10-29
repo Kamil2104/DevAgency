@@ -1,6 +1,6 @@
 import React from 'react'
 
-import WhiteButton from '../../../../../../components/WhiteButton'
+import Button from '../../../../../../components/Button'
 
 import { NavbarProps, OptionProps } from '../interfaces/interfaces'
 
@@ -13,7 +13,7 @@ const Navbar: React.FC<NavbarProps> = ({ navbarOptions }) => {
         option.type === 'text' ?
           <TextOption key={option.text} text={option.text} />
         :
-          <WhiteButton key={option.text} text={option.text} />
+          <Button key={option.text} text={option.text} stroke='#1D1D1D' />
       ))}
     </nav>
   )

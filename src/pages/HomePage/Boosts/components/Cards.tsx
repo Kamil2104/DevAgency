@@ -9,7 +9,7 @@ const Cards: React.FC<BoostCardProps> = ({ boostCards }) => {
   return (
     <section className="cards">
       {boostCards.map((boostCard) => (
-        <Card card={boostCard} />
+        <Card key={boostCard.title} card={boostCard} />
       ))}
     </section>
   )

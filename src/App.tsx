@@ -1,7 +1,7 @@
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
-import Solomon from './components/Solomon/Solomon'
-import Boosts from './components/Boosts/Boosts'
+import Header from './pages/HomePage/Header/Header'
+import Hero from './pages/HomePage/Hero/Hero'
+import Solomon from './pages/HomePage/Solomon/Solomon'
+import Boosts from './pages/HomePage/Boosts/Boosts'
 
 function App() {
   return (

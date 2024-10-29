@@ -1,0 +1,10 @@
+.boosts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    width: calc(1265px - 6em);
+
+    padding: 5em 3em;
+}

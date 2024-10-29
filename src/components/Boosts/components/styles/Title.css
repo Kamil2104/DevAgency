@@ -1,0 +1,32 @@
+.boosts .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 5em;
+}
+
+.boosts .title h2 {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 50px;
+}
+
+.boosts .title h2.normalTitle {
+    color: #F4F4F4;
+}
+
+.boosts .title h2.gradientedTitle {
+    background: linear-gradient(
+        to right,
+        #5E71FE 0%,
+        #7E8DFE 47%,
+        #B8C1FF 94%
+    );
+
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

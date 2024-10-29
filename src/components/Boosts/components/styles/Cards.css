@@ -1,0 +1,55 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    height: calc(200px - 4em);
+    width: calc(28% - 2em);
+
+    padding: 2em 1em;
+
+    color: #F1F1F1;
+    background-color: #202020;
+
+    border-radius: 1em;
+}
+
+.cards .card .cardHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.cards .card .cardHeader svg {
+    margin-right: 1em;
+}
+
+.cards .card .cardHeader h4 {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 28px;
+}
+
+.cards .card .cardHeader h4.cardPercent {
+    color: #5E71FE;
+}
+
+.cards .card .cardDescription {
+    width: 100%;
+}
+
+.cards .card .cardDescription p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--semi-medium);
+}

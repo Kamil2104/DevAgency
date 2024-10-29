@@ -1,20 +1,4 @@
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 4em;
-}
-
-nav span {
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 16px;
-    font-weight: var(--semi-bold);
-
-    cursor: pointer;
-}
-
-nav button {
+.boosts button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -22,7 +6,7 @@ nav button {
     gap: .5em;
 
     font-family: "Nunito Sans", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: var(--bold);
 
     padding: .75em 1.15em;

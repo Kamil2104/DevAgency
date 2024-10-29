@@ -1,6 +1,7 @@
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import Solomon from './components/Solomon/Solomon'
+import Boosts from './components/Boosts/Boosts'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Hero />
       <Solomon />
+      <Boosts />
     </section>
   )
 }

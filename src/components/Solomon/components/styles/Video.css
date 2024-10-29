@@ -1,14 +1,14 @@
-.videoContainer {
+.solomon .solomonContent .rightColumn .videoContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(65dvh - 10em);
+    height: 500px; /* Narazie sztywno wpisane dane. Wysokosc bedzie automatycznie dostosowywana względem szerokości po ustawieniu height: auto */
     width: 95%;
 
     border-radius: 2em;
     background-color: rgb(224, 224, 224);
 }
 
-.videoContainer h1 {
+.solomon .solomonContent .rightColumn .videoContainer h1 {
     font-size: 2em;
 }

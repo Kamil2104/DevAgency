@@ -1,4 +1,4 @@
-.boosts button {
+button.whiteBtn {
     display: flex;
     flex-direction: row;
     justify-content: center;

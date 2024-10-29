@@ -2,7 +2,7 @@ import React from 'react'
 
 import Title from './components/Title'
 import Cards from './components/Cards'
-import Button from './components/Button'
+import WhiteButton from '../../../components/WhiteButton'
 
 import { BoostCard } from './interfaces/interfaces'
 
@@ -31,7 +31,7 @@ const Boosts: React.FC = () => {
     <section className='boosts'>
       <Title />
       <Cards boostCards={cards}/>
-      <Button />
+      <WhiteButton text='Learn more' />
     </section>
   )
 }

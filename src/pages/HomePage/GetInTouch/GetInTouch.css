@@ -1,0 +1,50 @@
+.getInTouch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    padding: 3em 0em;
+}
+
+.getInTouch .getInTouchContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: calc(1265px - 8em);
+
+    padding: 4em 4em;
+
+    border-radius: 2em;
+    background-color: #202020;
+}
+
+.getInTouch .getInTouchContent .firstColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 60%;
+    gap: 1.5em;
+}
+
+.getInTouch .getInTouchContent .secondColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
+}
+
+.getInTouch .getInTouchContent .secondColumn button.originalBtn {
+    font-weight: var(--semi-bold);
+    font-size: 34px;
+
+    padding: .75em 2em;
+}
+
+.getInTouch .getInTouchContent .secondColumn button.originalBtn svg {
+    height: 35px;
+    width: 35px;
+}

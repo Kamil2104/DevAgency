@@ -1,0 +1,30 @@
+.getInTouch .getInTouchContent .firstColumn .getInTouchHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 52px;
+
+    color: #F1F1F1;
+}
+
+.getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 span.gradient1 {
+    background: linear-gradient(
+        to left,
+        #B8C1FF 0%,
+        #7E8DFE 47%,
+        #5E71FE 94%
+    );
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 span.gradient2 {
+    color: #5c6fff;
+}

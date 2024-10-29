@@ -1,0 +1,17 @@
+.options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2em;
+    width: 55%;
+}
+
+.options span {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 16px;
+
+    border-bottom: .15em solid #FFFFFF;
+
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.textContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.textContainer p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--semi-medium);
+    font-size: 18px;
+
+    width: 70%;
+}

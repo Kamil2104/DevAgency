@@ -1,0 +1,10 @@
+.arrowIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 15%;
+}
+
+.arrowIconContainer svg {
+    cursor: pointer;
+}

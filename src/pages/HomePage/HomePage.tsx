@@ -5,6 +5,7 @@ import Solomon from './Solomon/Solomon'
 import Boosts from './Boosts/Boosts'
 import AboutUs from './AboutUs/AboutUs'
 import GetInTouch from './GetInTouch/GetInTouch'
+import Footer from './Footer/Footer'
 
 const HomePage: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage: React.FC = () => {
         <Boosts />
         <AboutUs />
         <GetInTouch />
+        <Footer />
     </>
   )
 }

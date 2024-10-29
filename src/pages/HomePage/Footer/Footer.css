@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    width: 1250px;
+
+    color: #FFFFFF;
+}
+
+footer .firstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 1250px;
+}
+
+footer .secondRow {
+    width: 1250px;
+}

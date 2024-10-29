@@ -1,5 +1,16 @@
 .aboutUs {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    padding: 10em 0em;
+
+    background-color: #202020;
+}
+
+.aboutUs .aboutUsContent {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -9,11 +20,11 @@
     color: #F1F1F1;
 }
 
-.aboutUs .firstRow {
+.aboutUs .aboutUsContent .firstRow {
     width: 100%;
 }
 
-.aboutUs .secondRow {
+.aboutUs .aboutUsContent .secondRow {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

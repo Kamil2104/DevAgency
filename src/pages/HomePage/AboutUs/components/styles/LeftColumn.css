@@ -8,7 +8,7 @@
 }
 
 .aboutUs .secondRow .leftColumn h2 {
-    font-size: 50px;
+    font-size: 58px;
     font-weight: var(--semi-bold);
 
     line-height: 1;
@@ -31,5 +31,5 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 50%;
+    width: 100%;
 }

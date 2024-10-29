@@ -12,8 +12,8 @@
     justify-content: flex-start;
     align-items: center;
     gap: 1em;
-    height: calc(200px - 4em);
-    width: calc(28% - 2em);
+    height: calc(190px - 4em);
+    width: calc(30% - 2em);
 
     padding: 2em 1em;
 
@@ -38,7 +38,7 @@
 .cards .card .cardHeader h4 {
     font-family: "Red Hat Display", sans-serif;
     font-weight: var(--semi-bold);
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .cards .card .cardHeader h4.cardPercent {
@@ -52,4 +52,5 @@
 .cards .card .cardDescription p {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: var(--semi-medium);
+    font-size: 17px;
 }

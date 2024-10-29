@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({ card }) => {
   return (
     <section className='card'>
       <section className='cardHeader'>
-        <svg width="28" height="28" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="30" height="30" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 20.1758L12 3.17578M12 3.17578L5 10.4615M12 3.17578L19 10.4615" stroke="#F4F4F4" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
         <h4 className='cardPercent'> {card.percent}&nbsp; </h4>

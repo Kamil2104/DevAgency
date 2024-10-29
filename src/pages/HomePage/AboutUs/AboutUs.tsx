@@ -9,6 +9,7 @@ import './AboutUs.css'
 const AboutUs: React.FC = () => {
   return (
     <section className='aboutUs'>
+      <section className='aboutUsContent'>
         <section className='firstRow'>
           <Heading />
         </section>
@@ -16,6 +17,7 @@ const AboutUs: React.FC = () => {
             <LeftColumn />
             <RightColumn />
         </section>
+      </section>
     </section>
   )
 }

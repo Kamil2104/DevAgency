@@ -12,12 +12,12 @@
 
     font-family: 'Nunito Sans', sans-serif;
     font-weight: var(--medium);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .aboutUs .secondRow .rightColumn button.originalBtn {
     font-weight: var(--semi-bold);
-    font-size: 16px;
+    font-size: 18px;
 
     padding: .5em 1em;
 

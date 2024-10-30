@@ -1,5 +1,6 @@
 .hero {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -8,11 +9,16 @@
 }
 
 .hero .heroVideo {
-    width: 100dvw;
+    width: 100%;
     height: 90dvh;
     object-fit: cover;
 
     z-index: -1;
+}
+
+.hero svg.backgroundTransition {
+    position: absolute;
+    bottom: 0;
 }
 
 .hero .heroContent {

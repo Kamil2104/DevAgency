@@ -4,13 +4,17 @@ import Text from './components/Text'
 import Options from './components/Options'
 import Arrow from './components/Arrow'
 
+import { useFormContext } from '../../../hooks/useFormContext'
+
 import { footerOption } from './interfaces/interfaces'
 
 import './Footer.css'
 
 const Footer: React.FC = () => {
+  const { setIsFormDisplayed } = useFormContext();
+
   const options: footerOption[] = [
-    { text: "Let's talk", onClick: () => { console.log('Building...') } },
+    { text: "Let's talk", onClick: () => { setIsFormDisplayed(true) } },
     { text: "Solomon", onClick: () => { alert('Solomon website is in building stages') } },
     { text: "LinkedIn", onClick: () => { window.open('https://www.linkedin.com/company/devagencyai/', '_blank') } }
   ]

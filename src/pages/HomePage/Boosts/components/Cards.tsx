@@ -10,7 +10,7 @@ const Card: React.FC<CardProps> = ({ card }) => {
 
   useEffect(() => {
     const targetPercent = parseInt(card.percent)
-    const duration = 1500
+    const duration = 1600
     const intervalTime = 20
     const increment = targetPercent / (duration / intervalTime)
 

@@ -3,17 +3,36 @@ import React from "react";
 import "./styles/Arrow.css";
 
 const Arrow: React.FC = () => {
-  const scrollToTop: () => void = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+  const scrollToTop = () => {
+    const startPosition = window.scrollY;
+    const targetPosition = 0;
+    const distance = startPosition - targetPosition;
+    const duration = 1000;
+    let startTime: number | null = null;
+
+    const easeOutQuad = (t: number) => t * (2 - t);
+
+    const scrollAnimation = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
+
+      const easedProgress = easeOutQuad(progress);
+      const scrollPosition = startPosition - distance * easedProgress;
+      window.scrollTo(0, scrollPosition);
+
+      if (progress < 1) {
+        requestAnimationFrame(scrollAnimation);
+      }
+    };
+
+    requestAnimationFrame(scrollAnimation);
   };
 
   return (
     <section className="arrowIconContainer">
       <svg
-        onClick={() => scrollToTop()}
+        onClick={scrollToTop}
         width="123"
         height="123"
         viewBox="0 0 123 123"

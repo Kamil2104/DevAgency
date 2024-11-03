@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
         </section>
         <section className='secondRow'>
           <TextContent />
-          <ScrollDownSign />
+          <ScrollDownSign componentID="solomon"/>
         </section>
       </section>
     </section>

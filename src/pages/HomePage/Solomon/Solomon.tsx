@@ -33,7 +33,7 @@ const Solomon: React.FC = () => {
   ]
 
   return (
-    <section className='solomon'>
+    <section className='solomon' id='solomon'>
         <section className='solomonContent'>
             <section className='leftColumn'>
                 <Title />

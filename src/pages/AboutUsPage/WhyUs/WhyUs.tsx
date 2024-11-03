@@ -8,7 +8,7 @@ import './WhyUs.css'
 
 const WhyUs: React.FC = () => {
   return (
-    <section className='whyUs'>
+    <section className='whyUs' id='whyUs'>
         <section className='whyUsContent'>
             <section className='firstRow'>
                 <h1> We&apos;re more than just experts </h1>

@@ -1,8 +1,23 @@
 import "./styles/ScrollDownSign.css";
 
-const ScrollDownSign: React.FC = () => {
+const ScrollDownSign: React.FC<{ componentID: string }> = ({ componentID }) => {
+  const handleScrollingToComponent = () => {
+    const targetComponent = document.getElementById(componentID);
+    if (targetComponent) {
+      const offset = 100
+      const elementPosition = targetComponent.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  }
+
   return (
     <svg
+      onClick={() => handleScrollingToComponent()}
       width="53"
       height="183"
       viewBox="0 0 53 183"

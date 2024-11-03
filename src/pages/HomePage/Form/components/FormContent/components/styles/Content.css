@@ -1,0 +1,312 @@
+.form .formContent .formColumns .rightColumn .rightColumnContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5em;
+    flex: 1;
+    width: 80%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent h2 {
+    width: 80%;
+
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 38px;
+    color: #F4F4F4;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent h3 {
+    width: 80%;
+
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: var(--medium);
+    font-size: 20px;
+    color: #F1F1F1;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1.25em;
+
+    margin-top: 2em;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--medium);
+    font-size: 18px;
+
+    width: calc(100% - 2em);
+
+    padding: 1em 1em;
+
+    border-radius: 1em;
+
+    color: #FFFFFF;
+    background-color: #404040;
+
+    border: none;
+    outline: none;
+    transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea {
+    padding: .5em 1em;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input:focus,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea:focus {
+    color: #131313;
+    background-color: #ECECEC;
+    transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input::placeholder,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea::placeholder {
+    color: #C7C7C7;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input:focus::placeholder,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea:focus::placeholder {
+    color: #616161;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .row ,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .fullSizeInput {
+    position: relative;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .halfSizeInput p.errorMessage,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .fullSizeInput p.errorMessage {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: var(--bold);
+    font-size: 14px;
+
+    padding-top: .5em;
+
+    color: #DD7B7E;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .halfSizeInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 49%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .fullSizeInput,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea {
+    width: 100%;
+    resize: none;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea::-webkit-scrollbar-thumb:hover {
+    cursor: default;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 49%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--medium);
+    font-size: 18px;
+
+    width: calc(100% - 2em);
+
+    padding: 1em 1em;
+
+    border-radius: 1em;
+
+    color: #C7C7C7;
+    background-color: #404040;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened {
+    color: #131313;
+    background-color: #ECECEC;
+
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+
+    transition: color 0.3s linear,
+                background-color 0.3s linear,
+                border-bottom-left-radius 0.3s linear,
+                border-bottom-right-radius 0.3s linear;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed {
+    transition: color 0.3s linear 0.2s,
+                background-color 0.3s linear 0.2s,
+                border-bottom-left-radius 0.3s linear 0.2s,
+                border-bottom-right-radius 0.3s linear 0.2s;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened p.selectedProductRequirementsOptionsPlaceholder,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed p.selectedProductRequirementsOptionsPlaceholder {
+    width: 90%;
+    user-select: none;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened p.selectedProductRequirementsOptions,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed p.selectedProductRequirementsOptions {
+    width: 90%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened .iconContainer,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened svg,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed svg {
+    height: 24px;
+    width: 24px;
+
+    cursor: pointer;
+}
+
+.productRequirementsOptions {
+    position: absolute;
+    top: 91%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5em;
+    max-height: 0;
+    width: calc(49% - 2em);
+    padding: 0em 1em 0em 1em;
+
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: #ECECEC;
+
+    overflow: hidden;
+}
+
+.productRequirementsOptions.open {
+    max-height: 12em;
+    padding-bottom: 1em;
+
+    transition: max-height .2s linear .3s,
+                padding-bottom .2s linear .3s;
+}
+
+.productRequirementsOptions.closed {
+    max-height: 0;
+    padding-bottom: 0em;
+
+    transition: max-height .2s linear,
+                padding-bottom .2s linear;
+}
+
+.productRequirementsOptions.open .productRequirementsOptionRow,
+.productRequirementsOptions.closed .productRequirementsOptionRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5em;
+    width: 100%;
+
+    cursor: pointer;
+}
+
+.productRequirementsOptions.open .productRequirementsOptionRow p,
+.productRequirementsOptions.closed .productRequirementsOptionRow p {
+    font-size: 18px;
+}
+
+.productRequirementsOptions.open .productRequirementsOptionRow:nth-child(1),
+.productRequirementsOptions.closed .productRequirementsOptionRow:nth-child(1) {
+    padding-top: .75em;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .submitButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .submitButtonContainer button.originalBtn  {
+    width: 50%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5em;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer svg {
+    cursor: pointer;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer p {
+    color: #F1F1F1;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer span.coloredParagraph {
+    width: fit-content;
+
+    color: #9DA9FE;
+
+    border-bottom: .1em solid #131313;
+
+    cursor: pointer;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer span.coloredParagraph:hover {
+    border-bottom: .1em solid #9DA9FE;
+}

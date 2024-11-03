@@ -1,0 +1,23 @@
+.form .formContent .formHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10dvh;
+    width: calc(100% - 6em);
+
+    padding: 0em 3em;
+}
+
+.form .formContent .formHeader svg {
+    height: 20px;
+
+}
+
+.form .formContent .formHeader svg.formHeaderLogo {
+    width: 120px;
+}
+
+.form .formContent .formHeader svg.formClose {
+    cursor: pointer;
+}

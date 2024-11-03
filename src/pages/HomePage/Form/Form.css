@@ -1,5 +1,44 @@
-.form {
-    height: 100dvh;
-    width: 100%;
-    background-color: white;
+.form.visible {
+  animation: slideIn 1s forwards cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.form.invisible {
+  animation: slideOut 0.3s forwards linear;
+}
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+  z-index: 1;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+  }
+
+  60% {
+    transform: translateY(-3%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
 }

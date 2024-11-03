@@ -33,6 +33,10 @@ p, h1, h2, h3, h4, h5, h6 {
   gap: 10em;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -47,4 +51,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #6b6b6b;
+}
+
+::placeholder {
+  user-select: none;
 }

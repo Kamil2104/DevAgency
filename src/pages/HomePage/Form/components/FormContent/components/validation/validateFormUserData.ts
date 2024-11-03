@@ -1,0 +1,71 @@
+import { UserData } from "../hooks/useFormUserData";
+import { UserDataErrors } from "../hooks/useFormUserDataErrors";
+
+export function validateFormUserData(userData: UserData, setUserDataErrors: React.Dispatch<React.SetStateAction<UserDataErrors>>): void {
+    const requiredFields: { key: keyof UserData; errorKey: keyof UserDataErrors; errorMessage: string;}[] = [
+        { key: 'firstName', errorKey: 'firstNameError', errorMessage: "Please complete this required field." },
+        { key: 'secondName', errorKey: 'secondNameError', errorMessage: "Please complete this required field." },
+        { key: 'companyName', errorKey: 'companyNameError', errorMessage: "Please complete this required field." },
+        { key: 'businessEmail', errorKey: 'businessEmailError', errorMessage: "Please complete this required field." },
+        { key: 'phoneNumber', errorKey: 'phoneNumberError', errorMessage: "Please complete this required field." },
+        { key: 'isPrivacyPolicyAgreementChecked', errorKey: 'isPrivacyPolicyAgreementCheckedError', errorMessage: "Please select this required field." }
+    ];
+
+    const errors: Partial<UserDataErrors> = {};
+
+    for (const field of requiredFields) {
+        if (!userData[field.key] || errors[field.errorKey]) {
+            errors[field.errorKey] = field.errorMessage;
+            break;
+        }
+    }
+
+    if (Object.keys(errors).length > 0) {
+        setUserDataErrors(prevErrors => ({
+            ...prevErrors,
+            ...errors,
+        }));
+
+        return
+    }
+
+    const textRegex = /^([a-zA-Z]{1,})([a-zA-Z\s])$/
+    const companyNameRegex = /^([a-zA-Z0-9.]{2,})$/
+    const businessEmailRegex = /^([a-z0-9._%+-]{3,})@([a-zA-Z0-9.-]{2,})\.[a-z]{2,}$/
+
+    if (!textRegex.test(userData.firstName)) {
+        setUserDataErrors(prevErrors => ({
+            ...prevErrors,
+            firstNameError: "Please enter valid first name.",
+        }));
+
+        return
+    }
+
+    if (!textRegex.test(userData.secondName)) {
+        setUserDataErrors(prevErrors => ({
+            ...prevErrors,
+            secondNameError: "Please enter valid second name.",
+        }));
+
+        return
+    }
+
+    if (!companyNameRegex.test(userData.companyName)) {
+        setUserDataErrors(prevErrors => ({
+            ...prevErrors,
+            companyNameError: "Please enter valid company name.",
+        }));
+
+        return
+    }
+
+    if (!businessEmailRegex.test(userData.businessEmail)) {
+        setUserDataErrors(prevErrors => ({
+            ...prevErrors,
+            businessEmailError: "Please enter valid business email.",
+        }));
+
+        return
+    }
+}

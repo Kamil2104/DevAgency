@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Button from '../../Button/Button'
+import Button from '../../../SmallComponents/Button/Button'
 
 import { NavbarProps, OptionProps } from '../interfaces/interfaces'
 

@@ -4,7 +4,7 @@ import { useFormContext } from '../../../hooks/useFormContext'
 
 import Heading from './components/Heading'
 import Description from './components/Description'
-import Button from '../../../components/Button/Button'
+import Button from '../../../components/SmallComponents/Button/Button'
 
 import './GetInTouch.css'
 

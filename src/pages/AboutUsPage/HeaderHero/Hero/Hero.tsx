@@ -1,8 +1,8 @@
 import React from 'react'
 
-import BackgroundTransition from '../../../../components/BackgroundTransition/BackgroundTransition'
+import BackgroundTransition from '../../../../components/SmallComponents/BackgroundTransition/BackgroundTransition'
 import TextContent from './components/TextContent'
-import ScrollDownSign from '../../../../components/ScrollDownSign/ScrollDownSign'
+import ScrollDownSign from '../../../../components/SmallComponents/ScrollDownSign/ScrollDownSign'
 
 import BackgroundVideo from '../../../../assets/HeroBackgroundVideo.mp4'
 

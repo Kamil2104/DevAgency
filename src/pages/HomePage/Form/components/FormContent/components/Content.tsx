@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import Button from '../../../../../../components/Button/Button'
+import Button from '../../../../../../components/SmallComponents/Button/Button'
 
 import useFormUserData from './hooks/useFormUserData'
 import useFormUserDataErrors from './hooks/useFormUserDataErrors'

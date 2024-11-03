@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Header from '../../../components/Header/Header'
+import Header from '../../../components/Sections/Header/Header'
 import Hero from './Hero/Hero'
 
 import './HeaderHero.css'

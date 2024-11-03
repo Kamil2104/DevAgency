@@ -1,9 +1,9 @@
 import BigLogo from './components/BigLogo'
-import ScrollDownSign from '../../../../components/ScrollDownSign/ScrollDownSign'
+import ScrollDownSign from '../../../../components/SmallComponents/ScrollDownSign/ScrollDownSign'
 import TextContent from './components/TextContent'
 
 import BackgroundVideo from '../../../../assets/HeroBackgroundVideo.mp4'
-import BackgroundTransition from '../../../../components/BackgroundTransition/BackgroundTransition'
+import BackgroundTransition from '../../../../components/SmallComponents/BackgroundTransition/BackgroundTransition'
 
 import './Hero.css'
 

@@ -6,8 +6,8 @@ import HeaderHero from './HeaderHero/HeaderHero';
 import Solomon from './Solomon/Solomon';
 import Boosts from './Boosts/Boosts';
 import AboutUs from './AboutUs/AboutUs';
-import GetInTouch from './GetInTouch/GetInTouch';
-import Footer from './Footer/Footer';
+import GetInTouch from '../../components/Sections/GetInTouch/GetInTouch';
+import Footer from '../../components/Sections/Footer/Footer';
 import Form from './Form/Form';
 
 const HomePage: React.FC = () => {

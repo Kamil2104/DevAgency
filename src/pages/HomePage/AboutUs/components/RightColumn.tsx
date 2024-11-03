@@ -1,14 +1,18 @@
 import React from 'react'
 
-import Button from '../../../../components/Button'
+import { useNavigate } from 'react-router-dom'
+
+import Button from '../../../../components/Button/Button'
 
 import './styles/RightColumn.css'
 
 const RightColumn: React.FC = () => {
+  const navigate = useNavigate()
+
   return (
     <section className='rightColumn'>
       <Text />
-      <Button text='Explore our story' stroke='#F4F4F4' />
+      <Button text='Explore our story' stroke='#F4F4F4' onClick={() => navigate('/AboutUs')} />
     </section>
   )
 }

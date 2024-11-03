@@ -8,6 +8,7 @@ button.originalBtn {
     font-family: "Nunito Sans", sans-serif;
     font-size: 18px;
     font-weight: var(--bold);
+    color: #1D1D1D;
 
     padding: .75em 1.15em;
 

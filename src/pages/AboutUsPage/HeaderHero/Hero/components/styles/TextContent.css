@@ -1,0 +1,33 @@
+.aboutUsHero .heroContent .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.aboutUsHero .heroContent .textContent h1 {
+    font-family: 'Red Hat Display';
+    font-weight: var(--semi-bold);
+    font-size: 80px;
+
+    background: linear-gradient(
+        to right,
+        #5E71FE 0%,
+        #7E8DFE 47%,
+        #B8C1FF 94%
+    );
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutUsHero .heroContent .textContent h4 {
+    font-family: 'Red Hat Display';
+    font-weight: var(--medium);
+    font-size: 28px;
+    color: #F4F4F4;
+
+    width: 575px;
+    text-align: center;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import BackgroundVideo from '../../../HeaderHero/components/Hero/assets/HeroBackgroundVideo.mp4'
+import BackgroundVideo from '../../../../../assets/HeroBackgroundVideo.mp4'
 
 import './Background.css'
 

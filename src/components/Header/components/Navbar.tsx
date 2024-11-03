@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Button from '../../../../../../components/Button'
+import Button from '../../Button/Button'
 
 import { NavbarProps, OptionProps } from '../interfaces/interfaces'
 
@@ -11,17 +11,17 @@ const Navbar: React.FC<NavbarProps> = ({ navbarOptions }) => {
     <nav>
       {navbarOptions.map((option) => (
         option.type === 'text' ?
-          <TextOption key={option.text} text={option.text} />
+          <TextOption key={option.text} text={option.text} onClick={option.onClick} />
         :
-          <Button key={option.text} text={option.text} stroke='#1D1D1D' />
+          <Button key={option.text} text={option.text} stroke='#1D1D1D' onClick={option.onClick} />
       ))}
     </nav>
   )
 }
 
-const TextOption: React.FC<OptionProps> = ({ text }) => {
+const TextOption: React.FC<OptionProps> = ({ text, onClick }) => {
   return (
-    <span> {text} </span>
+    <span onClick={onClick}> {text} </span>
   )
 }
 

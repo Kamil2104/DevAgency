@@ -1,6 +1,7 @@
 export interface NavbarOption {
     text: string,
-    type: 'text' | 'button'
+    type: 'text' | 'button',
+    onClick: () => void;
 }
 
 export interface NavbarProps {
@@ -8,5 +9,6 @@ export interface NavbarProps {
 }
 
 export interface OptionProps {
-    text: string
+    text: string;
+    onClick: () => void;
 }

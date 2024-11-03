@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import Button from '../../../../../../components/Button'
+import Button from '../../../../../../components/Button/Button'
 
 import useFormUserData from './hooks/useFormUserData'
 import useFormUserDataErrors from './hooks/useFormUserDataErrors'
@@ -316,7 +316,7 @@ const SubmitButton: React.FC<{ handleFormSubmition: () => void }> = ({ handleFor
       <Button
         text='Submit'
         stroke='#1D1D1D'
-        handleFormSubmition={handleFormSubmition}
+        onClick={handleFormSubmition}
       />
     </section>
   )

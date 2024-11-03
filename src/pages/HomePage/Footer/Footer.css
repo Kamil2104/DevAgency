@@ -2,13 +2,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 3em;
     width: 1250px;
 
     color: #FFFFFF;
 
-    margin-bottom: 5em;
+    margin-bottom: 3em;
 }
 
 footer .firstRow {
@@ -16,10 +16,23 @@ footer .firstRow {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+}
 
+footer .firstRow,
+footer .secondRow,
+footer .thirdRow {
     width: 1250px;
 }
 
-footer .secondRow {
-    width: 1250px;
+footer .thirdRow p.privacyAndTermsParagraph {
+    width: fit-content;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--bold);
+    font-size: 18px;
+    color: #616161;
+
+    border-bottom: .15em solid #616161;
+
+    cursor: pointer;
 }

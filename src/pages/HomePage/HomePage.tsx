@@ -8,7 +8,7 @@ import Boosts from './Boosts/Boosts';
 import AboutUs from './AboutUs/AboutUs';
 import GetInTouch from '../../components/Sections/GetInTouch/GetInTouch';
 import Footer from '../../components/Sections/Footer/Footer';
-import Form from './Form/Form';
+import Form from '../../components/Sections/Form/Form';
 
 const HomePage: React.FC = () => {
   const { isFormDisplayed } = useFormContext();

@@ -1,0 +1,47 @@
+.whyUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80dvh;
+    width: 100%;
+}
+
+.whyUs .whyUsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1265px;
+}
+
+.whyUs .whyUsContent .firstRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.whyUs .whyUsContent .firstRow h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 74px;
+    color: #F4F4F4;
+
+    width: 70%;
+}
+
+.whyUs .whyUsContent .secondRow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.whyUs .whyUsContent .secondRow .secondRowContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+    gap: 2em;
+}

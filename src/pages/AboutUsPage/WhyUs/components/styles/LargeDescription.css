@@ -1,0 +1,8 @@
+.whyUs .whyUsContent .secondRow .secondRowContent h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 36px;
+    color: #F4F4F4;
+
+    padding-left: .5em;
+}

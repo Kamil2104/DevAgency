@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { useFormContext } from '../../hooks/useFormContext'
 
 import HeaderHero from './HeaderHero/HeaderHero'
+import WhyUs from './WhyUs/WhyUs'
 import GetInTouch from '../../components/Sections/GetInTouch/GetInTouch'
 import Footer from '../../components/Sections/Footer/Footer'
 import Form from '../../components/Sections/Form/Form'
@@ -35,6 +36,7 @@ const AboutUsPage: React.FC = () => {
   return (
     <>
       <HeaderHero />
+      <WhyUs />
       <GetInTouch />
       <Footer />
       {isFormVisible && <Form isFormDisplayed={isFormDisplayed} />}

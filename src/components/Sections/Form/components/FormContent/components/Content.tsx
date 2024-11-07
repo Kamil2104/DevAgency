@@ -54,26 +54,13 @@ const ContentForm: React.FC<{
 
   const [isProductRequirementsSelectOpened, setIsProductRequirementsSelectOpened] = useState(false)
 
-  const handleProductRequirementsSelectToggle = () => {
-    setIsProductRequirementsSelectOpened(!isProductRequirementsSelectOpened)
-  }
-
-  const handleClosingProductRequirementsSelect = () => {
-    if (isProductRequirementsSelectOpened) {
-      setIsProductRequirementsSelectOpened(false)
-    }
-  }
-
-  const handleFormSubmition = () => {
-    validateFormUserData(userData, setUserDataErrors)
-    handleClosingProductRequirementsSelect()
-  }
-
+  // Function for handling value changing in input fields
   const handleValueChangeInFormField = (userDataName: string, newUserDataValue: string, userDataErrorName: string) => {
     setUserData({ ...userData, [userDataName]: newUserDataValue })
     setUserDataErrors({...userDataErrors, [userDataErrorName]: '', formError: '' })
   }
 
+  // Functions for product requirements
   const handleSelectingProductRequirements = (selectedUserProduct: string, newSelectedUserProduct: string) => {
     setUserSelectedProducts({...userSelectedProducts, [selectedUserProduct]: true})
     setUserData({
@@ -88,6 +75,22 @@ const ContentForm: React.FC<{
       ...prevUserData,
       productRequirements: prevUserData.productRequirements.filter(requirement => requirement !== deselectedUserProduct)
     }));
+  }
+
+  const handleProductRequirementsSelectToggle = () => {
+    setIsProductRequirementsSelectOpened(!isProductRequirementsSelectOpened)
+  }
+
+  const handleClosingProductRequirementsSelect = () => {
+    if (isProductRequirementsSelectOpened) {
+      setIsProductRequirementsSelectOpened(false)
+    }
+  }
+
+  // Function for form validation and submition
+  const handleFormSubmition = () => {
+    validateFormUserData(userData, setUserDataErrors)
+    handleClosingProductRequirementsSelect()
   }
 
   return (

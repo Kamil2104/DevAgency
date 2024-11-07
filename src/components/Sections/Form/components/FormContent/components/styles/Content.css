@@ -197,6 +197,10 @@
     text-overflow: ellipsis;
 }
 
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed p.selectedProductRequirementsOptions {
+    color: #FFFFFF;
+}
+
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened .iconContainer,
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed .iconContainer {
     display: flex;

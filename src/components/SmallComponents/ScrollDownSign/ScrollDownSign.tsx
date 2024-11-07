@@ -18,6 +18,7 @@ const ScrollDownSign: React.FC<{ componentID: string }> = ({ componentID }) => {
   return (
     <svg
       onClick={() => handleScrollingToComponent()}
+      className="scrollDownIcon"
       width="53"
       height="183"
       viewBox="0 0 53 183"

@@ -5,4 +5,5 @@
     align-items: center;
     gap: 5em;
     width: 1265px;
+    min-height: 625px;
 }

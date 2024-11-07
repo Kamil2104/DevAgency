@@ -11,6 +11,15 @@ export function validateFormUserData(userData: UserData, setUserDataErrors: Reac
         { key: 'isPrivacyPolicyAgreementChecked', errorKey: 'isPrivacyPolicyAgreementCheckedError', errorMessage: "Please select this required field." }
     ];
 
+    if (isEveryFormFieldEmpty(userData)) {
+        setUserDataErrors(prevErrors => ({
+            ...prevErrors,
+            formError: "It looks like one of the required fields hasn't been completed. Please ensure all fields marked with * are filled out before submitting your application.",
+        }));
+
+        return
+    }
+
     const errors: Partial<UserDataErrors> = {};
 
     for (const field of requiredFields) {
@@ -68,4 +77,12 @@ export function validateFormUserData(userData: UserData, setUserDataErrors: Reac
 
         return
     }
+}
+
+function isEveryFormFieldEmpty(userData: UserData): boolean {
+    return userData.firstName === '' &&
+           userData.secondName === '' &&
+           userData.companyName === '' &&
+           userData.businessEmail === '' &&
+           userData.phoneNumber === '';
 }

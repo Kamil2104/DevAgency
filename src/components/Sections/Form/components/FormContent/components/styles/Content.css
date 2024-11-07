@@ -33,8 +33,6 @@
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 1.25em;
-
-    margin-top: 2em;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .row {
@@ -91,8 +89,7 @@
     position: relative;
 }
 
-.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .halfSizeInput p.errorMessage,
-.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .fullSizeInput p.errorMessage {
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm p.errorMessage {
     font-family: "Nunito Sans", sans-serif;
     font-weight: var(--bold);
     font-size: 14px;
@@ -100,6 +97,10 @@
     padding-top: .5em;
 
     color: #DD7B7E;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm p.errorMessage.formError {
+    font-size: 16px;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .row {

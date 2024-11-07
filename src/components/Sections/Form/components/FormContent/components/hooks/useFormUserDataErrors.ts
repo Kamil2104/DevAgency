@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 export interface UserDataErrors {
+    formError: string,
     firstNameError: string,
     secondNameError: string,
     companyNameError: string,
@@ -11,6 +12,7 @@ export interface UserDataErrors {
 
 const useFormUserDataErrors = () => {
     const [userDataErrors, setUserDataErrors] = useState<UserDataErrors>({
+        formError: '',
         firstNameError: '',
         secondNameError: '',
         companyNameError: '',

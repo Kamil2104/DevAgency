@@ -72,6 +72,7 @@ const ContentForm: React.FC<{
   return (
     <>
       <section className='contentForm'>
+      <p className='errorMessage formError'> {userDataErrors.formError} </p>
         <section className='row'>
             <section className='halfSizeInput'>
                 <input
@@ -82,7 +83,7 @@ const ContentForm: React.FC<{
                   onClick={() => handleClosingProductRequirementsSelect()}
                   onChange={(e) => {
                     setUserData({ ...userData, firstName: e.target.value })
-                    setUserDataErrors({...userDataErrors, firstNameError: '' })
+                    setUserDataErrors({...userDataErrors, firstNameError: '', formError: '' })
                   }}
                 />
                 <p className='errorMessage'> {userDataErrors.firstNameError} </p>
@@ -97,7 +98,7 @@ const ContentForm: React.FC<{
                   onClick={() => handleClosingProductRequirementsSelect()}
                   onChange={(e) => {
                     setUserData({ ...userData, secondName: e.target.value })
-                    setUserDataErrors({...userDataErrors, secondNameError: '' })
+                    setUserDataErrors({...userDataErrors, secondNameError: '', formError: '' })
                 }}
                 />
                 <p className='errorMessage'> {userDataErrors.secondNameError} </p>
@@ -113,7 +114,7 @@ const ContentForm: React.FC<{
               onClick={() => handleClosingProductRequirementsSelect()}
               onChange={(e) => {
                 setUserData({ ...userData, companyName: e.target.value })
-                setUserDataErrors({...userDataErrors, companyNameError: '' })
+                setUserDataErrors({...userDataErrors, companyNameError: '', formError: '' })
               }}
             />
             <p className='errorMessage'> {userDataErrors.companyNameError} </p>
@@ -128,7 +129,7 @@ const ContentForm: React.FC<{
               onClick={() => handleClosingProductRequirementsSelect()}
               onChange={(e) => {
                 setUserData({ ...userData, businessEmail: e.target.value })
-                setUserDataErrors({...userDataErrors, businessEmailError: '' })
+                setUserDataErrors({...userDataErrors, businessEmailError: '', formError: '' })
               }}
             />
             <p className='errorMessage'> {userDataErrors.businessEmailError} </p>
@@ -262,7 +263,7 @@ const ContentForm: React.FC<{
                   onClick={() => handleClosingProductRequirementsSelect()}
                   onChange={(e) => {
                     setUserData({ ...userData, phoneNumber: e.target.value })
-                    setUserDataErrors({...userDataErrors, phoneNumberError: '' })
+                    setUserDataErrors({...userDataErrors, phoneNumberError: '', formError: '' })
                   }}
                 />
                 <p className='errorMessage'> {userDataErrors.phoneNumberError} </p>

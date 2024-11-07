@@ -18,6 +18,8 @@
     background-color: #131313;
 
     transition: transform 0.3s ease;
+
+    z-index: 2;
 }
 
 .header.hidden {

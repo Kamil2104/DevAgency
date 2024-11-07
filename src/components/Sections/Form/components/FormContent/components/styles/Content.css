@@ -26,6 +26,20 @@
     color: #F1F1F1;
 }
 
+.form .formContent .formColumns .rightColumn .rightColumnContent p.errorMessage {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: var(--bold);
+    font-size: 14px;
+
+    padding-top: .5em;
+
+    color: #DD7B7E;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent p.errorMessage.formError {
+    font-size: 16px;
+}
+
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm {
     display: flex;
     flex-direction: row;
@@ -87,20 +101,6 @@
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .row ,
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .fullSizeInput {
     position: relative;
-}
-
-.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm p.errorMessage {
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: var(--bold);
-    font-size: 14px;
-
-    padding-top: .5em;
-
-    color: #DD7B7E;
-}
-
-.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm p.errorMessage.formError {
-    font-size: 16px;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .row {
@@ -284,21 +284,30 @@
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: .5em;
 }
 
-.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer svg {
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent svg {
     cursor: pointer;
 }
 
-.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer p {
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent p {
     color: #F1F1F1;
+
+    line-height: 24px;
 }
 
-.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer span.coloredParagraph {
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent span.coloredParagraph {
     width: fit-content;
 
     color: #9DA9FE;
@@ -308,6 +317,6 @@
     cursor: pointer;
 }
 
-.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer span.coloredParagraph:hover {
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent span.coloredParagraph:hover {
     border-bottom: .1em solid #9DA9FE;
 }

@@ -77,6 +77,15 @@ export function validateFormUserData(userData: UserData, setUserDataErrors: Reac
 
         return
     }
+
+    if (!userData.isPrivacyPolicyAgreementChecked) {
+        setUserDataErrors(prevErrors => ({
+            ...prevErrors,
+            isPrivacyPolicyAgreementCheckedError: "Please complete all required fields.",
+        }));
+
+        return
+    }
 }
 
 function isEveryFormFieldEmpty(userData: UserData): boolean {

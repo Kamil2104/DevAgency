@@ -2,12 +2,12 @@ import { UserData } from "../hooks/useFormUserData";
 import { UserDataErrors } from "../hooks/useFormUserDataErrors";
 
 export function isUserDataCorrectlyFulfilled(userData: UserData, setUserDataErrors: React.Dispatch<React.SetStateAction<UserDataErrors>>): boolean {
-    const requiredFields: { key: keyof UserData; errorKey: keyof UserDataErrors; errorMessage: string;}[] = [
-        { key: 'firstName', errorKey: 'firstNameError', errorMessage: "Please complete this required field." },
-        { key: 'secondName', errorKey: 'secondNameError', errorMessage: "Please complete this required field." },
-        { key: 'companyName', errorKey: 'companyNameError', errorMessage: "Please complete this required field." },
-        { key: 'businessEmail', errorKey: 'businessEmailError', errorMessage: "Please complete this required field." },
-        { key: 'phoneNumber', errorKey: 'phoneNumberError', errorMessage: "Please complete this required field." },
+    const requiredFields: { key: keyof UserData; errorKey: keyof UserDataErrors; errorMessage: string; id?: string}[] = [
+        { key: 'firstName', errorKey: 'firstNameError', errorMessage: "Please complete this required field.", id: 'firstNameInput' },
+        { key: 'secondName', errorKey: 'secondNameError', errorMessage: "Please complete this required field.", id: 'secondNameInput' },
+        { key: 'companyName', errorKey: 'companyNameError', errorMessage: "Please complete this required field.", id: 'companyNameInput' },
+        { key: 'businessEmail', errorKey: 'businessEmailError', errorMessage: "Please complete this required field.", id: 'businessEmailInput' },
+        { key: 'phoneNumber', errorKey: 'phoneNumberError', errorMessage: "Please complete this required field.", id: 'phoneNumberInput' },
         { key: 'isPrivacyPolicyAgreementChecked', errorKey: 'isPrivacyPolicyAgreementCheckedError', errorMessage: "Please select this required field." }
     ];
 
@@ -25,6 +25,14 @@ export function isUserDataCorrectlyFulfilled(userData: UserData, setUserDataErro
     for (const field of requiredFields) {
         if (!userData[field.key] || errors[field.errorKey]) {
             errors[field.errorKey] = field.errorMessage;
+
+            if (field.id) {
+                const inputElement = document.getElementById(field.id);
+                if (inputElement) {
+                    inputElement.style.borderColor = '#DD7B7E';
+                }
+            }
+
             break;
         }
     }
@@ -96,5 +104,6 @@ function isEveryFormFieldEmpty(userData: UserData): boolean {
            userData.secondName === '' &&
            userData.companyName === '' &&
            userData.businessEmail === '' &&
+           userData.productRequirements.length === 0 &&
            userData.phoneNumber === '';
 }

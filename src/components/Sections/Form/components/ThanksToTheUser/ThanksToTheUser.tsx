@@ -25,6 +25,7 @@ const Content = () => {
   const { setIsFormDisplayed, setDisplayedFormContent } = useFormContext()
 
   const handleBackToHomepageButtonClick = () => {
+    window.scrollTo(0, 0);
     navigate('/')
     setIsFormDisplayed(false)
 

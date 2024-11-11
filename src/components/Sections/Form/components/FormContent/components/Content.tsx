@@ -60,9 +60,14 @@ const ContentForm: React.FC<{
   const { setDisplayedFormContent } = useFormContext()
 
   // Function for handling value changing in input fields
-  const handleValueChangeInFormField = (userDataName: string, newUserDataValue: string, userDataErrorName: string) => {
+  const handleValueChangeInFormField = (userDataName: string, newUserDataValue: string, userDataErrorName: string, inputFieldID: string) => {
     setUserData({ ...userData, [userDataName]: newUserDataValue })
     setUserDataErrors({...userDataErrors, [userDataErrorName]: '', formError: '' })
+
+    const inputField = document.getElementById(inputFieldID);
+    if (inputField) {
+      inputField.style.borderColor = '#131313';
+    }
   }
 
   // Functions for product requirements
@@ -72,6 +77,7 @@ const ContentForm: React.FC<{
       ...userData,
       productRequirements: [...userData.productRequirements, newSelectedUserProduct],
     });
+    setUserDataErrors({...userDataErrors, formError: '' })
   }
 
   const handleDeselectingProductRequirements = (selectedUserProduct: string, deselectedUserProduct: string) => {
@@ -113,7 +119,7 @@ const ContentForm: React.FC<{
                   placeholder='First name*'
                   value={userData.firstName}
                   onClick={() => handleClosingProductRequirementsSelect()}
-                  onChange={(e) => handleValueChangeInFormField('firstName', e.target.value, 'firstNameError')}
+                  onChange={(e) => handleValueChangeInFormField('firstName', e.target.value, 'firstNameError', 'firstNameInput')}
                 />
                 <p className='errorMessage'> {userDataErrors.firstNameError} </p>
             </section>
@@ -125,7 +131,7 @@ const ContentForm: React.FC<{
                   placeholder='Second name*'
                   value={userData.secondName}
                   onClick={() => handleClosingProductRequirementsSelect()}
-                  onChange={(e) => handleValueChangeInFormField('secondName', e.target.value, 'secondNameError')}
+                  onChange={(e) => handleValueChangeInFormField('secondName', e.target.value, 'secondNameError', 'secondNameInput')}
                 />
                 <p className='errorMessage'> {userDataErrors.secondNameError} </p>
             </section>
@@ -138,7 +144,7 @@ const ContentForm: React.FC<{
               placeholder='Company name*'
               value={userData.companyName}
               onClick={() => handleClosingProductRequirementsSelect()}
-              onChange={(e) => handleValueChangeInFormField('companyName', e.target.value, 'companyNameError')}
+              onChange={(e) => handleValueChangeInFormField('companyName', e.target.value, 'companyNameError', 'companyNameInput')}
             />
             <p className='errorMessage'> {userDataErrors.companyNameError} </p>
         </section>
@@ -150,7 +156,7 @@ const ContentForm: React.FC<{
               placeholder='Business e-mail*'
               value={userData.businessEmail}
               onClick={() => handleClosingProductRequirementsSelect()}
-              onChange={(e) => handleValueChangeInFormField('businessEmail', e.target.value, 'businessEmailError')}
+              onChange={(e) => handleValueChangeInFormField('businessEmail', e.target.value, 'businessEmailError', 'businessEmailInput')}
             />
             <p className='errorMessage'> {userDataErrors.businessEmailError} </p>
         </section>
@@ -221,7 +227,7 @@ const ContentForm: React.FC<{
                   placeholder='+48*'
                   value={userData.phoneNumber}
                   onClick={() => handleClosingProductRequirementsSelect()}
-                  onChange={(e) => handleValueChangeInFormField('phoneNumber', e.target.value, 'phoneNumberError')}
+                  onChange={(e) => handleValueChangeInFormField('phoneNumber', e.target.value, 'phoneNumberError', 'phoneNumberInput')}
                 />
                 <p className='errorMessage'> {userDataErrors.phoneNumberError} </p>
             </section>

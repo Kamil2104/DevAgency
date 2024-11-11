@@ -46,7 +46,7 @@
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
-    gap: 1.25em;
+    gap: .75em;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .row {
@@ -72,7 +72,7 @@
     color: #FFFFFF;
     background-color: #404040;
 
-    border: none;
+    border: .15em solid #131313;
     outline: none;
     transition: color 0.3s linear, background-color 0.3s linear;
 }
@@ -220,7 +220,7 @@
 
 .productRequirementsOptions {
     position: absolute;
-    top: 91%;
+    top: 86%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -1,4 +1,4 @@
-.form .formContent .formHeader {
+.form .formHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,15 +9,15 @@
     padding: 0em 3em;
 }
 
-.form .formContent .formHeader svg {
+.form .formHeader svg {
     height: 20px;
 
 }
 
-.form .formContent .formHeader svg.formHeaderLogo {
+.form .formHeader svg.formHeaderLogo {
     width: 120px;
 }
 
-.form .formContent .formHeader svg.formClose {
+.form .formHeader svg.formClose {
     cursor: pointer;
 }

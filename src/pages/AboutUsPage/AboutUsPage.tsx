@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { useFormContext } from '../../hooks/useFormContext'
+import useFormContext from '../../hooks/useFormContext'
 
 import HeaderHero from './HeaderHero/HeaderHero'
 import WhyUs from './WhyUs/WhyUs'

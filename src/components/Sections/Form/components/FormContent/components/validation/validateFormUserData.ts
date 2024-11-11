@@ -1,7 +1,7 @@
 import { UserData } from "../hooks/useFormUserData";
 import { UserDataErrors } from "../hooks/useFormUserDataErrors";
 
-export function validateFormUserData(userData: UserData, setUserDataErrors: React.Dispatch<React.SetStateAction<UserDataErrors>>): void {
+export function isUserDataCorrectlyFulfilled(userData: UserData, setUserDataErrors: React.Dispatch<React.SetStateAction<UserDataErrors>>): boolean {
     const requiredFields: { key: keyof UserData; errorKey: keyof UserDataErrors; errorMessage: string;}[] = [
         { key: 'firstName', errorKey: 'firstNameError', errorMessage: "Please complete this required field." },
         { key: 'secondName', errorKey: 'secondNameError', errorMessage: "Please complete this required field." },
@@ -17,7 +17,7 @@ export function validateFormUserData(userData: UserData, setUserDataErrors: Reac
             formError: "It looks like one of the required fields hasn't been completed. Please ensure all fields marked with * are filled out before submitting your application.",
         }));
 
-        return
+        return false
     }
 
     const errors: Partial<UserDataErrors> = {};
@@ -35,7 +35,7 @@ export function validateFormUserData(userData: UserData, setUserDataErrors: Reac
             ...errors,
         }));
 
-        return
+        return false
     }
 
     const textRegex = /^([a-zA-Z]{1,})([a-zA-Z\s])$/
@@ -48,7 +48,7 @@ export function validateFormUserData(userData: UserData, setUserDataErrors: Reac
             firstNameError: "Please enter valid first name.",
         }));
 
-        return
+        return false
     }
 
     if (!textRegex.test(userData.secondName)) {
@@ -57,7 +57,7 @@ export function validateFormUserData(userData: UserData, setUserDataErrors: Reac
             secondNameError: "Please enter valid second name.",
         }));
 
-        return
+        return false
     }
 
     if (!companyNameRegex.test(userData.companyName)) {
@@ -66,7 +66,7 @@ export function validateFormUserData(userData: UserData, setUserDataErrors: Reac
             companyNameError: "Please enter valid company name.",
         }));
 
-        return
+        return false
     }
 
     if (!businessEmailRegex.test(userData.businessEmail)) {
@@ -75,7 +75,7 @@ export function validateFormUserData(userData: UserData, setUserDataErrors: Reac
             businessEmailError: "Please enter valid business email.",
         }));
 
-        return
+        return false
     }
 
     if (!userData.isPrivacyPolicyAgreementChecked) {
@@ -84,8 +84,11 @@ export function validateFormUserData(userData: UserData, setUserDataErrors: Reac
             isPrivacyPolicyAgreementCheckedError: "Please complete all required fields.",
         }));
 
-        return
+        return false
     }
+
+    // If everything is done correctly:
+    return true
 }
 
 function isEveryFormFieldEmpty(userData: UserData): boolean {

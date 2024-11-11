@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { useFormContext } from '../../../hooks/useFormContext'
+import useFormContext from '../../../hooks/useFormContext'
 
 import Logo from './components/Logo'
 import Navbar from './components/Navbar'

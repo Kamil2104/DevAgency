@@ -4,7 +4,7 @@ import Text from './components/Text'
 import Options from './components/Options'
 import Arrow from './components/Arrow'
 
-import { useFormContext } from '../../../hooks/useFormContext'
+import useFormContext from '../../../hooks/useFormContext'
 
 import { footerOption } from './interfaces/interfaces'
 

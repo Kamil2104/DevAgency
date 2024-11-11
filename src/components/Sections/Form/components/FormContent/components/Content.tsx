@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 import Button from '../../../../../../components/SmallComponents/Button/Button'
 
+import useFormContext from '../../../../../../hooks/useFormContext'
+
 import useFormUserData from './hooks/useFormUserData'
 import useFormUserDataErrors from './hooks/useFormUserDataErrors'
 import useFormUserSelectedProducts from './hooks/useFormUserSelectedProducts'
@@ -10,7 +12,7 @@ import { UserData } from './hooks/useFormUserData'
 import { UserDataErrors } from './hooks/useFormUserDataErrors'
 import { UserDataSelectedProducts } from './hooks/useFormUserSelectedProducts'
 
-import { validateFormUserData } from './validation/validateFormUserData'
+import { isUserDataCorrectlyFulfilled } from './validation/validateFormUserData'
 
 import './styles/Content.css'
 
@@ -48,11 +50,14 @@ const ContentDescription: React.FC = () => {
 }
 
 const ContentForm: React.FC<{
-  userData: UserData, setUserData: React.Dispatch<React.SetStateAction<UserData>>,
-  userDataErrors: UserDataErrors, setUserDataErrors: React.Dispatch<React.SetStateAction<UserDataErrors>>,
-  userSelectedProducts: UserDataSelectedProducts, setUserSelectedProducts: React.Dispatch<React.SetStateAction<UserDataSelectedProducts>>}> = ({ userData, setUserData, userDataErrors, setUserDataErrors, userSelectedProducts, setUserSelectedProducts }) => {
+    userData: UserData, setUserData: React.Dispatch<React.SetStateAction<UserData>>,
+    userDataErrors: UserDataErrors, setUserDataErrors: React.Dispatch<React.SetStateAction<UserDataErrors>>,
+    userSelectedProducts: UserDataSelectedProducts, setUserSelectedProducts: React.Dispatch<React.SetStateAction<UserDataSelectedProducts>>
+  }> = ({ userData, setUserData, userDataErrors, setUserDataErrors, userSelectedProducts, setUserSelectedProducts }) => {
 
   const [isProductRequirementsSelectOpened, setIsProductRequirementsSelectOpened] = useState(false)
+
+  const { setDisplayedFormContent } = useFormContext()
 
   // Function for handling value changing in input fields
   const handleValueChangeInFormField = (userDataName: string, newUserDataValue: string, userDataErrorName: string) => {
@@ -89,8 +94,11 @@ const ContentForm: React.FC<{
 
   // Function for form validation and submition
   const handleFormSubmition = () => {
-    validateFormUserData(userData, setUserDataErrors)
     handleClosingProductRequirementsSelect()
+
+    if (isUserDataCorrectlyFulfilled(userData, setUserDataErrors)) {
+      setDisplayedFormContent('ThanksToTheUser')
+    }
   }
 
   return (

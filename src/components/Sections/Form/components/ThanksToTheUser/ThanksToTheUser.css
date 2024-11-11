@@ -1,0 +1,110 @@
+/* Overriden components in ThanksToTheUser component */
+
+.thanksToTheUser .backgroundContainer video.formVideo {
+    width: 100%;
+}
+
+.thanksToTheUser .backgroundContainer .formContentBackground {
+    display: none;
+}
+
+.thanksToTheUser .formHeader {
+    position: sticky;
+    z-index: 5;
+}
+
+/* ThanksToTheUser components */
+
+.thanksToTheUser {
+    height: 100dvh;
+    width: 100%;
+}
+
+.thanksToTheUserContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7.5em;
+    height: 90dvh;
+    width: 100%;
+
+    z-index: 1;
+}
+
+.thanksToTheUserContentMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1250px;
+    gap: 2em;
+
+    z-index: 1;
+}
+
+.thanksToTheUserContentMain h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 68px;
+    color: #F4F4F4;
+}
+
+.thanksToTheUserContentMain h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--semi-medium);
+    font-size: 22px;
+    color: #F4F4F4;
+    text-align: center;
+
+    width: 65%;
+}
+
+.thanksToTheUserContentMain button {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 18px;
+    color: #F4F4F4;
+
+    padding: .75em 1.15em;
+    margin-top: 2em;
+
+    border-radius: 2em;
+    background-color: #5E71FE;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+
+.thanksToTheUserContentFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1250px;
+    gap: 1.5em;
+
+    z-index: 1;
+}
+
+.thanksToTheUserContentFooter p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 22px;
+    color: #616161;
+}
+
+.socialMediaIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.socialMediaIcons svg {
+    width: 22.5px;
+
+    cursor: pointer;
+}

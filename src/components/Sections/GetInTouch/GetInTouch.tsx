@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useFormContext } from '../../../hooks/useFormContext'
+import useFormContext from '../../../hooks/useFormContext'
 
 import Heading from './components/Heading'
 import Description from './components/Description'

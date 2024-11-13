@@ -1,0 +1,32 @@
+.howWeGetThingsDoneContent .stepsCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1050px;
+
+    margin-top: 5em;
+}
+
+.stepsCards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 180px;
+}
+
+.stepsCards .card svg,
+.stepsCards .card img {
+    height: 100px;
+    width: 100px;
+}
+
+.stepsCards .card p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 18px;
+
+    color: #F4F4F4;
+}

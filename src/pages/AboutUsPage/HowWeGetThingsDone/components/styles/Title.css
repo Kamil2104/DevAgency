@@ -1,0 +1,10 @@
+.howWeGetThingsDone h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 74px;
+    color: #F4F4F4;
+
+    width: 60%;
+
+    text-align: center;
+}

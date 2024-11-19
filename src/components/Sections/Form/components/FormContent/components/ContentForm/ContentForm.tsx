@@ -6,7 +6,7 @@ import Textarea from "./components/Textarea"
 import PrivacyPolicyCheckbox from "./components/PrivacyPolicyCheckbox"
 import SubmitButton from "./components/SubmitButton"
 
-import useContentFormFunctions from "./hooks/ContentFormFunctions"
+import useContentFormFunctions from "./functions/ContentFormFunctions"
 
 import { UserData } from "../hooks/useFormUserData"
 import { UserDataErrors } from "../hooks/useFormUserDataErrors"

@@ -1,6 +1,6 @@
-import { UserData } from "../../hooks/useFormUserData"
-import { UserDataErrors } from "../../hooks/useFormUserDataErrors"
-import { UserDataSelectedProducts } from "../../hooks/useFormUserSelectedProducts"
+import { UserData } from "../../functions/useFormUserData"
+import { UserDataErrors } from "../../functions/useFormUserDataErrors"
+import { UserDataSelectedProducts } from "../../functions/useFormUserSelectedProducts"
 
 export interface InputProps  {
     className: 'halfSizeInput' | 'fullSizeInput',

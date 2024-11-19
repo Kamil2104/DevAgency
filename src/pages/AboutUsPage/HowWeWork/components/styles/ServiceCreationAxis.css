@@ -1,0 +1,129 @@
+.serviceCreationAxis {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+    gap: 2em;
+}
+
+.axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.axis .servicesTimeLine {
+    height: 480px;
+    width: 6px;
+
+    border-radius: 2em;
+    background-color: #ECECEC;
+}
+
+.axis .servicesTimeLine .servicesTimeLineSegment {
+    position: relative;
+
+    height: 120px;
+    width: 100%;
+
+    border-radius: 2em;
+    background: linear-gradient(to left, #B8C1FF 0%, #7E8DFE 47%, #5E71FE 94%);
+
+    transition: transform .25s linear;
+}
+
+.servicesTimeLineSegment.first {
+    transform: translateY(0);
+}
+
+.servicesTimeLineSegment.second {
+    transform: translateY(120px);
+}
+
+.servicesTimeLineSegment.third {
+    transform: translateY(240px);
+}
+
+.servicesTimeLineSegment.fourth {
+    transform: translateY(360px);
+}
+
+.axis .servicesTimeLine .servicesTimeLineSegment:first-child,
+.axis .servicesTimeLine .servicesTimeLineSegment:last-child {
+    border-radius: 2em;
+}
+
+.axis .downArrowButton,
+.axis .upArrowButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+    width: 30px;
+
+    border-radius: 50%;
+
+    background-color: #5E71FE;
+
+    cursor: pointer;
+}
+
+.axis .downArrowButton.disabled,
+.axis .upArrowButton.disabled {
+    background-color: #616161;
+
+    cursor: default;
+}
+
+.axis .downArrowButton svg,
+.axis .upArrowButton svg {
+    height: 15px;
+    width: 15px;
+
+    transform: rotate(90deg);
+}
+
+.servicesTimeLineDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+
+    height: 120px;
+
+    cursor: pointer;
+}
+
+.service svg {
+    height: 38px;
+    width: 38px;
+}
+
+.service p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 28px;
+
+    color: #616161;
+
+    user-select: none;
+}
+
+.service p.active {
+    background: linear-gradient(to right, #5E71FE 0%, #7E8DFE 47%, #B8C1FF 94%);
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -44,7 +44,7 @@ const Card: React.FC<CardProps> = ({ card }) => {
   )
 }
 
-const Cards: React.FC<BoostCardProps> = ({ boostCards }) => {
+const Cards: React.FC<BoostCardProps> = React.memo(({ boostCards }) => {
   const [isVisible, setIsVisible] = useState(false)
   const cardsRef = useRef<HTMLDivElement | null>(null)
 
@@ -74,6 +74,6 @@ const Cards: React.FC<BoostCardProps> = ({ boostCards }) => {
         ))}
     </section>
   )
-}
+})
 
 export default Cards

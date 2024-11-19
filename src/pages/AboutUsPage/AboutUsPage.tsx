@@ -4,6 +4,7 @@ import useFormContext from '../../hooks/useFormContext'
 
 import HeaderHero from './HeaderHero/HeaderHero'
 import WhyUs from './WhyUs/WhyUs'
+import HowWeWork from './HowWeWork/HowWeWork'
 import HowWeGetThingsDone from './HowWeGetThingsDone/HowWeGetThingsDone'
 import GetInTouch from '../../components/Sections/GetInTouch/GetInTouch'
 import Footer from '../../components/Sections/Footer/Footer'
@@ -43,6 +44,7 @@ const AboutUsPage: React.FC = () => {
       <HeaderHero />
       <WhyUs />
       <HowWeGetThingsDone />
+      <HowWeWork />
       <GetInTouch />
       <Footer />
       {isFormVisible && <Form isFormDisplayed={isFormDisplayed} />}

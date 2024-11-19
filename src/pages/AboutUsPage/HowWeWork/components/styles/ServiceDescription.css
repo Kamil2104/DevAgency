@@ -1,0 +1,73 @@
+.serviceDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    width: 50%;
+}
+
+.serviceDescriptionContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(100% - 2em);
+
+    padding: 2em 3em;
+
+    border-radius: 2em;
+    background-color: #202020;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 70%;
+    gap: 1.25em;
+}
+
+.leftColumn h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: var(--semi-bold);
+    font-size: 30px;
+    color: #F4F4F4;
+
+    margin-bottom: .5em;
+}
+
+.rightColumn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
+.rightColumn svg.stepPoint {
+    width: 150px;
+    height: 150px;
+}
+
+.stepPoint {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.stepPoint svg {
+    height: 16px;
+    width: 16px;
+}
+
+.stepPoint p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--semi-medium);
+    font-size: 20px;
+    color: #F4F4F4;
+}

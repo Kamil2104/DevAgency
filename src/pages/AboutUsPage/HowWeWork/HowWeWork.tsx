@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 
 import Title from './components/Title'
 import ServiceCreationAxis from './components/ServiceCreationAxis'
@@ -11,7 +11,7 @@ import './HowWeWork.css'
 const HowWeWork: React.FC = () => {
   const [activeService, setActiveService] = useState(0)
 
-  const ourServices: OurServices[] = [
+  const ourServices: OurServices[] = useMemo(() => [
     {
       activeIcon: <svg viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4.5 9.625L38.5 9.625M25.2778 18.6875L29.0556 22.3125L25.2778 25.9375M17.7222 25.9375L13.9444 22.3125L17.7222 18.6875M4.5 29.2V11.8C4.5 9.76983 4.5 8.75475 4.91175 7.97932C5.27394 7.29724 5.85145 6.74264 6.56228 6.3951C7.37039 6 8.42906 6 10.5448 6H32.4559C34.5717 6 35.6288 6 36.4369 6.3951C37.1478 6.74264 37.7265 7.29724 38.0886 7.97932C38.5004 8.75475 38.5 9.76983 38.5 11.8V29.2C38.5 31.2302 38.5004 32.2453 38.0886 33.0207C37.7265 33.7028 37.1478 34.2574 36.4369 34.605C35.6288 35.0001 34.5717 35 32.4559 35L10.5448 35C8.42906 35 7.37039 35.0001 6.56228 34.605C5.85145 34.2574 5.27394 33.7028 4.91175 33.0207C4.5 32.2453 4.5 31.2302 4.5 29.2Z" stroke="url(#paint0_linear_527_840)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/> <defs> <linearGradient id="paint0_linear_527_840" x1="4.5" y1="20.5" x2="38.5" y2="20.5" gradientUnits="userSpaceOnUse"> <stop stopColor="#5E71FE"/> <stop offset="0.465" stopColor="#7E8DFE" stopOpacity="0.99"/> <stop offset="0.94" stopColor="#B8C1FF"/> </linearGradient> </defs> </svg>,
       unactiveIcon:  <svg viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fillRule="evenodd" clipRule="evenodd" d="M4.5 9.625L38.5 9.625L4.5 9.625Z" fill="#616161"/> <path d="M4.5 9.625L38.5 9.625M25.2778 18.6875L29.0556 22.3125L25.2778 25.9375M17.7222 25.9375L13.9444 22.3125L17.7222 18.6875M4.5 29.2V11.8C4.5 9.76983 4.5 8.75475 4.91175 7.97932C5.27394 7.29724 5.85145 6.74264 6.56228 6.3951C7.37039 6 8.42906 6 10.5448 6H32.4559C34.5717 6 35.6288 6 36.4369 6.3951C37.1478 6.74264 37.7265 7.29724 38.0886 7.97932C38.5004 8.75475 38.5 9.76983 38.5 11.8V29.2C38.5 31.2302 38.5004 32.2453 38.0886 33.0207C37.7265 33.7028 37.1478 34.2574 36.4369 34.605C35.6288 35.0001 34.5717 35 32.4559 35L10.5448 35C8.42906 35 7.37039 35.0001 6.56228 34.605C5.85145 34.2574 5.27394 33.7028 4.91175 33.0207C4.5 32.2453 4.5 31.2302 4.5 29.2Z" stroke="#616161" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/> </svg>,
@@ -44,9 +44,9 @@ const HowWeWork: React.FC = () => {
       isActive: activeService === 3,
       onClick: () => setActiveService(3)
     }
-  ]
+  ], [activeService]);
 
-  const activeServiceObject = ourServices.find(service => service.isActive);
+  const activeServiceObject = useMemo(() => ourServices.find(service => service.isActive), [ourServices]);
 
   return (
     <section className='howWeWork'>

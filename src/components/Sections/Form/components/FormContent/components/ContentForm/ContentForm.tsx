@@ -12,7 +12,7 @@ import { UserData } from "../hooks/useFormUserData"
 import { UserDataErrors } from "../hooks/useFormUserDataErrors"
 import { UserDataSelectedProducts } from "../hooks/useFormUserSelectedProducts"
 
-const ContentForm: React.FC<{ userData: UserData, setUserData: React.Dispatch<React.SetStateAction<UserData>>, userDataErrors: UserDataErrors, setUserDataErrors: React.Dispatch<React.SetStateAction<UserDataErrors>>, userSelectedProducts: UserDataSelectedProducts, setUserSelectedProducts: React.Dispatch<React.SetStateAction<UserDataSelectedProducts>> }> = ({ userData, setUserData, userDataErrors, setUserDataErrors, userSelectedProducts, setUserSelectedProducts }) => {
+const ContentForm: React.FC<{ userData: UserData, setUserData: React.Dispatch<React.SetStateAction<UserData>>, userDataErrors: UserDataErrors, setUserDataErrors: React.Dispatch<React.SetStateAction<UserDataErrors>>, userSelectedProducts: UserDataSelectedProducts, setUserSelectedProducts: React.Dispatch<React.SetStateAction<UserDataSelectedProducts>> }> = React.memo(({ userData, setUserData, userDataErrors, setUserDataErrors, userSelectedProducts, setUserSelectedProducts }) => {
   const [isProductRequirementsSelectOpened, setIsProductRequirementsSelectOpened] = useState(false)
 
   const {
@@ -108,6 +108,6 @@ const ContentForm: React.FC<{ userData: UserData, setUserData: React.Dispatch<Re
       <SubmitButton handleFormSubmition={handleFormSubmition} />
     </>
   )
-}
+})
 
 export default ContentForm

@@ -4,7 +4,7 @@ import { OurServices } from './interfaces/interfaces'
 
 import './styles/ServiceDescription.css'
 
-const ServiceDescription: React.FC<Partial<OurServices>> = ({ steps, activeIcon }) => {
+const ServiceDescription: React.FC<Partial<OurServices>> = React.memo(({ steps, activeIcon }) => {
   return (
     <section className='serviceDescription'>
       <section className='serviceDescriptionContent'>
@@ -20,15 +20,15 @@ const ServiceDescription: React.FC<Partial<OurServices>> = ({ steps, activeIcon 
       </section>
     </section>
   )
-}
+})
 
-const StepPoint: React.FC<{ pointDescription: string }> = ({ pointDescription }) => {
+const StepPoint: React.FC<{ pointDescription: string }> = React.memo(({ pointDescription }) => {
   return (
     <div className='stepPoint'>
       <svg className='stepPoint' width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="10.5" cy="10" r="10" fill="#5E71FE"/> </svg>
       <p> {pointDescription} </p>
     </div>
   )
-}
+})
 
 export default ServiceDescription

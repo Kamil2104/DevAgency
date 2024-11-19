@@ -2,7 +2,7 @@ import React from 'react'
 
 import './styles/ProductCreationAxis.css'
 
-const ProductCreationAxis: React.FC<{ activeCard: number, setActiveCard: (card: number) => void }> = ({ activeCard, setActiveCard }) => {
+const ProductCreationAxis: React.FC<{ activeCard: number, setActiveCard: (card: number) => void }> = React.memo(({ activeCard, setActiveCard }) => {
   const cardAttributes: { value: number, description: string }[] = [
     { value: 0, description: 'We start by understanding your vision and goals.' },
     { value: 1, description: 'We start by understanding your vision and goals.' },
@@ -42,20 +42,20 @@ const ProductCreationAxis: React.FC<{ activeCard: number, setActiveCard: (card: 
       </div>
     </section>
   )
-}
+})
 
-const TimeLinePoint: React.FC<{ activeCard: number, setActiveCard: (card: number) => void, cardValue: number}> = ({ activeCard, setActiveCard, cardValue }) => {
+const TimeLinePoint: React.FC<{ activeCard: number, setActiveCard: (card: number) => void, cardValue: number}> = React.memo(({ activeCard, setActiveCard, cardValue }) => {
   return (
     <div className='stepSection'>
       <div className={`timeLinePoint ${activeCard === cardValue ? 'active' : ''}`} onClick={() => setActiveCard(cardValue)}></div>
     </div>
   )
-}
+})
 
-const TimeLinePointDescription: React.FC<{ activeCard: number, description: string, cardValue: number }> = ({ activeCard, description, cardValue }) => {
+const TimeLinePointDescription: React.FC<{ activeCard: number, description: string, cardValue: number }> = React.memo(({ activeCard, description, cardValue }) => {
   return (
     <div className={`timeLinePointDescription ${activeCard === cardValue ? '' : 'invisible'}`}> <p> {description} </p> </div>
   )
-}
+})
 
 export default ProductCreationAxis

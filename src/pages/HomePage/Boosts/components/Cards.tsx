@@ -5,7 +5,7 @@ import { BoostCardProps } from '../interfaces/interfaces'
 
 import './styles/Cards.css'
 
-const Card: React.FC<CardProps> = ({ card }) => {
+const Card: React.FC<CardProps> = React.memo(({ card }) => {
   const [animatedPercent, setAnimatedPercent] = useState(0)
 
   useEffect(() => {
@@ -42,7 +42,7 @@ const Card: React.FC<CardProps> = ({ card }) => {
       </section>
     </section>
   )
-}
+})
 
 const Cards: React.FC<BoostCardProps> = React.memo(({ boostCards }) => {
   const [isVisible, setIsVisible] = useState(false)

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { PrivacyPolicyCheckboxProps } from './interfaces/interfaces'
 
-const PrivacyPolicyCheckbox: React.FC<PrivacyPolicyCheckboxProps> = ({ userData, setUserData, userDataErrors, setUserDataErrors }) => {
+const PrivacyPolicyCheckbox: React.FC<PrivacyPolicyCheckboxProps> = React.memo(({ userData, setUserData, userDataErrors, setUserDataErrors }) => {
     return (
       <section className='privacyPolicyCheckboxContainer'>
           <section className='privacyPolicyCheckboxContainerContent'>
@@ -28,6 +28,6 @@ const PrivacyPolicyCheckbox: React.FC<PrivacyPolicyCheckboxProps> = ({ userData,
           <p className='errorMessage'> {userDataErrors.isPrivacyPolicyAgreementCheckedError} </p>
       </section>
     )
-}
+})
 
 export default PrivacyPolicyCheckbox

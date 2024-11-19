@@ -2,7 +2,7 @@ import React from 'react'
 
 import { TextareaProps } from './interfaces/interfaces'
 
-const Textarea: React.FC<TextareaProps> = ({ value, onClick, onChange }) => {
+const Textarea: React.FC<TextareaProps> = React.memo(({ value, onClick, onChange }) => {
   return (
     <textarea
       id="userMessageTextarea"
@@ -13,6 +13,6 @@ const Textarea: React.FC<TextareaProps> = ({ value, onClick, onChange }) => {
       onChange={onChange}
     />
   )
-}
+})
 
 export default Textarea

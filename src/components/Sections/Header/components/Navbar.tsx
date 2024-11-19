@@ -6,7 +6,7 @@ import { NavbarProps, OptionProps } from '../interfaces/interfaces'
 
 import './styles/Navbar.css'
 
-const Navbar: React.FC<NavbarProps> = ({ navbarOptions }) => {
+const Navbar: React.FC<NavbarProps> = React.memo(({ navbarOptions }) => {
   return (
     <nav>
       {navbarOptions.map((option) => (
@@ -17,12 +17,12 @@ const Navbar: React.FC<NavbarProps> = ({ navbarOptions }) => {
       ))}
     </nav>
   )
-}
+})
 
-const TextOption: React.FC<OptionProps> = ({ text, onClick }) => {
+const TextOption: React.FC<OptionProps> = React.memo(({ text, onClick }) => {
   return (
     <span onClick={onClick}> {text} </span>
   )
-}
+})
 
 export default Navbar

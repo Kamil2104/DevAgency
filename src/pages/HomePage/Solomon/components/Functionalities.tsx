@@ -4,7 +4,7 @@ import { FunctionalityCardProps } from '../interfaces/interfaces'
 
 import './styles/Functionalities.css'
 
-const Functionalities: React.FC<FunctionalityCardProps> = ({ functionalities }) => {
+const Functionalities: React.FC<FunctionalityCardProps> = React.memo(({ functionalities }) => {
   return (
     <section className='functionalities'>
       {functionalities.map((functionality, index) => (
@@ -16,6 +16,6 @@ const Functionalities: React.FC<FunctionalityCardProps> = ({ functionalities }) 
       ))}
     </section>
   )
-}
+})
 
 export default Functionalities

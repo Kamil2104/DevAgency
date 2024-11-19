@@ -2,7 +2,7 @@ import React from 'react'
 
 import './styles/Button.css'
 
-const Button: React.FC<{ text: string, stroke: string, onClick: () => void }> = ({ text, stroke, onClick }) => {
+const Button: React.FC<{ text: string, stroke: string, onClick: () => void }> = React.memo(({ text, stroke, onClick }) => {
   return (
     <button className='originalBtn' onClick={onClick}>
       {text}
@@ -17,6 +17,6 @@ const Button: React.FC<{ text: string, stroke: string, onClick: () => void }> = 
       </svg>
     </button>
   );
-};
+});
 
 export default Button

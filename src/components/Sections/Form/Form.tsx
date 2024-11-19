@@ -9,7 +9,7 @@ import useFormContext from '../../../hooks/useFormContext';
 
 import './Form.css';
 
-const Form: React.FC<{ isFormDisplayed: boolean }> = ({ isFormDisplayed }) => {
+const Form: React.FC<{ isFormDisplayed: boolean }> = React.memo(({ isFormDisplayed }) => {
   const { displayedFormContent } = useFormContext()
 
   return (
@@ -24,6 +24,6 @@ const Form: React.FC<{ isFormDisplayed: boolean }> = ({ isFormDisplayed }) => {
       }
     </section>
   );
-};
+});
 
 export default Form;

@@ -1,6 +1,8 @@
+import React from "react";
+
 import "./styles/ScrollDownSign.css";
 
-const ScrollDownSign: React.FC<{ componentID: string }> = ({ componentID }) => {
+const ScrollDownSign: React.FC<{ componentID: string }> = React.memo(({ componentID }) => {
   const handleScrollingToComponent = () => {
     const targetComponent = document.getElementById(componentID);
     if (targetComponent) {
@@ -74,6 +76,6 @@ const ScrollDownSign: React.FC<{ componentID: string }> = ({ componentID }) => {
       </defs>
     </svg>
   );
-};
+});
 
 export default ScrollDownSign;

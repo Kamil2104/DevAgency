@@ -2,7 +2,7 @@ import React from 'react'
 
 import { ProductRequirementsProps } from './interfaces/interfaces'
 
-const ProductRequirements: React.FC<ProductRequirementsProps> = ({ userData, userSelectedProducts, isProductRequirementsSelectOpened, handleProductRequirementsSelectToggle, handleSelectingProductRequirements, handleDeselectingProductRequirements }) => {
+const ProductRequirements: React.FC<ProductRequirementsProps> = React.memo(({ userData, userSelectedProducts, isProductRequirementsSelectOpened, handleProductRequirementsSelectToggle, handleSelectingProductRequirements, handleDeselectingProductRequirements }) => {
   return (
     <section className='selectContainer'>
       <section onClick={() => handleProductRequirementsSelectToggle()} id={isProductRequirementsSelectOpened ? "productRequirementsOpened" : "productRequirementsClosed"} className='fullSizeInput'>
@@ -61,6 +61,6 @@ const ProductRequirements: React.FC<ProductRequirementsProps> = ({ userData, use
       </section>
     </section>
   )
-}
+})
 
 export default ProductRequirements

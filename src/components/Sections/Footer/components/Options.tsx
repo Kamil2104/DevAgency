@@ -4,7 +4,7 @@ import { FooterProps } from '../interfaces/interfaces'
 
 import './styles/Options.css'
 
-const Options: React.FC<FooterProps> = ({ footerOptions }) => {
+const Options: React.FC<FooterProps> = React.memo(({ footerOptions }) => {
   return (
     <section className='options'>
         {footerOptions.map((footerOption) => (
@@ -15,6 +15,6 @@ const Options: React.FC<FooterProps> = ({ footerOptions }) => {
         ))}
     </section>
   )
-}
+})
 
 export default Options

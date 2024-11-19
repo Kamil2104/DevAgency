@@ -133,7 +133,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 49%;
+    gap: .1em;
+    width: 100%;
+
+    margin-bottom: 7px;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened,
@@ -204,7 +207,7 @@
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened .iconContainer,
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed .iconContainer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     width: 10%;
@@ -215,19 +218,18 @@
     height: 24px;
     width: 24px;
 
+    margin-right: .5em;
+
     cursor: pointer;
 }
 
 .productRequirementsOptions {
-    position: absolute;
-    top: 86%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: .5em;
-    max-height: 0;
-    width: calc(49% - 2em);
+    width: calc(100% - 2em);
     padding: 0em 1em 0em 1em;
 
     border-bottom-left-radius: 1em;

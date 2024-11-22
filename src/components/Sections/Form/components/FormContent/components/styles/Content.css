@@ -14,7 +14,7 @@
     font-family: "Red Hat Display", sans-serif;
     font-weight: var(--semi-bold);
     font-size: 38px;
-    color: #F4F4F4;
+    color: #F6F6F6;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent h3 {
@@ -69,7 +69,7 @@
 
     border-radius: 1em;
 
-    color: #FFFFFF;
+    color: #F6F6F6;
     background-color: #404040;
 
     border: .15em solid #131313;
@@ -108,6 +108,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .halfSizeInput {
@@ -126,6 +127,83 @@
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea::-webkit-scrollbar-thumb:hover {
     cursor: default;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 49%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorContainer p.errorMessage {
+    padding-top: .1em;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelector,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelector .regionSelectorButton,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected .regionSelectorButton {
+    height: 64px;
+    width: 101%;
+
+    border: .15em solid #131313;
+    border-radius: 1em;
+
+    background-color: #404040;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelector .regionSelectorButton::after,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected .regionSelectorButton::after {
+  position: absolute;
+  right: 20px;
+
+  content: '';
+  display: inline-block;
+
+  color: #C7C7C7;
+
+  padding: 4px;
+
+  border: solid currentColor;
+  border-width: 0 2px 2px 0;
+
+  transform: translateY(-20%) rotate(45deg);
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected .regionSelectorButton::after {
+    color: #F6F6F6;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelector .regionSelectorButton span,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected .regionSelectorButton span {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--medium);
+    font-size: 18px;
+
+    color: #C7C7C7;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected .regionSelectorButton span.ReactFlagsSelect-module_selectFlag__2q5gC svg {
+    width: 22px;
+    height: 22px;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected .regionSelectorButton span {
+    color: #F6F6F6;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelector ul,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected ul {
+    top: -10%;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer {
@@ -201,7 +279,7 @@
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed p.selectedProductRequirementsOptions {
-    color: #FFFFFF;
+    color: #F6F6F6;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened .iconContainer,

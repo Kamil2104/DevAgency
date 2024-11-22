@@ -1,12 +1,15 @@
 import { UserData } from "../hooks/useFormUserData";
 import { UserDataErrors } from "../hooks/useFormUserDataErrors";
 
+import { CountryCode, isValidPhoneNumber } from "libphonenumber-js";
+
 export function isUserDataCorrectlyFulfilled(userData: UserData, setUserDataErrors: React.Dispatch<React.SetStateAction<UserDataErrors>>): boolean {
     const requiredFields: { key: keyof UserData; errorKey: keyof UserDataErrors; errorMessage: string; id?: string}[] = [
         { key: 'firstName', errorKey: 'firstNameError', errorMessage: "Please complete this required field.", id: 'firstNameInput' },
         { key: 'secondName', errorKey: 'secondNameError', errorMessage: "Please complete this required field.", id: 'secondNameInput' },
         { key: 'companyName', errorKey: 'companyNameError', errorMessage: "Please complete this required field.", id: 'companyNameInput' },
         { key: 'businessEmail', errorKey: 'businessEmailError', errorMessage: "Please complete this required field.", id: 'businessEmailInput' },
+        { key: 'phoneNumberRegion', errorKey: 'phoneNumberRegionError', errorMessage: "Please select your country region", id: 'rfs-btn' },
         { key: 'phoneNumber', errorKey: 'phoneNumberError', errorMessage: "Please complete this required field.", id: 'phoneNumberInput' },
         { key: 'isPrivacyPolicyAgreementChecked', errorKey: 'isPrivacyPolicyAgreementCheckedError', errorMessage: "Please select this required field." }
     ];
@@ -27,9 +30,9 @@ export function isUserDataCorrectlyFulfilled(userData: UserData, setUserDataErro
             errors[field.errorKey] = field.errorMessage;
 
             if (field.id) {
-                const inputElement = document.getElementById(field.id);
-                if (inputElement) {
-                    inputElement.style.borderColor = '#DD7B7E';
+                const element = document.getElementById(field.id);
+                if (element) {
+                    element.style.borderColor = '#DD7B7E';
                 }
             }
 
@@ -86,6 +89,15 @@ export function isUserDataCorrectlyFulfilled(userData: UserData, setUserDataErro
         return false
     }
 
+    if (!isValidPhoneNumber(userData.phoneNumber, userData.phoneNumberRegion as CountryCode)) {
+        setUserDataErrors(prevErrors => ({
+            ...prevErrors,
+            phoneNumberError: "Please enter valid phone number or phone number region.",
+        }));
+
+        return false
+    }
+
     if (!userData.isPrivacyPolicyAgreementChecked) {
         setUserDataErrors(prevErrors => ({
             ...prevErrors,
@@ -104,6 +116,6 @@ function isEveryFormFieldEmpty(userData: UserData): boolean {
            userData.secondName === '' &&
            userData.companyName === '' &&
            userData.businessEmail === '' &&
-           userData.productRequirements.length === 0 &&
+           userData.phoneNumberRegion === '' &&
            userData.phoneNumber === '';
 }

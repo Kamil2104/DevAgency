@@ -13,13 +13,14 @@ interface ContentFormFunctionsProps {
   setUserData: React.Dispatch<React.SetStateAction<UserData>>,
   userDataErrors: UserDataErrors,
   setUserDataErrors: React.Dispatch<React.SetStateAction<UserDataErrors>>,
+  setSelectedCountryCode: (code: string) => void,
   userSelectedProducts: UserDataSelectedProducts,
   setUserSelectedProducts: React.Dispatch<React.SetStateAction<UserDataSelectedProducts>>,
   isProductRequirementsSelectOpened: boolean,
   setIsProductRequirementsSelectOpened: (isOpened: boolean) => void;
 }
 
-const useContentFormFunctions = ({ userData, setUserData, userDataErrors, setUserDataErrors, userSelectedProducts, setUserSelectedProducts, isProductRequirementsSelectOpened, setIsProductRequirementsSelectOpened }: ContentFormFunctionsProps) => {
+const useContentFormFunctions = ({ userData, setUserData, userDataErrors, setUserDataErrors, setSelectedCountryCode,  userSelectedProducts, setUserSelectedProducts, isProductRequirementsSelectOpened, setIsProductRequirementsSelectOpened }: ContentFormFunctionsProps) => {
   const { setDisplayedFormContent } = useFormContext();
 
   const handleValueChangeInFormField = useCallback((userDataName: string, newUserDataValue: string, userDataErrorName: string, inputFieldID: string) => {
@@ -46,6 +47,17 @@ const useContentFormFunctions = ({ userData, setUserData, userDataErrors, setUse
   }, [userSelectedProducts, setUserSelectedProducts, setUserData]);
 
 
+  const handleSelectingRegion = useCallback((code: string) => {
+    setSelectedCountryCode(code.toUpperCase())
+    setUserData({ ...userData, phoneNumberRegion: code });
+    setUserDataErrors({ ...userDataErrors, phoneNumberRegionError: "" });
+
+    const regionSelectorButton = document.getElementById('rfs-btn')
+    if (regionSelectorButton) {
+      regionSelectorButton.style.borderColor = '#131313'
+    }
+  }, [setSelectedCountryCode, userData, setUserData, userDataErrors, setUserDataErrors])
+
   const handleProductRequirementsSelectToggle = useCallback(() => {
       setIsProductRequirementsSelectOpened(!isProductRequirementsSelectOpened);
   }, [isProductRequirementsSelectOpened, setIsProductRequirementsSelectOpened]);
@@ -71,10 +83,11 @@ const useContentFormFunctions = ({ userData, setUserData, userDataErrors, setUse
       handleValueChangeInFormField,
       handleSelectingProductRequirements,
       handleDeselectingProductRequirements,
+      handleSelectingRegion,
       handleProductRequirementsSelectToggle,
       handleClosingProductRequirementsSelect,
       handleFormSubmition,
-    }), [ handleValueChangeInFormField, handleSelectingProductRequirements, handleDeselectingProductRequirements, handleProductRequirementsSelectToggle, handleClosingProductRequirementsSelect, handleFormSubmition, ]
+    }), [ handleValueChangeInFormField, handleSelectingRegion, handleSelectingProductRequirements, handleDeselectingProductRequirements, handleProductRequirementsSelectToggle, handleClosingProductRequirementsSelect, handleFormSubmition, ]
   );
 };
 

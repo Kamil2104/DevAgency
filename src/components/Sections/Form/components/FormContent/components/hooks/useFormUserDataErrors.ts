@@ -6,6 +6,7 @@ export interface UserDataErrors {
     secondNameError: string,
     companyNameError: string,
     businessEmailError: string,
+    phoneNumberRegionError: string,
     phoneNumberError: string,
     isPrivacyPolicyAgreementCheckedError: string,
 }
@@ -17,6 +18,7 @@ const useFormUserDataErrors = () => {
         secondNameError: '',
         companyNameError: '',
         businessEmailError: '',
+        phoneNumberRegionError: '',
         phoneNumberError: '',
         isPrivacyPolicyAgreementCheckedError: ''
     });

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 
 import Input from "./components/Input"
+import RegionSelector from "./components/RegionSelector"
 import ProductRequirements from "./components/ProductRequirements"
 import Textarea from "./components/Textarea"
 import PrivacyPolicyCheckbox from "./components/PrivacyPolicyCheckbox"
@@ -13,16 +14,12 @@ import { UserDataErrors } from "../hooks/useFormUserDataErrors"
 import { UserDataSelectedProducts } from "../hooks/useFormUserSelectedProducts"
 
 const ContentForm: React.FC<{ userData: UserData, setUserData: React.Dispatch<React.SetStateAction<UserData>>, userDataErrors: UserDataErrors, setUserDataErrors: React.Dispatch<React.SetStateAction<UserDataErrors>>, userSelectedProducts: UserDataSelectedProducts, setUserSelectedProducts: React.Dispatch<React.SetStateAction<UserDataSelectedProducts>> }> = React.memo(({ userData, setUserData, userDataErrors, setUserDataErrors, userSelectedProducts, setUserSelectedProducts }) => {
+  const [selectedCountryCode, setSelectedCountryCode] = useState("")
+
   const [isProductRequirementsSelectOpened, setIsProductRequirementsSelectOpened] = useState(false)
 
-  const {
-    handleValueChangeInFormField,
-    handleSelectingProductRequirements,
-    handleDeselectingProductRequirements,
-    handleProductRequirementsSelectToggle,
-    handleClosingProductRequirementsSelect,
-    handleFormSubmition
-  } = useContentFormFunctions({ userData, setUserData, userDataErrors, setUserDataErrors, userSelectedProducts, setUserSelectedProducts, isProductRequirementsSelectOpened, setIsProductRequirementsSelectOpened })
+  const { handleValueChangeInFormField, handleSelectingProductRequirements, handleDeselectingProductRequirements, handleSelectingRegion, handleProductRequirementsSelectToggle, handleClosingProductRequirementsSelect, handleFormSubmition
+  } = useContentFormFunctions({ userData, setUserData, userDataErrors, setUserDataErrors, setSelectedCountryCode, userSelectedProducts, setUserSelectedProducts, isProductRequirementsSelectOpened, setIsProductRequirementsSelectOpened })
 
   return (
     <>
@@ -71,6 +68,12 @@ const ContentForm: React.FC<{ userData: UserData, setUserData: React.Dispatch<Re
         />
 
         <section className='row'>
+          <RegionSelector
+            selectedCountryCode={selectedCountryCode}
+            onSelect={handleSelectingRegion}
+            error={userDataErrors.phoneNumberRegionError}
+          />
+
           <Input
             className='halfSizeInput'
             id='phoneNumberInput'

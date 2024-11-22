@@ -1,6 +1,6 @@
-import { UserData } from "../../functions/useFormUserData"
-import { UserDataErrors } from "../../functions/useFormUserDataErrors"
-import { UserDataSelectedProducts } from "../../functions/useFormUserSelectedProducts"
+import { UserData } from "../../../hooks/useFormUserData"
+import { UserDataErrors } from "../../../hooks/useFormUserDataErrors"
+import { UserDataSelectedProducts } from "../../../hooks/useFormUserSelectedProducts"
 
 export interface InputProps  {
     className: 'halfSizeInput' | 'fullSizeInput',
@@ -9,6 +9,12 @@ export interface InputProps  {
     value: string,
     onClick: () => void,
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
+    error?: string
+}
+
+export interface RegionSelectorProps {
+    selectedCountryCode: string,
+    onSelect: (code: string) => void,
     error: string
 }
 

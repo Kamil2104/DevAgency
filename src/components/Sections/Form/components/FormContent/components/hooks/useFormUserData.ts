@@ -7,6 +7,7 @@ export interface UserData {
     businessEmail: string,
     productRequirements: string[],
     phoneNumber: string,
+    phoneNumberRegion: string,
     message: string,
     isPrivacyPolicyAgreementChecked: boolean,
 }
@@ -18,6 +19,7 @@ const useFormUserData = () => {
         companyName: '',
         businessEmail: '',
         productRequirements: [],
+        phoneNumberRegion: '',
         phoneNumber: '',
         message: '',
         isPrivacyPolicyAgreementChecked: false

@@ -32,7 +32,19 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   width: 100%;
   min-height: 100dvh;
+}
+
+.app .homePage,
+.app .aboutUsPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100dvh;
   gap: 10em;
+
+  animation: showContent 1s ease;
 }
 
 .no-scroll {
@@ -57,4 +69,13 @@ p, h1, h2, h3, h4, h5, h6 {
 
 ::placeholder {
   user-select: none;
+}
+
+@keyframes showContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -40,7 +40,7 @@ const AboutUsPage: React.FC = () => {
   }, [isFormDisplayed]);
 
   return (
-    <>
+    <section className='aboutUsPage'>
       <HeaderHero />
       <WhyUs />
       <HowWeGetThingsDone />
@@ -48,7 +48,7 @@ const AboutUsPage: React.FC = () => {
       <GetInTouch />
       <Footer />
       {isFormVisible && <Form isFormDisplayed={isFormDisplayed} />}
-    </>
+    </section>
   )
 }
 

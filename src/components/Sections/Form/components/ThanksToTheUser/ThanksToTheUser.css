@@ -76,6 +76,14 @@
     outline: none;
 
     cursor: pointer;
+
+    transition: color 0.4s ease,
+                background-color 0.4s ease;
+}
+
+.thanksToTheUserContentMain button:hover {
+    color: #1D1D1D;
+    background-color: #F6F6F6;
 }
 
 .thanksToTheUserContentFooter {

@@ -35,4 +35,17 @@ footer .thirdRow p.privacyAndTermsParagraph {
     border-bottom: .15em solid #616161;
 
     cursor: pointer;
+
+    transition: color 0.4s ease,
+                border-color 0.4s ease;
+}
+
+footer .thirdRow p.privacyAndTermsParagraph:hover {
+    color: #5E71FE;
+    border-color: #5E71FE;
+}
+
+footer .thirdRow p.privacyAndTermsParagraph:active {
+    color: #9DA9FE;
+    border-color: #9DA9FE;
 }

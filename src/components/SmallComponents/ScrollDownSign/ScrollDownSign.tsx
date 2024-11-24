@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import "./styles/ScrollDownSign.css";
 
-const ScrollDownSign: React.FC<{ componentID: string }> = React.memo(({ componentID }) => {
+const ScrollDownSign: React.FC<{ page: string, componentID: string }> = React.memo(({ page, componentID }) => {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+
+      const progress = Math.min(scrollTop / (windowHeight * 0.8), 1);
+      setScrollProgress(progress);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleScrollingToComponent = () => {
     const targetComponent = document.getElementById(componentID);
     if (targetComponent) {
@@ -17,6 +32,10 @@ const ScrollDownSign: React.FC<{ componentID: string }> = React.memo(({ componen
     }
   }
 
+  const svgAnimation = page === 'HomePage' ? {
+    transform: `translateX(${scrollProgress * 575}%)`,
+  } : {};
+
   return (
     <svg
       onClick={() => handleScrollingToComponent()}
@@ -26,6 +45,7 @@ const ScrollDownSign: React.FC<{ componentID: string }> = React.memo(({ componen
       viewBox="0 0 53 183"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      style={svgAnimation}
     >
       <rect
         x="51.0225"

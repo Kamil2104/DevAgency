@@ -40,6 +40,12 @@
     background-color: #5E71FE;
 
     cursor: pointer;
+
+    transition: background-color .4s ease;
+}
+
+.rightArrowButton:hover, .leftArrowButton:hover {
+    background-color: #3846A7;
 }
 
 .rightArrowButton svg, .leftArrowButton svg {

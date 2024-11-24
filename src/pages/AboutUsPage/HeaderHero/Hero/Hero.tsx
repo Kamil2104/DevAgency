@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         <BackgroundTransition />
         <section className='heroContent'>
             <TextContent />
-            <ScrollDownSign componentID='whyUs' />
+            <ScrollDownSign page="AboutUsPage" componentID='whyUs' />
         </section>
     </section>
   )

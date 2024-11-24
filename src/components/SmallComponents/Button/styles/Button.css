@@ -19,4 +19,17 @@ button.originalBtn {
     outline: none;
 
     cursor: pointer;
+
+    transition: color 0.4s ease,
+                background-color 0.4s ease;
+}
+
+button.originalBtn:hover {
+    color: #F4F4F4;
+    background-color: #5E71FE;
+}
+
+button.originalBtn:active {
+    color: #F4F4F4;
+    background-color: #9DA9FE;
 }

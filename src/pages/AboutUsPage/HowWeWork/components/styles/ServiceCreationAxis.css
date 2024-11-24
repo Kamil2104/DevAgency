@@ -70,6 +70,13 @@
     background-color: #5E71FE;
 
     cursor: pointer;
+
+    transition: background-color 0.4s ease;
+}
+
+.axis .downArrowButton:hover,
+.axis .upArrowButton:hover {
+    background-color: #3846A7;
 }
 
 .axis .downArrowButton.disabled,

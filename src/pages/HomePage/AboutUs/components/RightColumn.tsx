@@ -12,7 +12,7 @@ const RightColumn: React.FC = () => {
   return (
     <section className='rightColumn'>
       <Text />
-      <Button text='Explore our story' stroke='#F4F4F4' onClick={() => navigate('/AboutUs')} />
+      <Button text='Explore our story' onClick={() => navigate('/AboutUs')} />
     </section>
   )
 }

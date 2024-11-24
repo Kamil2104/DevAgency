@@ -11,9 +11,24 @@ nav span {
     font-size: 16px;
     font-weight: var(--semi-bold);
 
+    border-bottom: .1em solid transparent;
+
     cursor: pointer;
+
+    transition: color .4s ease,
+                border-color .4s ease;
 }
 
 nav button.originalBtn {
     font-size: 16px;
+}
+
+nav span:hover {
+    color: #5E71FE;
+    border-color: #5E71FE;
+}
+
+nav span:active {
+    color: #9DA9FE;
+    border-color: #9DA9FE;
 }

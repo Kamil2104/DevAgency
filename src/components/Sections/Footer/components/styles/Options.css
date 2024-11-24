@@ -14,4 +14,17 @@
     border-bottom: .15em solid #FFFFFF;
 
     cursor: pointer;
+
+    transition: color .4s ease,
+                border-color .4s ease;
+}
+
+.options span:hover {
+    color: #5E71FE;
+    border-color: #5E71FE;
+}
+
+.options span:active {
+    color: #9DA9FE;
+    border-color: #9DA9FE;
 }

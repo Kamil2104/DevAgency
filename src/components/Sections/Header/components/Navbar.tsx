@@ -13,7 +13,7 @@ const Navbar: React.FC<NavbarProps> = React.memo(({ navbarOptions }) => {
         option.type === 'text' ?
           <TextOption key={option.text} text={option.text} onClick={option.onClick} />
         :
-          <Button key={option.text} text={option.text} stroke='#1D1D1D' onClick={option.onClick} />
+          <Button key={option.text} text={option.text} onClick={option.onClick} />
       ))}
     </nav>
   )

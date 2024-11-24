@@ -31,7 +31,7 @@ const Boosts: React.FC = () => {
     <section className='boosts'>
       <Title />
       <Cards boostCards={cards} />
-      <Button text='Learn more' stroke='#1D1D1D' onClick={() => console.log("")} />
+      <Button text='Learn more' onClick={() => console.log("")} />
     </section>
   )
 }

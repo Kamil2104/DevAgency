@@ -94,12 +94,15 @@
 }
 
 .productRequirementsOptions {
+    position: absolute;
+    top: 66.75%;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: .5em;
-    width: calc(100% - 2em);
+    width: calc(48% - 2em);
     padding: 0em 1em 0em 1em;
 
     border-bottom-left-radius: 1em;

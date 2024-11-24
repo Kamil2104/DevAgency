@@ -1,0 +1,45 @@
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea {
+    width: 100%;
+    resize: none;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea::-webkit-scrollbar-thumb:hover {
+    cursor: default;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--medium);
+    font-size: 18px;
+
+    width: calc(100% - 2em);
+
+    padding: 1em 1em;
+
+    border-radius: 1em;
+
+    color: #F6F6F6;
+    background-color: #404040;
+
+    border: .15em solid #131313;
+    outline: none;
+    transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea {
+    padding: .5em 1em;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea:focus {
+    color: #131313;
+    background-color: #ECECEC;
+    transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea::placeholder {
+    color: #C7C7C7;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea:focus::placeholder {
+    color: #616161;
+}

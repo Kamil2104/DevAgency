@@ -2,6 +2,8 @@ import React from 'react'
 
 import { InputProps } from './interfaces/interfaces'
 
+import './styles/Input.css'
+
 const Input: React.FC<InputProps> = ({ className, id, placeholder, value, onClick, onChange, error }) => {
   return (
     <section className={className}>

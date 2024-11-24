@@ -2,6 +2,8 @@ import React from 'react'
 
 import { ProductRequirementsProps } from './interfaces/interfaces'
 
+import './styles/ProductRequirements.css'
+
 const ProductRequirements: React.FC<ProductRequirementsProps> = React.memo(({ userData, userSelectedProducts, isProductRequirementsSelectOpened, handleProductRequirementsSelectToggle, handleSelectingProductRequirements, handleDeselectingProductRequirements }) => {
   return (
     <section className='selectContainer'>

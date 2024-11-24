@@ -4,6 +4,8 @@ import ReactFlagsSelect from 'react-flags-select';
 
 import { RegionSelectorProps } from './interfaces/interfaces';
 
+import './styles/RegionSelector.css'
+
 const RegionSelector: React.FC<RegionSelectorProps> = React.memo(({ selectedCountryCode, onSelect, error }) => {
     return (
     <section className='regionSelectorContainer'>

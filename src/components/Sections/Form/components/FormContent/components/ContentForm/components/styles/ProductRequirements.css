@@ -1,0 +1,148 @@
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .1em;
+    width: 100%;
+
+    margin-bottom: 7px;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--medium);
+    font-size: 18px;
+
+    width: calc(100% - 2em);
+
+    padding: 1em 1em;
+
+    border-radius: 1em;
+
+    color: #C7C7C7;
+    background-color: #404040;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened {
+    color: #131313;
+    background-color: #ECECEC;
+
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+
+    transition: color 0.3s linear,
+                background-color 0.3s linear,
+                border-bottom-left-radius 0.3s linear,
+                border-bottom-right-radius 0.3s linear;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed {
+    transition: color 0.3s linear 0.2s,
+                background-color 0.3s linear 0.2s,
+                border-bottom-left-radius 0.3s linear 0.2s,
+                border-bottom-right-radius 0.3s linear 0.2s;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened p.selectedProductRequirementsOptionsPlaceholder,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed p.selectedProductRequirementsOptionsPlaceholder {
+    width: 90%;
+    user-select: none;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened p.selectedProductRequirementsOptions,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed p.selectedProductRequirementsOptions {
+    width: 90%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed p.selectedProductRequirementsOptions {
+    color: #F6F6F6;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened .iconContainer,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed .iconContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 10%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened svg,
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed svg {
+    height: 24px;
+    width: 24px;
+
+    margin-right: .5em;
+
+    cursor: pointer;
+}
+
+.productRequirementsOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5em;
+    width: calc(100% - 2em);
+    padding: 0em 1em 0em 1em;
+
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: #ECECEC;
+
+    overflow: hidden;
+}
+
+.productRequirementsOptions.open {
+    max-height: 12em;
+    padding-bottom: 1em;
+
+    transition: max-height .2s linear .3s,
+                padding-bottom .2s linear .3s;
+}
+
+.productRequirementsOptions.closed {
+    max-height: 0;
+    padding-bottom: 0em;
+
+    transition: max-height .2s linear,
+                padding-bottom .2s linear;
+}
+
+.productRequirementsOptions.open .productRequirementsOptionRow,
+.productRequirementsOptions.closed .productRequirementsOptionRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5em;
+    width: 100%;
+
+    cursor: pointer;
+}
+
+.productRequirementsOptions.open .productRequirementsOptionRow p,
+.productRequirementsOptions.closed .productRequirementsOptionRow p {
+    font-size: 18px;
+}
+
+.productRequirementsOptions.open .productRequirementsOptionRow:nth-child(1),
+.productRequirementsOptions.closed .productRequirementsOptionRow:nth-child(1) {
+    padding-top: .75em;
+}

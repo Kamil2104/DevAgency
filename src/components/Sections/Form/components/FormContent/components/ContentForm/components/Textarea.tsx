@@ -2,6 +2,8 @@ import React from 'react'
 
 import { TextareaProps } from './interfaces/interfaces'
 
+import './styles/Textarea.css'
+
 const Textarea: React.FC<TextareaProps> = React.memo(({ value, onClick, onChange }) => {
   return (
     <textarea

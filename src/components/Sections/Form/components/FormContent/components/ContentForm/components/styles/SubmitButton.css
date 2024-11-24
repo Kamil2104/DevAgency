@@ -1,0 +1,10 @@
+.form .formContent .formColumns .rightColumn .rightColumnContent .submitButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .submitButtonContainer button.originalBtn  {
+    width: 50%;
+}

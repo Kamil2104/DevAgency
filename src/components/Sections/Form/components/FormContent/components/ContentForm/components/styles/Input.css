@@ -1,0 +1,46 @@
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--medium);
+    font-size: 18px;
+
+    width: calc(100% - 2em);
+
+    padding: 1em 1em;
+
+    border-radius: 1em;
+
+    color: #F6F6F6;
+    background-color: #404040;
+
+    border: .15em solid #131313;
+    outline: none;
+    transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input:focus {
+    color: #131313;
+    background-color: #ECECEC;
+    transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input::placeholder {
+    color: #C7C7C7;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input:focus::placeholder {
+    color: #616161;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .fullSizeInput {
+    width: 100%;
+
+    position: relative;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .halfSizeInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 49%;
+}

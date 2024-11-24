@@ -1,0 +1,38 @@
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent svg {
+    cursor: pointer;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent p {
+    color: #F1F1F1;
+
+    line-height: 24px;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent span.coloredParagraph {
+    width: fit-content;
+
+    color: #9DA9FE;
+
+    border-bottom: .1em solid #131313;
+
+    cursor: pointer;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent span.coloredParagraph:hover {
+    border-bottom: .1em solid #9DA9FE;
+}

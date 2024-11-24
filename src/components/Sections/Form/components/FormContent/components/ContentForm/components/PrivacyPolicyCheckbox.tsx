@@ -2,6 +2,8 @@ import React from 'react'
 
 import { PrivacyPolicyCheckboxProps } from './interfaces/interfaces'
 
+import './styles/PrivacyPolicyCheckbox.css'
+
 const PrivacyPolicyCheckbox: React.FC<PrivacyPolicyCheckboxProps> = React.memo(({ userData, setUserData, userDataErrors, setUserDataErrors }) => {
     return (
       <section className='privacyPolicyCheckboxContainer'>

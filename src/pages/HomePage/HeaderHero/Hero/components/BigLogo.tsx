@@ -48,7 +48,7 @@ const BigLogo: React.FC = () => {
         className="bigLogoSecondPart"
         style={{
           transform: `translateX(${
-            scrollProgress * 100 - 12
+            scrollProgress * 65 - 12
           }%) translateY(55%)`,
         }}
       >

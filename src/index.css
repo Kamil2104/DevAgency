@@ -47,6 +47,10 @@ p, h1, h2, h3, h4, h5, h6 {
   animation: showContent 1s ease;
 }
 
+.app .privacyPolicyPage {
+  animation: showContent 1s ease;
+}
+
 .no-scroll {
   overflow: hidden;
 }

@@ -1,6 +1,7 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useEffect, Suspense } from "react";
 
 import useFormContext from "../../hooks/useFormContext";
+import useFormVisibility from "../../hooks/useFormVisibility";
 
 import HeaderHero from "./HeaderHero/HeaderHero";
 const Solomon = React.lazy(() => import("./Solomon/Solomon"));
@@ -12,32 +13,11 @@ import Form from "../../components/Sections/Form/Form";
 
 const HomePage: React.FC = () => {
   const { isFormDisplayed } = useFormContext();
-
-  const [isFormVisible, setIsFormVisible] = useState(isFormDisplayed);
+  const { isFormVisible } = useFormVisibility();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  useEffect(() => {
-    if (isFormDisplayed) {
-      setIsFormVisible(true);
-      setTimeout(() => {
-        document.body.classList.add("no-scroll");
-      }, 1000);
-    } else {
-      const timer = setTimeout(() => {
-        setIsFormVisible(false);
-        document.body.classList.remove("no-scroll");
-      }, 300);
-
-      return () => clearTimeout(timer);
-    }
-
-    return () => {
-      document.body.classList.remove("no-scroll");
-    };
-  }, [isFormDisplayed]);
 
   return (
     <section className="homePage">

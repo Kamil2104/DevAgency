@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 
 import Header from '../../components/Sections/Header/Header'
 import Footer from '../../components/Sections/Footer/Footer'
@@ -12,37 +12,17 @@ import Subpoint from './components/Subpoint'
 import Text from './components/Text'
 
 import useFormContext from '../../hooks/useFormContext'
+import useFormVisibility from '../../hooks/useFormVisibility';
 
 import './PrivacyPolicyPage.css'
 
 const PrivacyPolicyPage: React.FC = () => {
   const { isFormDisplayed } = useFormContext()
-
-  const [isFormVisible, setIsFormVisible] = useState(isFormDisplayed)
+  const { isFormVisible } = useFormVisibility();
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-
-  useEffect(() => {
-    if (isFormDisplayed) {
-      setIsFormVisible(true);
-      setTimeout(() => {
-        document.body.classList.add('no-scroll');
-      }, 1000)
-    } else {
-      const timer = setTimeout(() => {
-        setIsFormVisible(false);
-        document.body.classList.remove('no-scroll');
-      }, 300);
-
-      return () => clearTimeout(timer);
-    }
-
-    return () => {
-      document.body.classList.remove('no-scroll');
-    };
-  }, [isFormDisplayed]);
 
   return (
     <section className='privacyPolicyPage'>

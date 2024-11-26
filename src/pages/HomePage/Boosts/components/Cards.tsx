@@ -28,11 +28,11 @@ const Cards: React.FC<BoostCardProps> = React.memo(({ boostCards }) => {
   }, [])
 
   return (
-    <section className="cards" ref={cardsRef}>
+    <div className="cards" ref={cardsRef}>
       {boostCards.map((boostCard) => (
         <Card key={boostCard.title} card={boostCard} isVisible={isVisible} />
       ))}
-    </section>
+    </div>
   )
 })
 
@@ -62,18 +62,18 @@ const Card: React.FC<CardProps & { isVisible: boolean }> = React.memo(({ card, i
   }, [card.percent, isVisible])
 
   return (
-    <section className='card'>
-      <section className='cardHeader'>
+    <div className='card'>
+      <div className='cardHeader'>
         <svg width="30" height="30" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 20.1758L12 3.17578M12 3.17578L5 10.4615M12 3.17578L19 10.4615" stroke="#F4F4F4" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
         <h4 className='cardPercent'> {Math.floor(animatedPercent)}%&nbsp; </h4>
         <h4 className='cardHeader'> {card.title} </h4>
-      </section>
-      <section className='cardDescription'>
+      </div>
+      <div className='cardDescription'>
         <p> {card.description} </p>
-      </section>
-    </section>
+      </div>
+    </div>
   )
 })
 

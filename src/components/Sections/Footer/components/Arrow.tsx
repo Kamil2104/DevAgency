@@ -31,7 +31,7 @@ const Arrow: React.FC = () => {
   };
 
   return (
-    <section
+    <div
       className="arrowIconContainer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -101,7 +101,7 @@ const Arrow: React.FC = () => {
           strokeLinejoin="round"
         />
       </svg>
-    </section>
+    </div>
   );
 };
 

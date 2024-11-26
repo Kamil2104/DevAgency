@@ -9,18 +9,18 @@ import './WhyUs.css'
 const WhyUs: React.FC = () => {
   return (
     <section className='whyUs' id='whyUs'>
-        <section className='whyUsContent'>
-            <section className='firstRow'>
+        <div className='whyUsContent'>
+            <div className='firstRow'>
                 <h1> We&apos;re more than just experts </h1>
-            </section>
-            <section className='secondRow'>
-                <section className='secondRowContent'>
+            </div>
+            <div className='secondRow'>
+                <div className='secondRowContent'>
                     <Characteristics />
                     <LargeDescription />
                     <SmallDescription />
-                </section>
-            </section>
-        </section>
+                </div>
+            </div>
+        </div>
     </section>
   )
 }

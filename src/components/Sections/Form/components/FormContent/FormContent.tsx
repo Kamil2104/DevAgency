@@ -9,17 +9,17 @@ import './FormContent.css'
 
 const FormContent: React.FC = () => {
   return (
-    <section className='formContent'>
+    <div className='formContent'>
       <Header />
-      <section className='formColumns'>
-        <section className='leftColumn'>
+      <div className='formColumns'>
+        <div className='leftColumn'>
           <Title />
-        </section>
-        <section className='rightColumn'>
+        </div>
+        <div className='rightColumn'>
           <Content />
-        </section>
-      </section>
-    </section>
+        </div>
+      </div>
+    </div>
   )
 }
 

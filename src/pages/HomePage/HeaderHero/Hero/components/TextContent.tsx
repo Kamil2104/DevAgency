@@ -19,9 +19,9 @@ const TextContent: React.FC = () => {
   }, []);
 
   return (
-    <section className='textContent' style={{ transform: `translateX(${-scrollProgress * 100}%)` }}>
+    <div className='textContent' style={{ transform: `translateX(${-scrollProgress * 100}%)` }}>
       <p>&lt; We are a AI development agency <br /> focused on bringing designs, <br /> brands, and products to life&nbsp;/&gt;</p>
-    </section>
+    </div>
   )
 }
 

@@ -4,9 +4,9 @@ import './styles/Video.css'
 
 const Video: React.FC = () => {
   return (
-    <section className='videoContainer'>
+    <div className='videoContainer'>
       <h1> Video </h1>
-    </section>
+    </div>
   )
 }
 

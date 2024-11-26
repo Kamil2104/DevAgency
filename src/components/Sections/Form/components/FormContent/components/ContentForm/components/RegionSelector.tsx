@@ -8,7 +8,7 @@ import './styles/RegionSelector.css'
 
 const RegionSelector: React.FC<RegionSelectorProps> = React.memo(({ selectedCountryCode, onSelect, error }) => {
     return (
-    <section className='regionSelectorContainer'>
+    <div className='regionSelectorContainer'>
       <ReactFlagsSelect
           id='regionSelector'
           selected={selectedCountryCode}
@@ -18,7 +18,7 @@ const RegionSelector: React.FC<RegionSelectorProps> = React.memo(({ selectedCoun
           selectButtonClassName="regionSelectorButton"
       />
       <p className='errorMessage'> {error} </p>
-    </section>
+    </div>
   )
 })
 

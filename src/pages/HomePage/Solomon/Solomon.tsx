@@ -34,15 +34,15 @@ const Solomon: React.FC = () => {
 
   return (
     <section className='solomon' id='solomon'>
-        <section className='solomonContent'>
-            <section className='leftColumn'>
+        <div className='solomonContent'>
+            <div className='leftColumn'>
                 <Title />
                 <Functionalities functionalities={functionalities}/>
-            </section>
-            <section className='rightColumn'>
+            </div>
+            <div className='rightColumn'>
                 <Video />
-            </section>
-        </section>
+            </div>
+        </div>
     </section>
   )
 }

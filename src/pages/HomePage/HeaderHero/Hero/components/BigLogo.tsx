@@ -18,7 +18,7 @@ const BigLogo: React.FC = () => {
   }, []);
 
   return (
-    <section className="bigLogo">
+    <div className="bigLogo">
       <svg
         viewBox="0 0 429 159"
         fill="none"
@@ -77,7 +77,7 @@ const BigLogo: React.FC = () => {
           fill="#F4F4F4"
         />
       </svg>
-    </section>
+    </div>
   );
 };
 

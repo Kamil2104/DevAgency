@@ -51,10 +51,10 @@ const HowWeWork: React.FC = () => {
   return (
     <section className='howWeWork'>
       <Title />
-        <section className='services'>
+        <div className='services'>
           <ServiceCreationAxis activeService={activeService} setActiveService={setActiveService} ourServices={ourServices} />
           <ServiceDescription steps={activeServiceObject?.steps} activeIcon={activeServiceObject?.activeIcon} />
-        </section>
+        </div>
     </section>
   )
 }

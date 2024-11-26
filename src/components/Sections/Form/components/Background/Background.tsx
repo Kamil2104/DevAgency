@@ -6,10 +6,10 @@ import './Background.css'
 
 const Background: React.FC = () => {
   return (
-    <section className='backgroundContainer'>
+    <div className='backgroundContainer'>
         <video autoPlay loop muted playsInline className="formVideo"> <source src={BackgroundVideo} type="video/mp4" /> Your browser does not support the video tag. </video>
-        <section className='formContentBackground'><span></span></section>
-    </section>
+        <div className='formContentBackground'><span></span></div>
+    </div>
   )
 }
 

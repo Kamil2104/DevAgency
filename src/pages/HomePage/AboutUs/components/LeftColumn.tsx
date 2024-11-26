@@ -4,12 +4,12 @@ import './styles/LeftColumn.css'
 
 const LeftColumn: React.FC = () => {
   return (
-    <section className='leftColumn'>
-      <section className='row'>
+    <div className='leftColumn'>
+      <div className='row'>
         <h2> Who we are </h2> <h2 className='gradientedHeading'> &nbsp;& </h2>
-      </section>
+      </div>
       <h2> What we do. </h2>
-    </section>
+    </div>
   )
 }
 

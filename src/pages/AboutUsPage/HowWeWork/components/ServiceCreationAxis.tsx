@@ -13,8 +13,8 @@ const ServiceCreationAxis: React.FC<{ activeService: number, setActiveService: (
   }
 
   return (
-    <section className='serviceCreationAxis'>
-      <section className='axis'>
+    <div className='serviceCreationAxis'>
+      <div className='axis'>
         <div className={`downArrowButton ${activeService === 0 ? 'disabled' : ''}`} onClick={activeService !== 0 ? () => setActiveService(activeService - 1) : () => {}}>
           {activeService === 0 ? arrowIcons.disabledUpArrow : arrowIcons.enabledUpArrow}
         </div>
@@ -29,13 +29,13 @@ const ServiceCreationAxis: React.FC<{ activeService: number, setActiveService: (
         <div className={`upArrowButton ${activeService === 3 ? 'disabled' : ''}`} onClick={activeService !== 3 ? () => setActiveService(activeService + 1) : () => {}}>
           {activeService === 3 ? arrowIcons.disabledDownArrow : arrowIcons.enabledDownArrow}
         </div>
-      </section>
-      <section className='servicesTimeLineDescription'>
+      </div>
+      <div className='servicesTimeLineDescription'>
         {ourServices.map((service) => (
           <Service key={service.text} activeIcon={service.activeIcon} unactiveIcon={service.unactiveIcon} text={service.text} isActive={service.isActive} onClick={service.onClick} />
         ))}
-      </section>
-    </section>
+      </div>
+    </div>
   )
 })
 

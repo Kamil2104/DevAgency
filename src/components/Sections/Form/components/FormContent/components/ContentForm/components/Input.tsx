@@ -6,7 +6,7 @@ import './styles/Input.css'
 
 const Input: React.FC<InputProps> = ({ className, id, placeholder, value, onClick, onChange, error }) => {
   return (
-    <section className={className}>
+    <div className={className}>
       <input
         id={id}
         type='text'
@@ -16,7 +16,7 @@ const Input: React.FC<InputProps> = ({ className, id, placeholder, value, onClic
         onChange={onChange}
       />
       <p className='errorMessage'> {error} </p>
-    </section>
+    </div>
   )
 }
 

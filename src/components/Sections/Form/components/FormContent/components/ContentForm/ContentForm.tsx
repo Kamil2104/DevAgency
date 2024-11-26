@@ -23,9 +23,9 @@ const ContentForm: React.FC<{ userData: UserData, setUserData: React.Dispatch<Re
 
   return (
     <>
-      <section className='contentForm'>
+      <div className='contentForm'>
       <p className='errorMessage formError'> {userDataErrors.formError} </p>
-        <section className='row'>
+        <div className='row'>
             <Input
               className='halfSizeInput'
               id='firstNameInput'
@@ -45,7 +45,7 @@ const ContentForm: React.FC<{ userData: UserData, setUserData: React.Dispatch<Re
               onChange={(e) => handleValueChangeInFormField('secondName', e.target.value, 'secondNameError', 'secondNameInput')}
               error={userDataErrors.secondNameError}
             />
-        </section>
+        </div>
 
         <Input
           className='fullSizeInput'
@@ -67,7 +67,7 @@ const ContentForm: React.FC<{ userData: UserData, setUserData: React.Dispatch<Re
           error={userDataErrors.businessEmailError}
         />
 
-        <section className='row'>
+        <div className='row'>
           <RegionSelector
             selectedCountryCode={selectedCountryCode}
             onSelect={handleSelectingRegion}
@@ -83,7 +83,7 @@ const ContentForm: React.FC<{ userData: UserData, setUserData: React.Dispatch<Re
             onChange={(e) => handleValueChangeInFormField('phoneNumber', e.target.value, 'phoneNumberError', 'phoneNumberInput')}
             error={userDataErrors.phoneNumberError}
           />
-        </section>
+        </div>
 
         <ProductRequirements
           userData={userData}
@@ -99,7 +99,7 @@ const ContentForm: React.FC<{ userData: UserData, setUserData: React.Dispatch<Re
           onClick={() => handleClosingProductRequirementsSelect()}
           onChange={(e) => setUserData({ ...userData, message: e.target.value })}
         />
-      </section>
+      </div>
 
       <PrivacyPolicyCheckbox
         userData={userData}

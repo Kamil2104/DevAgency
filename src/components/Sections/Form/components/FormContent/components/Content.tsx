@@ -14,7 +14,7 @@ const Content: React.FC = () => {
   const { userSelectedProducts, setUserSelectedProducts } = useFormUserSelectedProducts()
 
   return (
-    <section className='rightColumnContent'>
+    <div className='rightColumnContent'>
       <h2> Your AI Transformation starts Here </h2>
       <h3> Fill in your details and DevAgency representative will give you a quick response. </h3>
       <ContentForm
@@ -25,7 +25,7 @@ const Content: React.FC = () => {
         userSelectedProducts={userSelectedProducts}
         setUserSelectedProducts={setUserSelectedProducts}
       />
-    </section>
+    </div>
   )
 }
 

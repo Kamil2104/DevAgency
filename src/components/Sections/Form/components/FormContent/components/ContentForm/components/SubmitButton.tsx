@@ -8,12 +8,12 @@ import './styles/SubmitButton.css'
 
 const SubmitButton: React.FC<SubmitButtonProps> = React.memo(({ handleFormSubmition }) => {
   return (
-    <section className='submitButtonContainer'>
+    <div className='submitButtonContainer'>
       <Button
         text='Submit'
         onClick={handleFormSubmition}
       />
-    </section>
+    </div>
   )
 })
 

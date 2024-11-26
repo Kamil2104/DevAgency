@@ -9,15 +9,15 @@ import './AboutUs.css'
 const AboutUs: React.FC = () => {
   return (
     <section className='aboutUs'>
-      <section className='aboutUsContent'>
-        <section className='firstRow'>
+      <div className='aboutUsContent'>
+        <div className='firstRow'>
           <Heading />
-        </section>
-        <section className='secondRow'>
+        </div>
+        <div className='secondRow'>
             <LeftColumn />
             <RightColumn />
-        </section>
-      </section>
+        </div>
+      </div>
     </section>
   )
 }

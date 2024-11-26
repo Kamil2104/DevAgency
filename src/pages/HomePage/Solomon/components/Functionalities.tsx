@@ -6,15 +6,15 @@ import './styles/Functionalities.css'
 
 const Functionalities: React.FC<FunctionalityCardProps> = React.memo(({ functionalities }) => {
   return (
-    <section className='functionalities'>
+    <div className='functionalities'>
       {functionalities.map((functionality, index) => (
-        <section className='functionalityCard' key={index}>
+        <div className='functionalityCard' key={index}>
           <> {functionality.icon} </>
           <h3> {functionality.title} </h3>
           <p> {functionality.description} </p>
-        </section>
+        </div>
       ))}
-    </section>
+    </div>
   )
 })
 

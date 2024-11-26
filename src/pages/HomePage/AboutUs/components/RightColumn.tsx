@@ -10,10 +10,10 @@ const RightColumn: React.FC = () => {
   const navigate = useNavigate()
 
   return (
-    <section className='rightColumn'>
+    <div className='rightColumn'>
       <Text />
       <Button text='Explore our story' onClick={() => navigate('/AboutUs')} />
-    </section>
+    </div>
   )
 }
 

@@ -32,11 +32,11 @@ const Cards: React.FC<{ activeCard: number }> = React.memo(({ activeCard }) => {
   ]
 
   return (
-    <section className='stepsCards'>
+    <div className='stepsCards'>
       {stepsCards.map((step) => (
         <Card key={step.title} icon={step.icon} gif={step.gif} title={step.title} isActive={step.isActive} />
       ))}
-    </section>
+    </div>
   )
 })
 
@@ -49,10 +49,10 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = React.memo(({ icon, gif, title, isActive }) => {
   return (
-    <section className='card'>
+    <div className='card'>
       {isActive ? gif : icon}
       <p> {title} </p>
-    </section>
+    </div>
   )
 })
 

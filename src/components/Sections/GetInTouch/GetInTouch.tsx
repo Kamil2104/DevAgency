@@ -13,15 +13,15 @@ const GetInTouch: React.FC = () => {
 
   return (
     <section className='getInTouch'>
-        <section className='getInTouchContent'>
-            <section className='firstColumn'>
+        <div className='getInTouchContent'>
+            <div className='firstColumn'>
                 <Heading />
                 <Description />
-            </section>
-            <section className='secondColumn'>
-                <Button text='Get in touch' stroke='#1D1D1D' onClick={() => { setIsFormDisplayed(true) }}/>
-            </section>
-        </section>
+            </div>
+            <div className='secondColumn'>
+                <Button text='Get in touch' onClick={() => { setIsFormDisplayed(true) }}/>
+            </div>
+        </div>
     </section>
   )
 }

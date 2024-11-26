@@ -12,15 +12,15 @@ const Hero: React.FC = () => {
     <section className='hero'>
       <video autoPlay loop muted playsInline className="heroVideo"> <source src={BackgroundVideo} type="video/mp4" /> Your browser does not support the video tag. </video>
       <BackgroundTransition />
-      <section className='heroContent'>
-        <section className='firstRow'>
+      <div className='heroContent'>
+        <div className='firstRow'>
           <BigLogo />
-        </section>
-        <section className='secondRow'>
+        </div>
+        <div className='secondRow'>
           <TextContent />
           <ScrollDownSign page="HomePage" componentID="solomon"/>
-        </section>
-      </section>
+        </div>
+      </div>
     </section>
   )
 }

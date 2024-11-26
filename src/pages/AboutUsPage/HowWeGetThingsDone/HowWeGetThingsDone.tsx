@@ -11,11 +11,11 @@ const HowWeGetThingsDone: React.FC = () => {
 
   return (
     <section className='howWeGetThingsDone'>
-        <section className='howWeGetThingsDoneContent'>
+        <div className='howWeGetThingsDoneContent'>
             <Title />
             <Cards activeCard={activeCard} />
             <ProductCreationAxis activeCard={activeCard} setActiveCard={setActiveCard}/>
-        </section>
+        </div>
     </section>
   )
 }

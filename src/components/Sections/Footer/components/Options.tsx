@@ -6,14 +6,14 @@ import './styles/Options.css'
 
 const Options: React.FC<FooterProps> = React.memo(({ footerOptions }) => {
   return (
-    <section className='options'>
+    <div className='options'>
         {footerOptions.map((footerOption) => (
             <span
                 key={footerOption.text}
                 onClick={footerOption.onClick}
             > {footerOption.text} </span>
         ))}
-    </section>
+    </div>
   )
 })
 

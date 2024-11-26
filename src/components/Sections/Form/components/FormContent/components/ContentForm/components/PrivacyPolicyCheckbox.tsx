@@ -6,8 +6,8 @@ import './styles/PrivacyPolicyCheckbox.css'
 
 const PrivacyPolicyCheckbox: React.FC<PrivacyPolicyCheckboxProps> = React.memo(({ userData, setUserData, userDataErrors, setUserDataErrors }) => {
     return (
-      <section className='privacyPolicyCheckboxContainer'>
-          <section className='privacyPolicyCheckboxContainerContent'>
+      <div className='privacyPolicyCheckboxContainer'>
+          <div className='privacyPolicyCheckboxContainerContent'>
               {userData.isPrivacyPolicyAgreementChecked
                 ?
                   <svg
@@ -26,9 +26,9 @@ const PrivacyPolicyCheckbox: React.FC<PrivacyPolicyCheckboxProps> = React.memo((
                   </svg>
               }
               <p> I agree to allow DevAgency to store and process my personal data in accordance with Centra&apos;s <span className='coloredParagraph'> privacy police* </span> </p>
-          </section>
+          </div>
           <p className='errorMessage'> {userDataErrors.isPrivacyPolicyAgreementCheckedError} </p>
-      </section>
+      </div>
     )
 })
 

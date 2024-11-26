@@ -6,8 +6,8 @@ import './styles/ServiceDescription.css'
 
 const ServiceDescription: React.FC<Partial<OurServices>> = React.memo(({ steps, activeIcon }) => {
   return (
-    <section className='serviceDescription'>
-      <section className='serviceDescriptionContent'>
+    <div className='serviceDescription'>
+      <div className='serviceDescriptionContent'>
           <div className='leftColumn'>
             <h4> Service includes </h4>
             {steps?.map((step) => (
@@ -17,8 +17,8 @@ const ServiceDescription: React.FC<Partial<OurServices>> = React.memo(({ steps, 
           <div className='rightColumn'>
             {activeIcon}
           </div>
-      </section>
-    </section>
+      </div>
+    </div>
   )
 })
 

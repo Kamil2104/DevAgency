@@ -1,0 +1,6 @@
+.privacyPolicyContent p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: var(--regular);
+    font-size: 18px;
+    color: #F1F1F1;
+}

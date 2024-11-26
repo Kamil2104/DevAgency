@@ -1,0 +1,21 @@
+.subpoint {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.subpointIcon,
+.subpointDescription {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.subpointIcon svg {
+    margin-top: .15em;
+
+    height: 18px;
+    width: 18px;
+}

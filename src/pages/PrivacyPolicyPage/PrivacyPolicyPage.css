@@ -1,0 +1,23 @@
+.privacyPolicyPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5em;
+    min-width: 100dvh;
+    width: 100%;
+}
+
+.privacyPolicyContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    min-height: 90dvh;
+    width: 1250px;
+
+    margin-top: 20dvh;
+
+    padding-bottom: 5em;
+}

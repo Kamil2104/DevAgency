@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { useNavigate } from 'react-router-dom'
+
 import Text from './components/Text'
 import Options from './components/Options'
 import Arrow from './components/Arrow'
@@ -11,6 +13,8 @@ import { footerOption } from './interfaces/interfaces'
 import './Footer.css'
 
 const Footer: React.FC = () => {
+  const navigate = useNavigate();
+
   const { setIsFormDisplayed } = useFormContext();
 
   const options: footerOption[] = [
@@ -33,7 +37,7 @@ const Footer: React.FC = () => {
             </svg>
         </div>
         <div className='thirdRow'>
-          <p className='privacyAndTermsParagraph'> Privacy & Terms </p>
+          <p className='privacyAndTermsParagraph' onClick={() => navigate('/PrivacyPolicy')}> Privacy & Terms </p>
         </div>
     </footer>
   )

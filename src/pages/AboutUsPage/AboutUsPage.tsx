@@ -8,12 +8,16 @@ const HowWeWork = React.lazy(() => import("./HowWeWork/HowWeWork"))
 const HowWeGetThingsDone = React.lazy(() => import("./HowWeGetThingsDone/HowWeGetThingsDone"))
 const GetInTouch = React.lazy(() => import("../../components/Sections/GetInTouch/GetInTouch"))
 const Footer = React.lazy(() => import("../../components/Sections/Footer/Footer"))
-const Form = React.lazy(() => import("../../components/Sections/Form/Form"))
+import Form from '../../components/Sections/Form/Form'
 
 const AboutUsPage: React.FC = () => {
   const { isFormDisplayed } = useFormContext();
 
   const [isFormVisible, setIsFormVisible] = useState(isFormDisplayed);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   useEffect(() => {
     if (isFormDisplayed) {

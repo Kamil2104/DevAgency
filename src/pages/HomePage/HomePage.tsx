@@ -8,7 +8,7 @@ const Boosts = React.lazy(() => import("./Boosts/Boosts"));
 const AboutUs = React.lazy(() => import("./AboutUs/AboutUs"));
 const GetInTouch = React.lazy(() => import("../../components/Sections/GetInTouch/GetInTouch"));
 const Footer = React.lazy(() => import("../../components/Sections/Footer/Footer"));
-const Form = React.lazy(() => import("../../components/Sections/Form/Form"));
+import Form from "../../components/Sections/Form/Form";
 
 const HomePage: React.FC = () => {
   const { isFormDisplayed } = useFormContext();

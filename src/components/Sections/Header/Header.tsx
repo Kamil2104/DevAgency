@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   const { setIsFormDisplayed } = useFormContext();
 
   const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0); // Ustawienie domyślne na 0
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleScrollingToSolomon = () => {
     const targetComponent = document.getElementById('solomon');

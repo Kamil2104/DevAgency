@@ -18,16 +18,27 @@ const Header: React.FC = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleScrollingToSolomon = () => {
-    const targetComponent = document.getElementById('solomon');
-    if (targetComponent) {
-      const offset = 100;
-      const elementPosition = targetComponent.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - offset;
+    const currentPath = window.location.pathname;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
+    const scrollToSolomon = () => {
+      const targetComponent = document.getElementById('solomon');
+      if (targetComponent) {
+        const offset = 100;
+        const elementPosition = targetComponent.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    };
+
+    if (currentPath === '/') {
+      scrollToSolomon();
+    } else {
+      navigate('/');
+      setTimeout(scrollToSolomon, 500);
     }
   };
 

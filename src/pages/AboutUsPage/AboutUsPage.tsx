@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Suspense } from 'react'
 
 import useFormContext from '../../hooks/useFormContext'
 
-import HeaderHero from './HeaderHero/HeaderHero'
-import WhyUs from './WhyUs/WhyUs'
-import HowWeWork from './HowWeWork/HowWeWork'
-import HowWeGetThingsDone from './HowWeGetThingsDone/HowWeGetThingsDone'
-import GetInTouch from '../../components/Sections/GetInTouch/GetInTouch'
-import Footer from '../../components/Sections/Footer/Footer'
-import Form from '../../components/Sections/Form/Form'
+const HeaderHero = React.lazy(() => import("./HeaderHero/HeaderHero"))
+const WhyUs = React.lazy(() => import("./WhyUs/WhyUs"))
+const HowWeWork = React.lazy(() => import("./HowWeWork/HowWeWork"))
+const HowWeGetThingsDone = React.lazy(() => import("./HowWeGetThingsDone/HowWeGetThingsDone"))
+const GetInTouch = React.lazy(() => import("../../components/Sections/GetInTouch/GetInTouch"))
+const Footer = React.lazy(() => import("../../components/Sections/Footer/Footer"))
+const Form = React.lazy(() => import("../../components/Sections/Form/Form"))
 
 const AboutUsPage: React.FC = () => {
   const { isFormDisplayed } = useFormContext();
@@ -41,12 +41,14 @@ const AboutUsPage: React.FC = () => {
 
   return (
     <section className='aboutUsPage'>
-      <HeaderHero />
-      <WhyUs />
-      <HowWeGetThingsDone />
-      <HowWeWork />
-      <GetInTouch />
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <HeaderHero />
+        <WhyUs />
+        <HowWeGetThingsDone />
+        <HowWeWork />
+        <GetInTouch />
+        <Footer />
+      </Suspense>
       {isFormVisible && <Form isFormDisplayed={isFormDisplayed} />}
     </section>
   )

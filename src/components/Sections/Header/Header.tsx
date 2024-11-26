@@ -17,8 +17,22 @@ const Header: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0); // Ustawienie domyślne na 0
 
+  const handleScrollingToSolomon = () => {
+    const targetComponent = document.getElementById('solomon');
+    if (targetComponent) {
+      const offset = 100;
+      const elementPosition = targetComponent.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const navbarOptions: NavbarOption[] = [
-    { text: 'Our products', type: 'text', onClick: () => {} },
+    { text: 'Our product', type: 'text', onClick: () => handleScrollingToSolomon() },
     { text: 'About us', type: 'text', onClick: () => navigate('/AboutUs') },
     { text: "Let's talk", type: 'button', onClick: () => setIsFormDisplayed(true) },
   ];
@@ -38,7 +52,6 @@ const Header: React.FC = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Reset scroll position on mount
     setLastScrollY(window.scrollY);
 
     return () => window.removeEventListener('scroll', handleScroll);

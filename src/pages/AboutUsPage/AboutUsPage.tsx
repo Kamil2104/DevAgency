@@ -16,10 +16,6 @@ const AboutUsPage: React.FC = () => {
   const [isFormVisible, setIsFormVisible] = useState(isFormDisplayed);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  useEffect(() => {
     if (isFormDisplayed) {
       setIsFormVisible(true);
       setTimeout(() => {

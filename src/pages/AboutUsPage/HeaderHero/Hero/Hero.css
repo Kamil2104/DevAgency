@@ -28,15 +28,17 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 1265px;
+    width: 100%;
     height: 515px;
     gap: 8em;
 
     position: absolute;
 }
 
-.aboutUsHero .heroContent svg {
+.aboutUsHero .scrollDownContainer {
     position: absolute;
-    right: 0;
     bottom: 0;
+    right: 0;
+
+    transform: rotate(90deg);
 }

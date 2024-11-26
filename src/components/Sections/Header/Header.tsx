@@ -1,52 +1,55 @@
-import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import useFormContext from '../../../hooks/useFormContext'
+import useFormContext from '../../../hooks/useFormContext';
 
-import Logo from './components/Logo'
-import Navbar from './components/Navbar'
+import Logo from './components/Logo';
+import Navbar from './components/Navbar';
 
-import { NavbarOption } from './interfaces/interfaces'
+import { NavbarOption } from './interfaces/interfaces';
 
-import './Header.css'
+import './Header.css';
 
 const Header: React.FC = () => {
-  const navigate = useNavigate()
-  const { setIsFormDisplayed } = useFormContext()
+  const navigate = useNavigate();
+  const { setIsFormDisplayed } = useFormContext();
 
-  const [isVisible, setIsVisible] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(window.scrollY)
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0); // Ustawienie domyślne na 0
 
   const navbarOptions: NavbarOption[] = [
-    { text: "Our products", type: "text", onClick: () => {} },
-    { text: "About us", type: "text", onClick: () => { navigate('/AboutUs') } },
-    { text: "Let's talk", type: "button", onClick: () => { setIsFormDisplayed(true) } },
-  ]
+    { text: 'Our products', type: 'text', onClick: () => {} },
+    { text: 'About us', type: 'text', onClick: () => navigate('/AboutUs') },
+    { text: "Let's talk", type: 'button', onClick: () => setIsFormDisplayed(true) },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY
+      const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setIsVisible(false)
+        setIsVisible(false);
       } else {
-        setIsVisible(true)
+        setIsVisible(true);
       }
 
-      setLastScrollY(currentScrollY)
-    }
+      setLastScrollY(currentScrollY);
+    };
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [lastScrollY])
+    // Reset scroll position on mount
+    setLastScrollY(window.scrollY);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   return (
-    <header className={`header ${isVisible ? "visible" : "hidden"}`}>
+    <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
       <Logo />
       <Navbar navbarOptions={navbarOptions} />
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

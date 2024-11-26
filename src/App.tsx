@@ -4,8 +4,13 @@ import AboutUsPage from './pages/AboutUsPage/AboutUsPage'
 import { FormProvider } from './context/FormContext'
 
 import { Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(-100, 0)
+  }, [])
+
   return (
     <section className='app'>
       <FormProvider>

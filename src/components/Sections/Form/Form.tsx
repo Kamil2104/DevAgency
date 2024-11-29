@@ -14,13 +14,12 @@ const Form: React.FC<{ isFormDisplayed: boolean }> = React.memo(({ isFormDisplay
 
   return (
     <section className={`form ${isFormDisplayed ? 'visible' : 'invisible'} full-screen`}>
-      {displayedFormContent === 'FormFields' ?
-        <>
-          <Background />
-          <FormContent />
-        </>
-        : displayedFormContent === 'ThanksToTheUser' ? <ThanksToTheUser />
-        : null
+      <Background displayedFormContent={displayedFormContent} />
+      <FormContent displayedFormContent={displayedFormContent}/>
+      {
+        displayedFormContent === 'ThanksToTheUser'
+          ? <ThanksToTheUser />
+          : null
       }
     </section>
   );

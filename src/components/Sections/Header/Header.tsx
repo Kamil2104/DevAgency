@@ -12,7 +12,7 @@ import './Header.css';
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
-  const { setIsFormDisplayed } = useFormContext();
+  const { displayedFormContent, setIsFormDisplayed } = useFormContext();
 
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
   const navbarOptions: NavbarOption[] = [
     { text: 'Our product', type: 'text', onClick: () => handleScrollingToSolomon() },
     { text: 'About us', type: 'text', onClick: () => navigate('/AboutUs') },
-    { text: "Let's talk", type: 'button', onClick: () => setIsFormDisplayed(true) },
+    { text: "Let's talk", type: 'button', onClick: () => displayedFormContent === 'FormFields' ? setIsFormDisplayed(true) : setIsFormDisplayed(false) },
   ];
 
   useEffect(() => {

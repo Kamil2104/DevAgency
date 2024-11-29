@@ -12,6 +12,14 @@
     padding-bottom: 3em;
 
     z-index: 1;
+
+    opacity: 1;
+
+    transition: opacity 0.3s linear;
+}
+
+.form .formContent.hide {
+    opacity: 0;
 }
 
 .form .formContent .formColumns {

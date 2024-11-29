@@ -7,9 +7,9 @@ import Content from './components/Content'
 
 import './FormContent.css'
 
-const FormContent: React.FC = () => {
+const FormContent: React.FC<{ displayedFormContent: string }> = ({ displayedFormContent }) => {
   return (
-    <div className='formContent'>
+    <div className={`formContent ${displayedFormContent === 'ThanksToTheUser' ? 'hide' : ''}`}>
       <Header />
       <div className='formColumns'>
         <div className='leftColumn'>

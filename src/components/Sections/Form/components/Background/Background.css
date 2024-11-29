@@ -18,6 +18,12 @@
     object-fit: cover;
 
     z-index: 1;
+
+    transition: width .3s linear;
+}
+
+.form .backgroundContainer video.formVideo.full-screen {
+    width: 100%;
 }
 
 .form .backgroundContainer .formContentBackground {
@@ -26,4 +32,8 @@
 
     background-color: #131313;
     z-index: 1;
+}
+
+.form .backgroundContainer .formContentBackground.hide {
+    width: 0%;
 }

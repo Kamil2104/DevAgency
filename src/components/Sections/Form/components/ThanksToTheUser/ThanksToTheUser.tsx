@@ -2,7 +2,6 @@ import React from 'react'
 
 import { useNavigate } from 'react-router-dom'
 
-import Background from '../Background/Background'
 import Header from '../FormContent/components/Header'
 
 import useFormContext from '../../../../../hooks/useFormContext'
@@ -12,7 +11,6 @@ import './ThanksToTheUser.css'
 const ThanksToTheUser: React.FC = () => {
   return (
     <section className='thanksToTheUser'>
-        <Background />
         <Header />
         <Content />
     </section>

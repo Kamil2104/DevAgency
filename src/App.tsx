@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import HomePage from './pages/HomePage/HomePage'
 import AboutUsPage from './pages/AboutUsPage/AboutUsPage'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage/PrivacyPolicyPage'
@@ -7,6 +9,13 @@ import { FormProvider } from './context/FormContext'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className='app'>
       <FormProvider>

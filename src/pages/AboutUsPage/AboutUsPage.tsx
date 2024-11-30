@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense } from 'react'
+import React, { Suspense } from 'react'
 
 import useFormContext from '../../hooks/useFormContext'
 import useFormVisibility from '../../hooks/useFormVisibility'
@@ -14,10 +14,6 @@ import Form from '../../components/Sections/Form/Form'
 const AboutUsPage: React.FC = () => {
   const { isFormDisplayed } = useFormContext();
   const { isFormVisible } = useFormVisibility();
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
 
   return (
     <section className='aboutUsPage'>

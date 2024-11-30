@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import Header from '../../components/Sections/Header/Header'
 import Footer from '../../components/Sections/Footer/Footer'
@@ -19,10 +19,6 @@ import './PrivacyPolicyPage.css'
 const PrivacyPolicyPage: React.FC = () => {
   const { isFormDisplayed } = useFormContext()
   const { isFormVisible } = useFormVisibility();
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
 
   return (
     <section className='privacyPolicyPage'>

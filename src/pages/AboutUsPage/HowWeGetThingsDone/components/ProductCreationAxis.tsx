@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import './styles/ProductCreationAxis.css'
 
 const ProductCreationAxis: React.FC<{ activeCard: number, setActiveCard: (card: number) => void }> = React.memo(({ activeCard, setActiveCard }) => {
   const cardAttributes: { value: number, description: string }[] = [
     { value: 0, description: 'We start by understanding your vision and goals.' },
-    { value: 1, description: 'We start by understanding your vision and goals.' },
-    { value: 2, description: 'We start by understanding your vision and goals.' },
-    { value: 3, description: 'We start by understanding your vision and goals.' }
+    { value: 1, description: 'But also the leap into electronic typesetting shit. Only hearts.' },
+    { value: 2, description: 'It was popularised in the 1960s with the release.' },
+    { value: 3, description: 'Lorem ipsum passages, and most recently with' }
   ];
 
   const arrowIcons: { [key: string]: JSX.Element } = {
@@ -36,9 +36,7 @@ const ProductCreationAxis: React.FC<{ activeCard: number, setActiveCard: (card: 
       </div>
 
       <div className='timeLineDescriptionsContainer'>
-        {cardAttributes.map(attributes => (
-          <TimeLinePointDescription key={attributes.value} description={attributes.description} activeCard={activeCard} cardValue={attributes.value}/>
-        ))}
+          <TimeLinePointDescription cardValue={cardAttributes[activeCard].value} description={cardAttributes[activeCard].description} />
       </div>
     </section>
   )
@@ -52,10 +50,32 @@ const TimeLinePoint: React.FC<{ activeCard: number, setActiveCard: (card: number
   )
 })
 
-const TimeLinePointDescription: React.FC<{ activeCard: number, description: string, cardValue: number }> = React.memo(({ activeCard, description, cardValue }) => {
+const TimeLinePointDescription: React.FC<{ cardValue: number, description: string }> = React.memo(({ cardValue, description }) => {
+  const [isExiting, setIsExiting] = useState(false);
+  const [currentDescription, setCurrentDescription] = useState(description);
+
+  useEffect(() => {
+    setIsExiting(true);
+
+    const timeout = setTimeout(() => {
+      setIsExiting(false);
+      setCurrentDescription(description);
+    }, 400);
+
+    return () => clearTimeout(timeout);
+  }, [description]);
+
   return (
-    <div className={`timeLinePointDescription ${activeCard === cardValue ? '' : 'invisible'}`}> <p> {description} </p> </div>
-  )
-})
+    <div
+      className="timeLinePointDescription"
+      style={{
+        transform: `translateX(calc(${cardValue * 285}px))`,
+      }}
+    >
+      <p className={isExiting ? 'exiting' : 'entering'}>{currentDescription}</p>
+    </div>
+  );
+});
+
 
 export default ProductCreationAxis

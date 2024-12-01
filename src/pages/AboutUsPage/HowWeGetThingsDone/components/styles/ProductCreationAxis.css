@@ -94,7 +94,7 @@
 
     cursor: pointer;
 
-    transition: .3s linear background-color;
+    transition: .5s linear background-color;
 }
 
 .timeLinePoint.active {
@@ -124,19 +124,25 @@
 
     opacity: 1;
 
-    transition: opacity 0.5s linear;
-}
-
-.timeLinePointDescription.invisible {
-    opacity: 0;
-
-    transition: opacity .25s linear;
+    transform: translateX(0);
+    transition: transform 0.5s linear;
+    will-change: transform;
 }
 
 .timeLinePointDescription p {
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: var(--semi-bold);
+    font-weight: 600;
     font-size: 18px;
-
     text-align: center;
+
+    transition: opacity 0.3s linear;
+    opacity: 1;
+}
+
+.timeLinePointDescription p.exiting {
+    opacity: 0;
+}
+
+.timeLinePointDescription p.entering {
+    opacity: 1;
 }

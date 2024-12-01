@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { OurServices } from './interfaces/interfaces'
 
@@ -40,12 +40,26 @@ const ServiceCreationAxis: React.FC<{ activeService: number, setActiveService: (
 })
 
 const Service: React.FC<Partial<OurServices>> = React.memo(({ activeIcon, unactiveIcon, text, isActive, onClick }) => {
+  const [delayedIsActive, setDelayedIsActive] = useState(isActive);
+
+  useEffect(() => {
+    if (isActive) {
+      const timeout = setTimeout(() => {
+        setDelayedIsActive(isActive);
+      }, 300);
+
+      return () => clearTimeout(timeout);
+    } else {
+      setDelayedIsActive(isActive);
+    }
+  }, [isActive]);
+
   return (
     <div className='service' onClick={onClick}>
-      {isActive ? activeIcon : unactiveIcon}
-      <p className={`${isActive ? 'active' : ''}`}> {text} </p>
+      {delayedIsActive ? activeIcon : unactiveIcon}
+      <p className={`${delayedIsActive ? 'active' : ''}`}> {text} </p>
     </div>
-  )
-})
+  );
+});
 
 export default ServiceCreationAxis

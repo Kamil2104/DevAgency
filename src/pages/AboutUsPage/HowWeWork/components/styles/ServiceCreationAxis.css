@@ -32,7 +32,7 @@
     border-radius: 2em;
     background: linear-gradient(to left, #B8C1FF 0%, #7E8DFE 47%, #5E71FE 94%);
 
-    transition: transform .25s linear;
+    transition: transform .4s ease;
 }
 
 .servicesTimeLineSegment.first {
@@ -71,7 +71,7 @@
 
     cursor: pointer;
 
-    transition: background-color 0.4s ease;
+    transition: background-color .3s ease;
 }
 
 .axis .downArrowButton:hover,

@@ -5,7 +5,7 @@ import './styles/ProductCreationAxis.css'
 const ProductCreationAxis: React.FC<{ activeCard: number, setActiveCard: (card: number) => void }> = React.memo(({ activeCard, setActiveCard }) => {
   const cardAttributes: { value: number, description: string }[] = [
     { value: 0, description: 'We start by understanding your vision and goals.' },
-    { value: 1, description: 'But also the leap into electronic typesetting shit. Only hearts.' },
+    { value: 1, description: 'But also the leap into electronic typesetting.' },
     { value: 2, description: 'It was popularised in the 1960s with the release.' },
     { value: 3, description: 'Lorem ipsum passages, and most recently with' }
   ];
@@ -60,7 +60,7 @@ const TimeLinePointDescription: React.FC<{ cardValue: number, description: strin
     const timeout = setTimeout(() => {
       setIsExiting(false);
       setCurrentDescription(description);
-    }, 400);
+    }, 300);
 
     return () => clearTimeout(timeout);
   }, [description]);
@@ -72,7 +72,9 @@ const TimeLinePointDescription: React.FC<{ cardValue: number, description: strin
         transform: `translateX(calc(${cardValue * 285}px))`,
       }}
     >
-      <p className={isExiting ? 'exiting' : 'entering'}>{currentDescription}</p>
+
+      <p className={`text ${isExiting ? 'exiting' : ''}`}>{currentDescription}</p>
+      <p className={`text ${!isExiting ? 'entering' : ''}`}>{description}</p>
     </div>
   );
 });

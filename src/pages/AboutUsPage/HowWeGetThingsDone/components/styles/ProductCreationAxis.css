@@ -94,7 +94,7 @@
 
     cursor: pointer;
 
-    transition: .5s linear background-color;
+    transition: .2s linear background-color;
 }
 
 .timeLinePoint.active {
@@ -113,9 +113,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80px;
     width: calc(180px - 2em);
 
-    padding: 1em 1em;
+    padding: 1.5em 1em;
 
     border-radius: 1em;
 
@@ -125,7 +126,7 @@
     opacity: 1;
 
     transform: translateX(0);
-    transition: transform 0.5s linear;
+    transition: transform 0.2s linear;
     will-change: transform;
 }
 
@@ -135,8 +136,12 @@
     font-size: 18px;
     text-align: center;
 
-    transition: opacity 0.3s linear;
-    opacity: 1;
+    position: absolute;
+    width: 70%;
+    top: 1;
+    left: 1;
+
+    transition: opacity 0.2s linear;
 }
 
 .timeLinePointDescription p.exiting {

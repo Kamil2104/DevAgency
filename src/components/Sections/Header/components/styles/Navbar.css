@@ -1,4 +1,4 @@
-nav {
+nav.desktopView {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,7 +6,7 @@ nav {
     gap: 4em;
 }
 
-nav span {
+nav.desktopView span {
     font-family: "Nunito Sans", sans-serif;
     font-size: 16px;
     font-weight: var(--semi-bold);
@@ -19,16 +19,16 @@ nav span {
                 border-color .4s ease;
 }
 
-nav button.originalBtn {
+nav.desktopView button.originalBtn {
     font-size: 16px;
 }
 
-nav span:hover {
+nav.desktopView span:hover {
     color: #5E71FE;
     border-color: #5E71FE;
 }
 
-nav span:active {
+nav.desktopView span:active {
     color: #9DA9FE;
     border-color: #9DA9FE;
 }

@@ -7,4 +7,5 @@
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .submitButtonContainer button.originalBtn  {
     width: 50%;
+    min-width: 300px;
 }

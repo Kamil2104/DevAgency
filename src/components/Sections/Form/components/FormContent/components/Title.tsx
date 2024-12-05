@@ -4,9 +4,7 @@ import './styles/Title.css'
 
 const Title: React.FC = () => {
   return (
-    <div className='formTitle'>
       <h1> Let's talk </h1>
-    </div>
   )
 }
 

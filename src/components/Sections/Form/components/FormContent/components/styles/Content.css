@@ -3,13 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 1.5em;
+    gap: 1.25em;
     flex: 1;
     width: 80%;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent h2 {
-    width: 80%;
+    width: 100%;
 
     font-family: "Red Hat Display", sans-serif;
     font-weight: var(--semi-bold);
@@ -18,7 +18,7 @@
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent h3 {
-    width: 80%;
+    width: 100%;
 
     font-family: "Red Hat Display", sans-serif;
     font-weight: var(--medium);

@@ -1,7 +1,7 @@
 .header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     position: fixed;
@@ -9,10 +9,7 @@
     left: 0;
     right: 0;
 
-    height: 10dvh;
-    width: calc(100% - 6em);
-
-    padding: 0em 3em;
+    height: fit-content;
 
     color: #F4F4F4;
     background-color: #131313;
@@ -28,4 +25,17 @@
 
 .header.visible {
     transform: translateY(0);
+}
+
+.header .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 70px;
+    height: 10dvh;
+    width: calc(100% - 6em);
+
+    padding: 0em 3em;
 }

@@ -8,7 +8,7 @@ import './styles/Navbar.css'
 
 const Navbar: React.FC<NavbarProps> = React.memo(({ navbarOptions }) => {
   return (
-    <nav>
+    <nav className='desktopView'>
       {navbarOptions.map((option) => (
         option.type === 'text' ?
           <TextOption key={option.text} text={option.text} onClick={option.onClick} />

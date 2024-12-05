@@ -11,7 +11,7 @@ const HamburgerIcon: React.FC<NavbarMobileViewProps> = React.memo(({ toggleIsMen
         toggleIsMenuOpen()
         setDisplayedIcon(displayedIcon === "Hamburger" ? "Cross" : "Hamburger")
     }}>
-        <input type="checkbox" id="burger" checked={displayedIcon === "Cross"}/>
+        <input type="checkbox" id="burger" checked={displayedIcon === "Cross"} readOnly/>
         <span></span>
         <span></span>
         <span></span>

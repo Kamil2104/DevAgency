@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 
+import useIsMobileView from "../../../hooks/useIsMobileView";
+
 import "./styles/ScrollDownSign.css";
 
 const ScrollDownSign: React.FC<{ page: string; componentID: string }> =
   React.memo(({ page, componentID }) => {
+    const { isMobileView } = useIsMobileView()
+
     const [scrollProgress, setScrollProgress] = useState(0);
 
     const [isHovered, setIsHovered] = useState(false);
@@ -17,9 +21,11 @@ const ScrollDownSign: React.FC<{ page: string; componentID: string }> =
         setScrollProgress(progress);
       };
 
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+      if (!isMobileView) {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+      }
+    }, [isMobileView]);
 
     const handleScrollingToComponent = () => {
       const targetComponent = document.getElementById(componentID);
@@ -59,7 +65,7 @@ const ScrollDownSign: React.FC<{ page: string; componentID: string }> =
           xmlns="http://www.w3.org/2000/svg"
           style={svgAnimation}
           className={`scrollDownIcon default ${
-            isHovered ? "fadeIn" : "fadeOut"
+            isHovered && !isMobileView ? "fadeIn" : "fadeOut"
           }`}
         >
           <rect
@@ -91,7 +97,7 @@ const ScrollDownSign: React.FC<{ page: string; componentID: string }> =
           xmlns="http://www.w3.org/2000/svg"
           style={svgAnimation}
           className={`scrollDownIcon hovered ${
-            isHovered ? "fadeOut" : "fadeIn"
+            isHovered && !isMobileView ? "fadeOut" : "fadeIn"
           }`}
         >
           <rect

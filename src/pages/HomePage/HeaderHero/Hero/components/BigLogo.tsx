@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
+
+import useIsMobileView from "../../../../../hooks/useIsMobileView";
+
 import "./styles/BigLogo.css";
 
 const BigLogo: React.FC = () => {
+  const { windowWidth } = useIsMobileView()
+
   const [scrollProgress, setScrollProgress] = useState(0);
+
+  const [bigLogoSecondPartTranslation, setBigLogoSecondPartTranslation] = useState([0, 0])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +23,13 @@ const BigLogo: React.FC = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (windowWidth > 1450) { setBigLogoSecondPartTranslation([scrollProgress * 65 - 12, 55])}
+    else if (windowWidth > 1150) { setBigLogoSecondPartTranslation([scrollProgress * 65 - 11, 45])}
+    else if (windowWidth > 900) { setBigLogoSecondPartTranslation([scrollProgress * 65 - 11, 35])}
+    else { setBigLogoSecondPartTranslation([scrollProgress * 65 - 12, 30])}
+  }, [windowWidth, scrollProgress])
 
   return (
     <div className="bigLogo">
@@ -47,9 +61,7 @@ const BigLogo: React.FC = () => {
         xmlns="http://www.w3.org/2000/svg"
         className="bigLogoSecondPart"
         style={{
-          transform: `translateX(${
-            scrollProgress * 65 - 12
-          }%) translateY(55%)`,
+          transform: `translateX(${bigLogoSecondPartTranslation[0]}%) translateY(${bigLogoSecondPartTranslation[1]}%)`,
         }}
       >
         <path

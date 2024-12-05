@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   const navigate = useNavigate();
 
   const { displayedFormContent, setIsFormDisplayed } = useFormContext();
-  const isMobileView = useIsMobileView();
+  const { isMobileView } = useIsMobileView();
 
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -28,15 +28,9 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     if (isMenuOpen) {
-      setTimeout(() => {
         document.body.classList.add('no-scroll');
-      }, 300);
     } else {
-      const timer = setTimeout(() => {
         document.body.classList.remove('no-scroll');
-      }, 300);
-
-      return () => clearTimeout(timer);
     }
 
     return () => {

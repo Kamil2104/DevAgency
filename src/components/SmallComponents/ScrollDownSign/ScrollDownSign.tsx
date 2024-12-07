@@ -1,31 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import useIsMobileView from "../../../hooks/useIsMobileView";
+import useScrollProgress from "../../../hooks/useScrollProgressContext";
 
 import "./styles/ScrollDownSign.css";
 
 const ScrollDownSign: React.FC<{ page: string; componentID: string }> =
   React.memo(({ page, componentID }) => {
     const { isMobileView } = useIsMobileView()
-
-    const [scrollProgress, setScrollProgress] = useState(0);
+    const { scrollProgress } = useScrollProgress()
 
     const [isHovered, setIsHovered] = useState(false);
-
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        const windowHeight = window.innerHeight;
-
-        const progress = Math.min(scrollTop / (windowHeight * 0.8), 1);
-        setScrollProgress(progress);
-      };
-
-      if (!isMobileView) {
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-      }
-    }, [isMobileView]);
 
     const handleScrollingToComponent = () => {
       const targetComponent = document.getElementById(componentID);

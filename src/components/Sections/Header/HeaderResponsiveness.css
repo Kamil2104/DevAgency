@@ -1,4 +1,8 @@
 @media screen and (max-width: 1150px) {
+    header .row {
+        height: 80px !important;
+    }
+
     svg.logo {
         width: 110px;
         height: 18px;
@@ -11,9 +15,17 @@
     nav.desktopView button.originalBtn {
         font-size: 15px;
     }
+
+    header button.originalBtn {
+        padding: .6em 1em;
+    }
 }
 
 @media screen and (max-width: 950px) {
+    header .row {
+        height: 70px !important;
+    }
+
     svg.logo {
         width: 100px;
         height: 16px;
@@ -29,7 +41,12 @@
 
     nav.desktopView button.originalBtn {
         font-size: 14px;
-        padding: .75em 1em;
+        padding: .6em .85em;
+    }
+
+    nav.desktopView button.originalBtn svg {
+        height: 20px;
+        width: 20px;
     }
 }
 
@@ -37,5 +54,54 @@
     header .row {
         width: calc(100% - 4em) !important;
         padding: 0em 2em !important;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    header .row {
+        height: 60px !important;
+    }
+
+    svg.logo {
+        width: 90px;
+        height: 14px;
+    }
+
+    .burger {
+        width: 16px;
+        height: 12px;
+    }
+
+    .burger input:checked ~ span:nth-of-type(3) {
+        top: 11px;
+        left: 5px;
+    }
+
+    .menu.open {
+        height: calc(100dvh - 3em - 60px);
+    }
+
+    .menu.open svg {
+        height: 22px;
+        width: 22px;
+
+        transform: translateX(3px);
+    }
+
+    .menu.open span {
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .menu.open button.originalBtn {
+        gap: .3em;
+
+        font-size: 16px;
+        padding: .5em 1em;
+    }
+
+    .menu.open button svg {
+        width: 20px;
+        height: 20px;
     }
 }

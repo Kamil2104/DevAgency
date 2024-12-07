@@ -14,7 +14,7 @@
 }
 
 .menu.open {
-    height: calc(90dvh - 3em);
+    height: calc(100dvh - 3em - 70px);
 
     padding-bottom: 3em;
 
@@ -24,7 +24,7 @@
 .menu.open .textOptions {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
@@ -38,9 +38,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
     width: calc(100% - 4em);
 
-    padding: 1.5em 2em;
+    padding: 0em 2em;
 
     border-top: .1em solid #404040;
 }
@@ -49,6 +50,15 @@
     border-bottom: .1em solid #404040;
 }
 
+.menu.open svg {
+    transform: translateX(4px);
+}
+
 .menu.open button {
     margin-bottom: 0;
+    padding: .5em 1.5em;
+}
+
+.menu.open button svg {
+    display: none;
 }

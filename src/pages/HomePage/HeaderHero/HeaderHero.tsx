@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { ScrollProgressProvider } from '../../../context/ScrollProgress'
+
 import Header from '../../../components/Sections/Header/Header'
 import Hero from './Hero/Hero'
 
@@ -9,7 +11,9 @@ const HeaderHero: React.FC = () => {
   return (
     <section className='headerHero'>
       <Header />
-      <Hero />
+      <ScrollProgressProvider>
+        <Hero />
+      </ScrollProgressProvider>
     </section>
   )
 }

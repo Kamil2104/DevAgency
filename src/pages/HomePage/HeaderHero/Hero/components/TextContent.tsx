@@ -1,28 +1,11 @@
-import React, { useEffect, useState } from "react";
-
 import useIsMobileView from "../../../../../hooks/useIsMobileView";
+import useScrollProgress from "../../../../../hooks/useScrollProgressContext";
 
 import './styles/TextContent.css'
 
 const TextContent: React.FC = () => {
   const { isMobileView } = useIsMobileView()
-
-  const [scrollProgress, setScrollProgress] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const windowHeight = window.innerHeight;
-
-      const progress = Math.min(scrollTop / (windowHeight * 0.8), 1);
-      setScrollProgress(progress);
-    };
-
-    if (!isMobileView) {
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }
-  }, [isMobileView]);
+  const { scrollProgress } = useScrollProgress()
 
   return (
     <div className='textContent' style={{ transform: `translateX(${-scrollProgress * 100}%)` }}>

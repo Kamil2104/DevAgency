@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 
 import useFormContext from "../../hooks/useFormContext";
 import useFormVisibility from "../../hooks/useFormVisibility";
@@ -14,6 +14,10 @@ import Form from "../../components/Sections/Form/Form";
 const HomePage: React.FC = () => {
   const { isFormDisplayed } = useFormContext();
   const { isFormVisible } = useFormVisibility();
+
+  useEffect(() => {
+    document.body.classList.remove('no-scroll');
+  }, [])
 
   return (
     <section className="homePage">

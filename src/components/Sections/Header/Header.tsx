@@ -27,6 +27,14 @@ const Header: React.FC = () => {
   const [displayedIcon, setDisplayedIcon] = useState('Hamburger')
 
   useEffect(() => {
+    if (!isMobileView && isMenuOpen) {
+      setIsMenuOpen(false);
+      setDisplayedIcon("Hamburger")
+      document.body.classList.remove('no-scroll');
+    }
+  }, [isMobileView, isMenuOpen])
+
+  useEffect(() => {
     if (isMenuOpen) {
         document.body.classList.add('no-scroll');
     } else {

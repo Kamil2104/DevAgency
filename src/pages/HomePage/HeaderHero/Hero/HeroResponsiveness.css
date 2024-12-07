@@ -1,4 +1,8 @@
 @media screen and (max-width: 1450px) {
+    .hero .heroContent {
+        gap: 5em;
+    }
+
     .bigLogo svg {
         min-width: 0;
 
@@ -19,6 +23,19 @@
 }
 
 @media screen and (max-width: 1150px) {
+    .hero {
+        margin-top: 80px;
+    }
+
+    .hero .heroContent {
+        gap: 2em !important;
+    }
+
+    .hero video.heroVideo {
+        height: calc(100dvh - 80px);
+        min-height: 500px;
+    }
+
     .bigLogo svg {
         max-width: 270px;
     }
@@ -45,10 +62,30 @@
 
     .hero .heroContent .secondRow .scrollDownContainer {
         width: 150px;
+
+        transform: translateY(17px);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .hero {
+        margin-top: 70px;
+    }
+
+    .hero video.heroVideo {
+        height: calc(100dvh - 70px);
     }
 }
 
 @media screen and (max-width: 900px) {
+    .hero .heroContent {
+        gap: 0em !important;
+    }
+
+    .hero video.heroVideo {
+        min-height: 400px;
+    }
+
     .bigLogo svg {
         max-width: 240px;
     }
@@ -72,6 +109,10 @@
     .hero .heroContent .textContent p {
         font-size: 16px;
     }
+
+    .hero .heroContent .secondRow .scrollDownContainer {
+        width: 140px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -79,6 +120,11 @@
         width: 100%;
         gap: 0em;
     }
+
+    .hero video.heroVideo {
+        min-height: 550px;
+    }
+
 
     .hero .heroContent .firstRow svg {
         height: auto;
@@ -110,7 +156,6 @@
 
     .hero .heroContent .secondRow .scrollDownContainer {
         position: absolute;
-        width: 140px;
 
         right: 40px;
         top: 250px;
@@ -134,6 +179,15 @@
 }
 
 @media screen and (max-width: 475px) {
+    .hero {
+        margin-top: 60px;
+    }
+
+    .hero video.heroVideo {
+        height: calc(100dvh - 60px);
+        min-height: 400px;
+    }
+
     .hero .heroContent .firstRow svg {
         width: 300px;
     }
@@ -165,6 +219,11 @@
     .hero .heroContent .firstRow svg {
         width: 250px;
     }
+
+    .hero video.heroVideo {
+        min-height: 375px;
+    }
+
 
     .hero .heroContent .secondRow {
         transform: translateY(-45px);

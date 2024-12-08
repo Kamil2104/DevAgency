@@ -1,28 +1,16 @@
 import React, { useEffect, useState } from "react";
 
 import useIsMobileView from "../../../../../hooks/useIsMobileView";
+import useScrollProgress from "../../../../../hooks/useScrollProgressContext";
 
 import "./styles/BigLogo.css";
 
 const BigLogo: React.FC = () => {
   const { windowWidth } = useIsMobileView()
+  const { scrollProgress } = useScrollProgress()
 
-  const [scrollProgress, setScrollProgress] = useState(0);
 
   const [bigLogoSecondPartTranslation, setBigLogoSecondPartTranslation] = useState([0, 0])
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const windowHeight = window.innerHeight;
-
-      const progress = Math.min(scrollTop / (windowHeight * 0.8), 1);
-      setScrollProgress(progress);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     if (windowWidth > 1450) { setBigLogoSecondPartTranslation([scrollProgress * 65 - 12, 55])}

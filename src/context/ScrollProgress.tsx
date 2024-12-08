@@ -22,10 +22,15 @@ export const ScrollProgressProvider = ({ children }: { children: ReactNode }) =>
             setScrollProgress(0)
             window.removeEventListener("scroll", handleScroll)
         } else {
+            if (scrollProgress == 0) {
+                const progress = Math.min(window.scrollY / (window.innerHeight * 0.8), 1)
+                setScrollProgress(progress)
+            }
+
             window.addEventListener("scroll", handleScroll);
             return () => window.removeEventListener("scroll", handleScroll);
         }
-    }, [isMobileView]);
+    }, [isMobileView, scrollProgress]);
 
     return (
         <ScrollProgressContext.Provider value={{ scrollProgress }}>

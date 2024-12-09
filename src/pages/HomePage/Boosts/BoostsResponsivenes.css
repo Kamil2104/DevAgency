@@ -96,11 +96,6 @@
         text-align: center;
     }
 
-    .boosts .cards {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
     .boosts .cards .card {
         width: calc(360px - 2em);
         height: auto;

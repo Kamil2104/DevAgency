@@ -1,0 +1,195 @@
+@media screen and (max-width: 1450px) {
+    .boosts {
+        width: 1050px;
+    }
+
+    .cards .card {
+        width: calc(31% - 2em);
+        height: calc(185px - 4em);
+    }
+
+    .cards .card .cardHeader svg {
+        margin-right: .75em;
+    }
+
+    .cards .card .cardHeader h4 {
+        font-size: 26px;
+    }
+
+    .cards .card .cardHeader h4.cardPercent {
+        margin-right: .1em;
+    }
+
+    .cards .card .cardDescription p {
+        font-size: 16px;
+    }
+
+    .boosts button.originalBtn {
+        font-size: 17px;
+    }
+
+    .boosts button.originalBtn p {
+        line-height: 1;
+    }
+
+    .boosts button.originalBtn svg {
+        height: 22px;
+        width: 22px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .boosts {
+        width: 800px;
+    }
+
+    .boosts .title h2 {
+        font-size: 44px;
+    }
+
+    .boosts .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .cards .card {
+        width: calc(320px - 2em);
+        height: calc(175px - 4em);
+    }
+
+    .cards .card .cardHeader svg {
+        height: 26px;
+    }
+
+    .cards .card .cardHeader h4 {
+        font-size: 23px;
+    }
+
+    .cards .card .cardDescription p {
+        font-size: 16px;
+    }
+
+    .boosts button.originalBtn {
+        font-size: 18px;
+    }
+
+    .boosts button.originalBtn svg {
+        height: 22px;
+        width: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .boosts {
+        width: 90%;
+        gap: 3em;
+    }
+
+    .boosts .title {
+        width: 90%;
+        gap: 0em;
+    }
+
+    .boosts .title h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .boosts .cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .boosts .cards .card {
+        width: calc(360px - 2em);
+        height: auto;
+    }
+
+    .boosts button.originalBtn {
+        font-size: 16px;
+    }
+
+    .boosts button.originalBtn svg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .boosts {
+        width: 95%;
+    }
+
+    .boosts .title h2 {
+        font-size: 33.75px;
+    }
+
+    .boosts .cards .card {
+        width: calc(320px - 2em);
+    }
+
+    .cards .card .cardHeader svg {
+        height: 22px;
+        margin-right: .5em;
+    }
+
+    .cards .card .cardHeader h4 {
+        font-size: 22px;
+    }
+
+    .cards .card .cardDescription p {
+        font-size: 15px;
+    }
+
+    .boosts button.originalBtn {
+        font-size: 16px;
+    }
+
+    .boosts button.originalBtn svg {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .boosts {
+        gap: 2em;
+    }
+
+    .boosts .title h2 {
+        font-size: 30px;
+    }
+
+    .boosts .cards {
+        gap: 1.5em;
+    }
+
+    .boosts .cards .card {
+        width: calc(280px - 2em);
+
+        padding: 1.5em 1em;
+    }
+
+    .cards .card .cardHeader svg {
+        height: 22px;
+        margin-right: .5em;
+    }
+
+    .cards .card .cardHeader h4 {
+        font-size: 22px;
+    }
+
+    .cards .card .cardDescription p {
+        font-size: 15px;
+    }
+
+    .boosts button.originalBtn {
+        font-size: 15px;
+    }
+
+    .boosts button.originalBtn svg {
+        height: 17px;
+        width: 17px;
+    }
+}

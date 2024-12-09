@@ -7,6 +7,7 @@ import Button from '../../../components/SmallComponents/Button/Button'
 import { BoostCard } from './interfaces/interfaces'
 
 import './Boosts.css'
+import './BoostsResponsivenes.css'
 
 const Boosts: React.FC = () => {
   const cards: BoostCard[] = [

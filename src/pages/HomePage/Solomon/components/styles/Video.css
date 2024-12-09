@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px; /* Narazie sztywno wpisane dane. Wysokosc bedzie automatycznie dostosowywana względem szerokości po ustawieniu height: auto */
+    aspect-ratio: 2/1.65;
+    max-height: 400px;
     width: 95%;
 
     border-radius: 2em;

@@ -5,5 +5,6 @@ export interface FunctionalityCard {
 }
 
 export interface FunctionalityCardProps {
-    functionalities: FunctionalityCard[]
+    functionalities: FunctionalityCard[],
+    contentDisplayDirection: string
 }

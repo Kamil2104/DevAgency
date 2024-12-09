@@ -7,6 +7,7 @@ import Description from './components/Description'
 import Button from '../../../components/SmallComponents/Button/Button'
 
 import './GetInTouch.css'
+import './GetInTouchResponsiveness.css'
 
 const GetInTouch: React.FC = () => {
   const { setIsFormDisplayed } = useFormContext()

@@ -1,0 +1,209 @@
+@media screen and (max-width: 1450px) {
+    .getInTouch .getInTouchContent {
+        width: calc(1050px - 8em);
+    }
+
+    .getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 {
+        font-size: 46px;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn p {
+        font-size: 20px;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn {
+        font-size: 30px;
+
+        padding: .75em 1.75em;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn svg {
+        height: 32px;
+        width: 32px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .getInTouch .getInTouchContent {
+        width: calc(850px - 6em);
+
+        padding: 4em 3em;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 {
+        font-size: 40px;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn p {
+        font-size: 19px;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn {
+        font-size: 28px;
+
+        padding: .75em 1.75em;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn svg {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .getInTouch .getInTouchContent {
+        width: calc(700px - 6em);
+
+        padding: 3em 3em;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 {
+        font-size: 34px;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn p {
+        font-size: 17px;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn {
+        font-size: 22px;
+
+        padding: .6em 1.2em;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn svg {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .getInTouch {
+        padding: 0em;
+    }
+
+    .getInTouch .getInTouchContent {
+        flex-direction: column;
+        gap: 2em;
+        width: calc(90% - 5em);
+
+        padding: 2em 2.5em;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn,
+    .getInTouch .getInTouchContent .secondColumn {
+        width: 100%;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 {
+        font-size: 37px;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn p {
+        width: 95%;
+
+        font-size: 19px;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn {
+        font-size: 20px;
+
+        padding: .7em 1.2em;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn p {
+        line-height: 1;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn svg {
+        height: 22px;
+        width: 22px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 {
+        font-size: 33px;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn p {
+        width: 100%;
+
+        font-size: 18px;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn {
+        font-size: 20px;
+
+        padding: .6em 1.2em;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn svg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .getInTouch .getInTouchContent {
+        width: calc(90% - 4em);
+
+        gap: 1em;
+
+        padding: 1.5em 2em;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 {
+        font-size: 27.75px;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn p {
+        font-size: 16px;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn {
+        font-size: 18px;
+
+        padding: .55em 1.1em;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn svg {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .getInTouch .getInTouchContent {
+        gap: 1.25em;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn {
+        gap: .75em;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 {
+        font-size: 26px;
+    }
+
+    .getInTouch .getInTouchContent .firstColumn p {
+        font-size: 16px;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn {
+        font-size: 16px;
+
+        padding: .55em 1.1em;
+        margin-top: 0em;
+    }
+
+    .getInTouch .getInTouchContent .secondColumn button.originalBtn svg {
+        height: 18px;
+        width: 18px;
+    }
+}

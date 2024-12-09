@@ -26,6 +26,8 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [displayedIcon, setDisplayedIcon] = useState('Hamburger')
 
+  /* Closing the menu when screen has changed to desktop view, enabling the scroll and setting menu icon to hamburger,
+  so when user comes back to the MobileView, the hamburger icon is displayed */
   useEffect(() => {
     if (!isMobileView && isMenuOpen) {
       setIsMenuOpen(false);
@@ -34,6 +36,7 @@ const Header: React.FC = () => {
     }
   }, [isMobileView, isMenuOpen])
 
+  /* Enabling or disabling the scroll on website depending on whether the menu is opened or not */
   useEffect(() => {
     if (isMenuOpen) {
         document.body.classList.add('no-scroll');
@@ -45,6 +48,28 @@ const Header: React.FC = () => {
       document.body.classList.remove('no-scroll');
     };
   }, [isMenuOpen])
+
+  /* Displaying and hiding header when menu is not opened */
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    if (!isMenuOpen) {
+      window.addEventListener('scroll', handleScroll);
+      setLastScrollY(window.scrollY);
+
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
+  }, [lastScrollY, isMenuOpen]);
 
   const toggleIsMenuOpen = () => {
     setIsMenuOpen(prev => !prev);
@@ -93,26 +118,6 @@ const Header: React.FC = () => {
     { text: 'About us', type: 'text', onClick: () => navigate('/AboutUs') },
     { text: "Let's talk", type: 'button', onClick: () => handleLetsTalkButtonClick() },
   ];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-
-      setLastScrollY(currentScrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    setLastScrollY(window.scrollY);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
 
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>

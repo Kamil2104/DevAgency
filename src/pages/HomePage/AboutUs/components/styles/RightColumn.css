@@ -30,12 +30,14 @@
                 border-color .4s ease;
 }
 
-.aboutUs .secondRow .rightColumn button.originalBtn:hover {
-    color: #5E71FE;
-    border-color: #5E71FE;
-}
+@media screen and (min-width: 769px) {
+    .aboutUs .secondRow .rightColumn button.originalBtn:hover {
+        color: #5E71FE;
+        border-color: #5E71FE;
+    }
 
-.aboutUs .secondRow .rightColumn button.originalBtn:active {
-    color: #9DA9FE;
-    border-color: #9DA9FE;
+    .aboutUs .secondRow .rightColumn button.originalBtn:active {
+        color: #9DA9FE;
+        border-color: #9DA9FE;
+    }
 }

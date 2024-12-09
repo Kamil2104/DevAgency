@@ -1,0 +1,213 @@
+@media screen and (max-width: 1450px) {
+    .aboutUs {
+        padding: 8em 0em;
+    }
+
+    .aboutUs .aboutUsContent {
+        width: 1050px;
+    }
+
+    .aboutUs .firstRow h5 {
+        font-size: 20px;
+    }
+
+    .aboutUs .secondRow .leftColumn h2 {
+        font-size: 50px;
+    }
+
+    .aboutUs .secondRow .rightColumn p {
+        font-size: 18px;
+    }
+
+    .aboutUs .secondRow .rightColumn button.originalBtn {
+        padding: .4em .8em;
+    }
+
+    .aboutUs .secondRow .rightColumn button.originalBtn p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .aboutUs {
+        padding: 6em 0em;
+    }
+
+    .aboutUs .aboutUsContent {
+        width: 850px;
+    }
+
+    .aboutUs .firstRow h5 {
+        font-size: 18px;
+        margin-left: 1.75em;
+    }
+
+    .aboutUs .aboutUsContent .secondRow {
+        justify-content: space-evenly;
+    }
+
+    .aboutUs .secondRow .leftColumn,
+    .aboutUs .secondRow .rightColumn {
+        width: 45%;
+    }
+
+    .aboutUs .secondRow .leftColumn h2 {
+        font-size: 46px;
+    }
+
+    .aboutUs .secondRow .rightColumn p {
+        font-size: 17px;
+    }
+
+    .aboutUs .secondRow .rightColumn button.originalBtn {
+        padding: .4em .8em;
+    }
+
+    .aboutUs .secondRow .rightColumn button.originalBtn p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .aboutUs {
+        padding: 4em 0em;
+    }
+
+    .aboutUs .aboutUsContent {
+        width: 700px;
+    }
+
+    .aboutUs .firstRow h5 {
+        font-size: 16px;
+        margin-left: .9em;
+    }
+
+    .aboutUs .secondRow .leftColumn {
+        width: 45%;
+    }
+
+    .aboutUs .secondRow .rightColumn {
+        width: 50%;
+        gap: 2em;
+    }
+
+    .aboutUs .secondRow .leftColumn h2 {
+        font-size: 40px;
+    }
+
+    .aboutUs .secondRow .rightColumn p {
+        width: 100%;
+    }
+
+    .aboutUs .secondRow .rightColumn button.originalBtn {
+        padding: .3em .6em;
+    }
+
+    .aboutUs .secondRow .rightColumn button.originalBtn p {
+        font-size: 15px;
+
+        line-height: 1;
+    }
+
+    .aboutUs .secondRow .rightColumn button.originalBtn svg {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutUs {
+        background-color: transparent;
+
+        padding: 0;
+    }
+
+    .aboutUs .aboutUsContent {
+        width: 90%;
+        gap: .5em;
+    }
+
+    .aboutUs .firstRow h5 {
+        margin-left: .2em;
+    }
+
+    .aboutUs .aboutUsContent .secondRow {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .aboutUs .secondRow .leftColumn {
+        gap: .25em;
+    }
+
+    .aboutUs .secondRow .leftColumn,
+    .aboutUs .secondRow .rightColumn {
+        width: 100%;
+    }
+
+    .aboutUs .secondRow .rightColumn p {
+        width: 95%;
+    }
+
+    .aboutUs .secondRow .rightColumn .buttonContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .aboutUs .secondRow .rightColumn .buttonContainer button.originalBtn {
+        gap: .25em;
+
+        margin-top: .5em;
+        padding: .35em .7em;
+    }
+
+    .aboutUs .secondRow .rightColumn .buttonContainer button.originalBtn p {
+        font-size: 16px;
+    }
+
+    .aboutUs .secondRow .rightColumn button.originalBtn svg {
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutUs .secondRow .leftColumn h2 {
+        font-size: 33.75px;
+    }
+
+    .aboutUs .firstRow h5 {
+        font-size: 15px;
+        margin-left: .2em;
+    }
+
+    .aboutUs .secondRow .rightColumn p {
+        font-size: 16px;
+    }
+
+    .aboutUs .secondRow .rightColumn .buttonContainer button.originalBtn {
+        margin-top: .25em;
+
+        padding: .25em .5em;
+    }
+
+    .aboutUs .secondRow .rightColumn .buttonContainer button.originalBtn p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .aboutUs .secondRow .leftColumn h2 {
+        font-size: 30px;
+    }
+
+    .aboutUs .firstRow h5 {
+        font-size: 14px;
+        margin-left: .2em;
+    }
+
+    .aboutUs .secondRow .rightColumn p {
+        font-size: 15px;
+    }
+}

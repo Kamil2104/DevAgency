@@ -5,6 +5,7 @@ import LeftColumn from './components/LeftColumn'
 import RightColumn from './components/RightColumn'
 
 import './AboutUs.css'
+import './AboutUsResponsiveness.css'
 
 const AboutUs: React.FC = () => {
   return (

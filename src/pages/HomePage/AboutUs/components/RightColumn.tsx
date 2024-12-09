@@ -2,6 +2,8 @@ import React from 'react'
 
 import { useNavigate } from 'react-router-dom'
 
+import useIsMobileView from '../../../../hooks/useIsMobileView'
+
 import Button from '../../../../components/SmallComponents/Button/Button'
 
 import './styles/RightColumn.css'
@@ -9,10 +11,15 @@ import './styles/RightColumn.css'
 const RightColumn: React.FC = () => {
   const navigate = useNavigate()
 
+  const isMobileView = useIsMobileView()
+
   return (
     <div className='rightColumn'>
       <Text />
-      <Button text='Explore our story' onClick={() => navigate('/AboutUs')} />
+      {isMobileView
+        ? <div className='buttonContainer'> <Button text='Explore our story' onClick={() => navigate('/AboutUs')} /> </div>
+        : <Button text='Explore our story' onClick={() => navigate('/AboutUs')} />
+      }
     </div>
   )
 }

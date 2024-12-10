@@ -17,7 +17,7 @@
     padding: 4em;
 
     border-radius: 2em;
-    background-color: #202020;
+    background-color: var(--bg-color-90);
 }
 
 .getInTouch .getInTouchContent .firstColumn {

@@ -21,7 +21,7 @@
     width: 1265px;
 
     border-radius: 2em;
-    background-color: #404040;
+    background-color: var(--bg-color-80);
 }
 
 .rightArrowButton, .leftArrowButton {
@@ -37,7 +37,7 @@
 
     border-radius: 50%;
 
-    background-color: #5E71FE;
+    background-color: var(--brand-color-50);
 
     cursor: pointer;
 
@@ -45,7 +45,7 @@
 }
 
 .rightArrowButton:hover, .leftArrowButton:hover {
-    background-color: #3846A7;
+    background-color: var(--brand-color-40);
 }
 
 .rightArrowButton svg, .leftArrowButton svg {
@@ -54,7 +54,7 @@
 }
 
 .rightArrowButton.disabled, .leftArrowButton.disabled {
-    background-color: #616161;
+    background-color: var(--bg-color-70);
 
     cursor: default;
 }
@@ -88,7 +88,7 @@
     width: 20px;
 
     border-radius: 50%;
-    background-color: #A1A1A1;
+    background-color: var(--bg-color-50);
 
     z-index: 3;
 
@@ -98,7 +98,7 @@
 }
 
 .timeLinePoint.active {
-    background-color: #5E71FE;
+    background-color: var(--brand-color-50);
 }
 
 .timeLineDescriptionsContainer {
@@ -120,8 +120,8 @@
 
     border-radius: 1em;
 
-    color: #F1F1F1;
-    background-color: #131313;
+    color: var(--body-light-text);
+    background-color: var(--bg-color-100);
 
     opacity: 1;
 
@@ -131,7 +131,7 @@
 }
 
 .timeLinePointDescription p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: 600;
     font-size: 18px;
     text-align: center;

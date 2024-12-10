@@ -1,9 +1,9 @@
 .howWeWork h1 {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--semi-bold);
     font-size: 74px;
 
-    color: #F6F6F6;
+    color: var(--headline-light-text);
 
     width: 60%;
 

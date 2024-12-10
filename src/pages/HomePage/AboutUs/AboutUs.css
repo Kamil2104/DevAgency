@@ -6,7 +6,7 @@
 
     padding: 10em 0em;
 
-    background-color: #202020;
+    background-color: var(--bg-color-90);
 }
 
 .aboutUs .aboutUsContent {
@@ -17,7 +17,7 @@
     width: 1265px;
     gap: 1em;
 
-    color: #F1F1F1;
+    color: var(--body-light-text);
 }
 
 .aboutUs .aboutUsContent .firstRow {

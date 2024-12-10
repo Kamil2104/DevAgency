@@ -1,7 +1,7 @@
 .form .leftColumn h1 {
-    font-family: "Red hat display", sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--semi-bold);
     font-size: 56px;
 
-    color: #FFFFFF;
+    color: var(--headline-light-text);
 }

@@ -24,10 +24,10 @@
     height: 64px;
     width: 101%;
 
-    border: .15em solid #131313;
+    border: .15em solid var(--bg-color-100);
     border-radius: 1em;
 
-    background-color: #404040;
+    background-color: var(--bg-color-80);
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelector .regionSelectorButton::after,
@@ -38,7 +38,7 @@
   content: '';
   display: inline-block;
 
-  color: #C7C7C7;
+  color: var(--bg-color-40);
 
   padding: 4px;
 
@@ -54,11 +54,11 @@
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelector .regionSelectorButton span,
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected .regionSelectorButton span {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--medium);
     font-size: 18px;
 
-    color: #C7C7C7;
+    color: var(--bg-color-40);
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected .regionSelectorButton span.ReactFlagsSelect-module_selectFlag__2q5gC svg {
@@ -67,7 +67,7 @@
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected .regionSelectorButton span {
-    color: #F6F6F6;
+    color: var(--body-light-text);
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelector ul,

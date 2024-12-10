@@ -7,22 +7,20 @@
 }
 
 .title h4 {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--regular);
     font-size: 20px;
-    color: #F4F4F4;
+    color: var(--headline-light-text);
 }
 
 .title h1 {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--medium);
     font-size: 68px;
 
     background: linear-gradient(
         to right,
-        #5E71FE 0%,
-        #7E8DFE 47%,
-        #B8C1FF 94%
+        var(--gradient-color)
     );
     background-clip: initial;
     -webkit-background-clip: text;
@@ -32,8 +30,8 @@
 .title p {
     width: 75%;
 
-    font-family: "Nunito Sans", sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--semi-medium);
     font-size: 18px;
-    color: #F4F4F4;
+    color: var(--headline-light-text);
 }

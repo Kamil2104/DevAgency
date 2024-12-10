@@ -21,7 +21,7 @@
   width: 100vw;
   height: fit-content;
 
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--bg-color-100);
 
   z-index: 1;
 }

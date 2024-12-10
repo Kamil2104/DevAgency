@@ -5,15 +5,15 @@ button.originalBtn {
     align-items: center;
     gap: .5em;
 
-    font-family: "Nunito Sans", sans-serif;
+    font-family: var(--nunito-sans);
     font-size: 18px;
     font-weight: var(--bold);
-    color: #1D1D1D;
+    color: var(--headline-dark-text);
 
     padding: .75em 1.15em;
 
     border-radius: 2em;
-    background-color: #F6F6F6;
+    background-color: var(--bg-color-10);
 
     border: none;
     outline: none;
@@ -26,12 +26,12 @@ button.originalBtn {
 
 @media screen and (min-width: 769px) {
     button.originalBtn:hover {
-        color: #F4F4F4;
-        background-color: #5E71FE;
+        color: var(--headline-light-text);
+        background-color: var(--brand-color-50);
     }
 
     button.originalBtn:active {
-        color: #F4F4F4;
-        background-color: #9DA9FE;
+        color: var(--headline-light-text);
+        background-color: var(--brand-color-60);
     }
 }

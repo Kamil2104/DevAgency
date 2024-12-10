@@ -18,7 +18,7 @@
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent p {
-    color: #F1F1F1;
+    color: var(--body-light-text);
 
     line-height: 24px;
 }
@@ -26,13 +26,13 @@
 .form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent span.coloredParagraph {
     width: fit-content;
 
-    color: #9DA9FE;
+    color: var(--brand-color-60);
 
-    border-bottom: .1em solid #131313;
+    border-bottom: .1em solid var(--bg-color-100);
 
     cursor: pointer;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent span.coloredParagraph:hover {
-    border-bottom: .1em solid #9DA9FE;
+    border-bottom: .1em solid var(--brand-color-60);
 }

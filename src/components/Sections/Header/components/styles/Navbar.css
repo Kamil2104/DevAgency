@@ -7,7 +7,7 @@ nav.desktopView {
 }
 
 nav.desktopView span {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: var(--nunito-sans);
     font-size: 16px;
     font-weight: var(--semi-bold);
 
@@ -24,11 +24,11 @@ nav.desktopView button.originalBtn {
 }
 
 nav.desktopView span:hover {
-    color: #5E71FE;
-    border-color: #5E71FE;
+    color: var(--brand-color-50);
+    border-color: var(--brand-color-50);
 }
 
 nav.desktopView span:active {
-    color: #9DA9FE;
-    border-color: #9DA9FE;
+    color: var(--brand-color-60);
+    border-color: var(--brand-color-60);
 }

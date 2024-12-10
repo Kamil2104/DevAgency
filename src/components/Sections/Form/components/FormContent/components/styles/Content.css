@@ -11,29 +11,29 @@
 .form .formContent .formColumns .rightColumn .rightColumnContent h2 {
     width: 100%;
 
-    font-family: "Red Hat Display", sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--semi-bold);
     font-size: 38px;
-    color: #F6F6F6;
+    color: var(--bg-color-10);
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent h3 {
     width: 100%;
 
-    font-family: "Red Hat Display", sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--medium);
     font-size: 20px;
-    color: #F1F1F1;
+    color: var(--body-light-text);
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent p.errorMessage {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--bold);
     font-size: 14px;
 
     padding-top: .5em;
 
-    color: #DD7B7E;
+    color: var(--error-color);
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent p.errorMessage.formError {

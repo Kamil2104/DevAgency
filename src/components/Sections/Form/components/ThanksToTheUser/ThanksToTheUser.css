@@ -47,33 +47,33 @@
 }
 
 .thanksToTheUserContentMain h1 {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--semi-bold);
     font-size: 68px;
-    color: #F4F4F4;
+    color: var(--headline-light-text);
 }
 
 .thanksToTheUserContentMain h4 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--semi-medium);
     font-size: 22px;
-    color: #F4F4F4;
+    color: var(--headline-light-text);
     text-align: center;
 
     width: 65%;
 }
 
 .thanksToTheUserContentMain button {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--semi-bold);
     font-size: 18px;
-    color: #F4F4F4;
+    color: var(--headline-light-text);
 
     padding: .75em 1.15em;
     margin-top: 2em;
 
     border-radius: 2em;
-    background-color: #5E71FE;
+    background-color: var(--brand-color-50);
 
     border: none;
     outline: none;
@@ -85,8 +85,8 @@
 }
 
 .thanksToTheUserContentMain button:hover {
-    color: #1D1D1D;
-    background-color: #F6F6F6;
+    color: var(--headline-dark-text);
+    background-color: var(--bg-color-10);
 }
 
 .thanksToTheUserContentFooter {
@@ -101,10 +101,10 @@
 }
 
 .thanksToTheUserContentFooter p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--semi-bold);
     font-size: 22px;
-    color: #616161;
+    color: var(--bg-color-70);
 }
 
 .socialMediaIcons {

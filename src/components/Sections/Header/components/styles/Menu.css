@@ -30,7 +30,7 @@
 }
 
 .menu.open span {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--semi-bold);
     font-size: 16px;
 
@@ -43,11 +43,11 @@
 
     padding: 0em 2em;
 
-    border-top: .1em solid #404040;
+    border-top: .1em solid var(--bg-color-80);
 }
 
 .menu.open span:nth-child(2) {
-    border-bottom: .1em solid #404040;
+    border-bottom: .1em solid var(--bg-color-80);
 }
 
 .menu.open svg {

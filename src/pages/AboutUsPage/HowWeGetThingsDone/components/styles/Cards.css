@@ -24,9 +24,9 @@
 }
 
 .stepsCards .card p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--semi-bold);
     font-size: 18px;
 
-    color: #F4F4F4;
+    color: var(--headline-light-text);
 }

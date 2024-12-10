@@ -16,7 +16,7 @@
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #F4F4F4;
+  background: var(--headline-light-text);
   border-radius: 9px;
   opacity: 1;
   left: 0;

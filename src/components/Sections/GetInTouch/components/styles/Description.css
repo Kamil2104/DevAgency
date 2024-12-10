@@ -1,9 +1,9 @@
 .getInTouch .getInTouchContent .firstColumn p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--semi-medium);
     font-size: 22px;
 
     width: 75%;
 
-    color: #F1F1F1;
+    color: var(--body-light-text);
 }

@@ -7,15 +7,13 @@
 }
 
 .aboutUsHero .heroContent .textContent h1 {
-    font-family: 'Red Hat Display';
+    font-family: var(--red-hat-display);
     font-weight: var(--semi-bold);
     font-size: 80px;
 
     background: linear-gradient(
         to right,
-        #5E71FE 0%,
-        #7E8DFE 47%,
-        #B8C1FF 94%
+        var(--gradient-color)
     );
     background-clip: initial;
     -webkit-background-clip: text;
@@ -23,10 +21,10 @@
 }
 
 .aboutUsHero .heroContent .textContent h4 {
-    font-family: 'Red Hat Display';
+    font-family: var(--red-hat-display);
     font-weight: var(--medium);
     font-size: 28px;
-    color: #F4F4F4;
+    color: var(--headline-light-text);
 
     width: 575px;
     text-align: center;

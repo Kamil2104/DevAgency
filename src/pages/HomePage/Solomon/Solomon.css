@@ -20,7 +20,7 @@
     padding: 5em 3em;
 
     border-radius: 2em;
-    background-color: #202020;
+    background-color: var(--bg-color-90);
 }
 
 .solomon .solomonContent .leftColumn {

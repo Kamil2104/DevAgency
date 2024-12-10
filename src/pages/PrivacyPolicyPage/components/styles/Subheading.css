@@ -1,8 +1,8 @@
 .privacyPolicyContent h5 {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--medium);
     font-size: 30px;
-    color: #F4F4F4;
+    color: var(--headline-light-text);
 
     margin: 1em 0em;
 }

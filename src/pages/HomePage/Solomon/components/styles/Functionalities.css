@@ -19,15 +19,15 @@
 }
 
 .functionalities .functionalityCard h3 {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--semi-medium);
-    color: #F4F4F4;
+    color: var(--body-light-text);
 }
 
 .functionalities .functionalityCard p {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--regular);
-    color: #E3E3E3;
+    color: var(--body-light-text);
 
     margin-top: .25em;
 }

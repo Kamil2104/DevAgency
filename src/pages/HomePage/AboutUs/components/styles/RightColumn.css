@@ -10,7 +10,7 @@
 .aboutUs .secondRow .rightColumn p {
     width: 92%;
 
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--medium);
     font-size: 20px;
 }
@@ -21,10 +21,10 @@
 
     padding: .5em 1em;
 
-    color: #F4F4F4;
+    color: var(--headline-light-text);
     background-color: transparent;
 
-    border: .15em solid #F4F4F4;
+    border: .15em solid var(--headline-light-text);
 
     transition: color .4s ease,
                 border-color .4s ease;
@@ -32,12 +32,12 @@
 
 @media screen and (min-width: 769px) {
     .aboutUs .secondRow .rightColumn button.originalBtn:hover {
-        color: #5E71FE;
-        border-color: #5E71FE;
+        color: var(--brand-color-50);
+        border-color: var(--brand-color-50);
     }
 
     .aboutUs .secondRow .rightColumn button.originalBtn:active {
-        color: #9DA9FE;
-        border-color: #9DA9FE;
+        color: var(--brand-color-60);
+        border-color: var(--brand-color-60);
     }
 }

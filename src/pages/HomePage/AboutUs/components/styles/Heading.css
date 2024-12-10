@@ -1,5 +1,5 @@
 .aboutUs .firstRow h5 {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--medium);
     font-size: 22px;
 }

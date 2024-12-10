@@ -20,7 +20,7 @@
     width: 6px;
 
     border-radius: 2em;
-    background-color: #ECECEC;
+    background-color: var(--bg-color-20)
 }
 
 .axis .servicesTimeLine .servicesTimeLineSegment {
@@ -30,7 +30,10 @@
     width: 100%;
 
     border-radius: 2em;
-    background: linear-gradient(to left, #B8C1FF 0%, #7E8DFE 47%, #5E71FE 94%);
+    background: linear-gradient(
+        to left,
+        var(--gradient-color)
+    );
 
     transition: transform .4s ease;
 }
@@ -67,7 +70,7 @@
 
     border-radius: 50%;
 
-    background-color: #5E71FE;
+    background-color: var(--brand-color-50);
 
     cursor: pointer;
 
@@ -76,12 +79,12 @@
 
 .axis .downArrowButton:hover,
 .axis .upArrowButton:hover {
-    background-color: #3846A7;
+    background-color: var(--brand-color-40);
 }
 
 .axis .downArrowButton.disabled,
 .axis .upArrowButton.disabled {
-    background-color: #616161;
+    background-color: var(--bg-color-70);
 
     cursor: default;
 }
@@ -119,17 +122,20 @@
 }
 
 .service p {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--semi-bold);
     font-size: 28px;
 
-    color: #616161;
+    color: var(--bg-color-70);
 
     user-select: none;
 }
 
 .service p.active {
-    background: linear-gradient(to right, #5E71FE 0%, #7E8DFE 47%, #B8C1FF 94%);
+    background: linear-gradient(
+        to right,
+        var(--gradient-color)
+    );
     background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -17,9 +17,7 @@
 .aboutUs .secondRow .leftColumn h2.gradientedHeading {
     background: linear-gradient(
         to right,
-        #5E71FE 0%,
-        #7E8DFE 47%,
-        #B8C1FF 94%
+        var(--gradient-color)
     );
     background-clip: initial;
     -webkit-background-clip: text;

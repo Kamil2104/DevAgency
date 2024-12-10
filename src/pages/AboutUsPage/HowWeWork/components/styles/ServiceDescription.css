@@ -28,10 +28,10 @@
 }
 
 .leftColumn h4 {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--semi-bold);
     font-size: 30px;
-    color: #F4F4F4;
+    color: var(--headline-light-text);
     margin-bottom: .5em;
 }
 
@@ -71,10 +71,10 @@
 }
 
 .stepPoint p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--semi-medium);
     font-size: 20px;
-    color: #F4F4F4;
+    color: var(--body-light-text);
     transition: opacity .25s linear;
 }
 

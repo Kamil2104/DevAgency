@@ -1,5 +1,5 @@
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--medium);
     font-size: 18px;
 
@@ -9,8 +9,8 @@
 
     border-radius: 1em;
 
-    color: #F6F6F6;
-    background-color: #404040;
+    color: var(--body-light-text);
+    background-color: var(--bg-color-80);
 
     border: .15em solid #131313;
     outline: none;
@@ -18,17 +18,17 @@
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input:focus {
-    color: #131313;
-    background-color: #ECECEC;
+    color: var(--bg-color-100);
+    background-color: var(--bg-color-20);
     transition: color 0.3s linear, background-color 0.3s linear;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input::placeholder {
-    color: #C7C7C7;
+    color: var(--bg-color-40)
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm input:focus::placeholder {
-    color: #616161;
+    color: var(--bg-color-70)
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .fullSizeInput {

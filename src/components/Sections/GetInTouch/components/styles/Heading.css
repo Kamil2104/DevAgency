@@ -6,19 +6,17 @@
 }
 
 .getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--semi-bold);
     font-size: 52px;
 
-    color: #F1F1F1;
+    color: var(--body-light-text);
 }
 
 .getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 span.gradient1 {
     background: linear-gradient(
         to left,
-        #B8C1FF 0%,
-        #7E8DFE 47%,
-        #5E71FE 94%
+        var(--gradient-color)
     );
     background-clip: initial;
     -webkit-background-clip: text;

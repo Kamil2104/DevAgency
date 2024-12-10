@@ -17,8 +17,8 @@
 
     padding: 2em 1em;
 
-    color: #F1F1F1;
-    background-color: #202020;
+    color: var(--body-light-text);
+    background-color: var(--bg-color-90);
 
     border-radius: 1em;
 }
@@ -36,13 +36,13 @@
 }
 
 .cards .card .cardHeader h4 {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: var(--red-hat-display);
     font-weight: var(--semi-bold);
     font-size: 30px;
 }
 
 .cards .card .cardHeader h4.cardPercent {
-    color: #5E71FE;
+    color: var(--brand-color-50);
 }
 
 .cards .card .cardDescription {
@@ -50,7 +50,7 @@
 }
 
 .cards .card .cardDescription p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--semi-medium);
     font-size: 17px;
 }

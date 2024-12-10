@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
 
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--nunito-sans);
     font-weight: var(--medium);
     font-size: 18px;
 
@@ -26,8 +26,8 @@
 
     border-radius: 1em;
 
-    color: #C7C7C7;
-    background-color: #404040;
+    color: var(--bg-color-40);
+    background-color: var(--bg-color-80);
 
     border: none;
     outline: none;
@@ -36,8 +36,8 @@
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened {
-    color: #131313;
-    background-color: #ECECEC;
+    color: var(--bg-color-100);
+    background-color: var(--bg-color-20);
 
     border-bottom-left-radius: 0em;
     border-bottom-right-radius: 0em;
@@ -71,7 +71,7 @@
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsClosed p.selectedProductRequirementsOptions {
-    color: #F6F6F6;
+    color: var(--body-light-text);
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .selectContainer #productRequirementsOpened .iconContainer,
@@ -107,7 +107,7 @@
 
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
-    background-color: #ECECEC;
+    background-color: var(--bg-color-20);
 
     overflow: hidden;
 }

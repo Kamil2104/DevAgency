@@ -13,12 +13,15 @@ import Text from './components/Text'
 
 import useFormContext from '../../hooks/useFormContext'
 import useFormVisibility from '../../hooks/useFormVisibility';
+import useIsMobileView from '../../hooks/useIsMobileView'
 
 import './PrivacyPolicyPage.css'
+import './PrivacyPolicyPageResponsiveness.css'
 
 const PrivacyPolicyPage: React.FC = () => {
   const { isFormDisplayed } = useFormContext()
   const { isFormVisible } = useFormVisibility();
+  const { isMobileView }  = useIsMobileView()
 
   return (
     <section className='privacyPolicyPage'>
@@ -26,7 +29,7 @@ const PrivacyPolicyPage: React.FC = () => {
       <div className='privacyPolicyContent'>
         <Title value='Privacy Police' />
 
-        <Subheading value='Introduction' style={{ marginBottom: '.5em' }}/>
+        <Subheading value='Introduction' style={ !isMobileView ? { marginBottom: '.5em' } : {}}/>
         <Text value='Our mission is not only to ensure your sense of security but also to simplify and expedite the process of purchasing our products. We create a space where you can easily and comfortably place an order, knowing that your data is fully protected.'  />
         <Text value='The following Privacy Policy aims to inform you about how we use your personal data, while complying with all requirements of Regulation (EU) 2016/679 of the European Parliament and of the Council, dated April 27, 2016 (hereinafter referred to as "GDPR").' />
 
@@ -71,7 +74,7 @@ const PrivacyPolicyPage: React.FC = () => {
         <Subpoint value='Withdraw consent at any time (if processing is based on consent).' />
         <Text value='To exercise these rights, please contact the Controller via email at: …………. Users also have the right to file a complaint with the President of the Personal Data Protection Office if they believe that their data is being processed in violation of the law.' />
 
-        <Subheading value='Cookies' style={{ marginTop: '2em', marginBottom: '.5em' }}/>
+        <Subheading value='Cookies' style={{ marginTop: `${isMobileView ? '1em' : '2em'}`,  marginBottom: `${!isMobileView ? '.5em' : '0em'}` }}/>
         <Text value='The website does not use cookies or other tracking technologies that allow user identification or activity monitoring. No information about website visitors is automatically collected or stored in a manner that enables identification or behavior analysis.'/>
       </div>
       <Footer />

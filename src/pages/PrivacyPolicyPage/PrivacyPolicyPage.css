@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 5em;
-    min-width: 100dvh;
+    min-width: 100dvw;
     width: 100%;
 }
 

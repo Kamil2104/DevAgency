@@ -132,7 +132,7 @@
 
 .timeLinePointDescription p {
     font-family: var(--nunito-sans);
-    font-weight: 600;
+    font-weight: var(--semi-medium);
     font-size: 18px;
     text-align: center;
 

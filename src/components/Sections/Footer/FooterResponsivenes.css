@@ -1,0 +1,121 @@
+@media screen and (max-width: 1450px) {
+    footer {
+        width: 1050px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    footer {
+        width: 800px;
+        gap: 2em;
+    }
+
+    footer .textContainer,
+    footer .arrowContainer {
+        width: 25%;
+    }
+
+    footer .options {
+        width: 50%;
+    }
+
+    footer .textContainer p {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    footer .options span {
+        font-size: 15px;
+    }
+
+    footer .arrowIconContainer {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        width: 700px;
+        gap: 2em;
+    }
+
+    footer .textContainer {
+        width: 30%;
+    }
+
+    footer .options {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        width: 90%;
+
+        gap: 1em;
+    }
+
+    footer .firstRow {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    footer .secondRow {
+        margin-top: 1em;
+    }
+
+    footer .firstRow .textContainer {
+        width: 100%;
+    }
+
+    footer .firstRow .textContainer p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    footer .thirdRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        gap: 0em;
+    }
+
+    footer .thirdRow p.privacyAndTermsParagraph {
+        font-size: 15px;
+    }
+
+    footer .thirdRow .options {
+        width: 60%;
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer .firstRow .textContainer p {
+        font-size: 16px;
+    }
+
+    footer .thirdRow p.privacyAndTermsParagraph {
+        font-size: 12px;
+    }
+
+    footer .options span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    footer .firstRow .textContainer p {
+        font-size: 15px;
+    }
+
+    footer .options span {
+        font-size: 10px;
+    }
+
+    footer .thirdRow p.privacyAndTermsParagraph {
+        font-size: 10px;
+    }
+}

@@ -21,7 +21,12 @@ footer .firstRow {
 footer .firstRow,
 footer .secondRow,
 footer .thirdRow {
-    width: 1250px;
+    width: 100%;
+}
+
+footer .secondRow svg {
+    height: auto;
+    width: 100%;
 }
 
 footer .thirdRow p.privacyAndTermsParagraph {

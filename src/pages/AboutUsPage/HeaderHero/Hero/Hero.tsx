@@ -7,6 +7,7 @@ import ScrollDownSign from '../../../../components/SmallComponents/ScrollDownSig
 import BackgroundVideo from '../../../../assets/HeroBackgroundVideo.mp4'
 
 import './Hero.css'
+import './HeroResponsiveness.css'
 
 const Hero: React.FC = () => {
   return (
@@ -15,7 +16,9 @@ const Hero: React.FC = () => {
         <BackgroundTransition />
         <div className='heroContent'>
             <TextContent />
-            <ScrollDownSign page="AboutUsPage" componentID='whyUs' />
+            <section className='iconContainer'>
+              <ScrollDownSign page="AboutUsPage" componentID='whyUs' />
+            </section>
         </div>
     </section>
   )

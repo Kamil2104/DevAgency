@@ -8,7 +8,7 @@ const Functionalities: React.FC<FunctionalityCardProps> = React.memo(({ function
   return (
     <div className='functionalities'>
       {functionalities.map((functionality) => (
-        <FunctionalityCard title={functionality.title} description={functionality.description} />
+        <FunctionalityCard key={functionality.title} title={functionality.title} description={functionality.description} />
       ))}
     </div>
   )

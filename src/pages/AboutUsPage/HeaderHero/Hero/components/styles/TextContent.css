@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
 }
 
 .aboutUsHero .heroContent .textContent h1 {
@@ -23,7 +23,7 @@
 .aboutUsHero .heroContent .textContent h4 {
     font-family: var(--red-hat-display);
     font-weight: var(--medium);
-    font-size: 28px;
+    font-size: 24px;
     color: var(--headline-light-text);
 
     width: 575px;

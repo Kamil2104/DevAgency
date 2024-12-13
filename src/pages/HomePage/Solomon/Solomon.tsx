@@ -23,17 +23,19 @@ const Solomon: React.FC = () => {
     {
       title: "Efficient pre-research",
       description: "Quickly gather relevant legal information",
-    }
+    },
   ];
 
   return (
-    <section className="solomon" id="solomon">
-      <Video />
-      <Title />
-      <div className="solomonColumns">
-        <AboutSolomon />
-        <Functionalities functionalities={functionalities} />
-      </div>
+    <section className="solomonBackgroundContainer">
+      <section className="solomon" >
+        <Video />
+        <Title />
+        <div className="solomonColumns">
+          <AboutSolomon />
+          <Functionalities functionalities={functionalities} />
+        </div>
+      </section>
     </section>
   );
 };

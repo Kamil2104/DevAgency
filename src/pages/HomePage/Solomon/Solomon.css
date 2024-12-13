@@ -3,8 +3,25 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 1265px;
+    width: 90%;
     gap: 4em;
+
+    transform: translateY(-150px);
+}
+
+.solomonBackgroundContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 825px;
+    width: 1265px;
+
+    margin-top: 10em;
+    padding: 5em 0em;
+
+    border-radius: 2em;
+    background-color: var(--bg-color-90);
 }
 
 .solomon .solomonColumns {

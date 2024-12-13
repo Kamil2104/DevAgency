@@ -1,15 +1,14 @@
-.solomon .solomonContent .rightColumn .videoContainer {
+.solomon .videoContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 2/1.65;
-    max-height: 400px;
-    width: 95%;
+    aspect-ratio: 2/1.2;
+    width: 80%;
 
     border-radius: 2em;
     background-color: rgb(224, 224, 224);
 }
 
-.solomon .solomonContent .rightColumn .videoContainer h1 {
+.solomon .videoContainer h1 {
     font-size: 2em;
 }

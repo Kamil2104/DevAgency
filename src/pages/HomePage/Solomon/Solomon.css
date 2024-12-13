@@ -1,42 +1,16 @@
 .solomon {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-
-    width: calc(100% - 6em);
-
-    padding: 0em 3em;
+    width: 1265px;
+    gap: 4em;
 }
 
-.solomon .solomonContent {
+.solomon .solomonColumns {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    height: auto;
-    width: calc(1265px - 6em);
-
-    padding: 5em 3em;
-
-    border-radius: 2em;
-    background-color: var(--bg-color-90);
-}
-
-.solomon .solomonContent .leftColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 3em;
-    height: auto;
-    width: 50%;
-}
-
-.solomon .solomonContent .rightColumn {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: auto;
-    width: 50%;
+    width: 90%;
 }

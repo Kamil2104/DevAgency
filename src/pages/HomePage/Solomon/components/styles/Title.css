@@ -1,37 +1,21 @@
-.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: .5em;
-}
-
-.title h4 {
+.solomon h1.title {
     font-family: var(--red-hat-display);
-    font-weight: var(--regular);
-    font-size: 20px;
+    font-size: 50px;
+    font-weight: var(--semi-bold);
     color: var(--headline-light-text);
+
+    width: 1000px;
+
+    text-align: center;
 }
 
-.title h1 {
-    font-family: var(--red-hat-display);
-    font-weight: var(--medium);
-    font-size: 68px;
-
+.solomon h1.title span.gradientedText {
     background: linear-gradient(
-        to right,
+        to left,
         var(--gradient-color)
     );
+
     background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.title p {
-    width: 75%;
-
-    font-family: var(--nunito-sans);
-    font-weight: var(--semi-medium);
-    font-size: 18px;
-    color: var(--headline-light-text);
 }

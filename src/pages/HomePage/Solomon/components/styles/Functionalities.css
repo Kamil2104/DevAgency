@@ -1,33 +1,33 @@
-.functionalities {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 3.25em;
-    width: 95%;
-}
-
-.functionalities .functionalityCard {
+.solomon .solomonColumns .functionalities {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    gap: .5em;
-    height: fit-content;
-    width: 45%;
+    align-items: flex-end;
+    gap: 3em;
+    width: 40%;
 }
 
-.functionalities .functionalityCard h3 {
+.solomon .solomonColumns .functionalities .functionalityCard {
+    display: flex;
+    flex-direction: column;
+
+    width: 280px;
+
+    padding-left: 1em;
+
+    border-left: .15em solid var(--bg-color-50);
+}
+
+.solomon .solomonColumns .functionalities .functionalityCard h4 {
     font-family: var(--red-hat-display);
-    font-weight: var(--semi-medium);
-    color: var(--body-light-text);
+    font-weight: var(--bold);
+    font-size: 26px;
+    color: var(--headline-light-text);
 }
 
-.functionalities .functionalityCard p {
+.solomon .solomonColumns .functionalities .functionalityCard p {
     font-family: var(--nunito-sans);
-    font-weight: var(--regular);
-    color: var(--body-light-text);
-
-    margin-top: .25em;
+    font-weight: var(--medium);
+    font-size: 16px;
+    color: var(--bg-color-50);
 }

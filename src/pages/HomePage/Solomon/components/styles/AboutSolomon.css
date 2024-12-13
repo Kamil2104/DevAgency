@@ -1,0 +1,69 @@
+.solomon .solomonColumns .aboutSolomon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+.solomon .solomonColumns .aboutSolomon h3 {
+    font-family: var(--red-hat-display);
+    font-weight: var(--bold);
+    font-size: 36px;
+    color: var(--headline-light-text);
+}
+
+.solomon .solomonColumns .aboutSolomon h3 span.gradientedText {
+    background: linear-gradient(
+        to left,
+        var(--gradient-color)
+    );
+
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.solomon .solomonColumns .aboutSolomon p.description {
+    width: 80%;
+
+    font-family: var(--nunito-sans);
+    font-weight: var(--semi-bold);
+    font-size: 22px;
+    color: var(--bg-color-50);
+
+    margin-top: .75em;
+}
+
+.solomon .solomonColumns .aboutSolomon p span.whiteText {
+    color: var(--body-light-text);
+}
+
+.solomon .solomonColumns .aboutSolomon button.originalBtn {
+    width: 25%;
+    
+    font-weight: var(--semi-bold);
+    font-size: 18px;
+
+    margin-top: 2em;
+    padding: .5em;
+
+    color: var(--headline-light-text);
+    background-color: transparent;
+
+    border: .15em solid var(--headline-light-text);
+
+    transition: color .4s ease,
+                border-color .4s ease;
+}
+
+@media screen and (min-width: 769px) {
+    .solomon .solomonColumns .aboutSolomon button.originalBtn:hover {
+        color: var(--brand-color-50);
+        border-color: var(--brand-color-50);
+    }
+
+    .solomon .solomonColumns .aboutSolomon button.originalBtn:active {
+        color: var(--brand-color-60);
+        border-color: var(--brand-color-60);
+    }
+}

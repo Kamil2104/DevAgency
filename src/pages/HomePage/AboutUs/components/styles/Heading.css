@@ -1,5 +1,5 @@
 .aboutUs .firstRow h5 {
-    font-family: var(--red-hat-display);
+    font-family: var(--headline-text-font);
     font-weight: var(--medium);
     font-size: 22px;
 }

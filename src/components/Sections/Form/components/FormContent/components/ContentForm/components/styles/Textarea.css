@@ -8,7 +8,7 @@
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm textarea {
-    font-family: var(--nunito-sans);
+    font-family: var(--body-text-font);
     font-weight: var(--medium);
     font-size: 18px;
 

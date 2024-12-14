@@ -1,5 +1,5 @@
 .whyUs .whyUsContent .secondRow .secondRowContent h4 {
-    font-family: var(--red-hat-display);
+    font-family: var(--headline-text-font);
     font-weight: var(--semi-bold);
     font-size: 36px;
     color: var(--headline-light-text);

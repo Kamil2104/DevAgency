@@ -11,7 +11,7 @@
 .form .formContent .formColumns .rightColumn .rightColumnContent h2 {
     width: 100%;
 
-    font-family: var(--red-hat-display);
+    font-family: var(--headline-text-font);
     font-weight: var(--semi-bold);
     font-size: 38px;
     color: var(--bg-color-10);
@@ -20,14 +20,14 @@
 .form .formContent .formColumns .rightColumn .rightColumnContent h3 {
     width: 100%;
 
-    font-family: var(--red-hat-display);
+    font-family: var(--headline-text-font);
     font-weight: var(--medium);
     font-size: 20px;
     color: var(--body-light-text);
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent p.errorMessage {
-    font-family: var(--nunito-sans);
+    font-family: var(--body-text-font);
     font-weight: var(--bold);
     font-size: 14px;
 

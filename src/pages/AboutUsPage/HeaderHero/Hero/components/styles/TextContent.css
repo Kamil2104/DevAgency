@@ -7,7 +7,7 @@
 }
 
 .aboutUsHero .heroContent .textContent h1 {
-    font-family: var(--red-hat-display);
+    font-family: var(--headline-text-font);
     font-weight: var(--semi-bold);
     font-size: 80px;
 
@@ -21,7 +21,7 @@
 }
 
 .aboutUsHero .heroContent .textContent h4 {
-    font-family: var(--red-hat-display);
+    font-family: var(--headline-text-font);
     font-weight: var(--medium);
     font-size: 24px;
     color: var(--headline-light-text);

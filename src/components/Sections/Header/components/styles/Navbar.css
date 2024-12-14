@@ -7,7 +7,7 @@ nav.desktopView {
 }
 
 nav.desktopView span {
-    font-family: var(--nunito-sans);
+    font-family: var(--body-text-font);
     font-size: 16px;
     font-weight: var(--semi-bold);
 

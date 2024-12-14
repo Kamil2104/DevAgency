@@ -1,0 +1,43 @@
+:root {
+    /* Font colors */
+    --brand-color-20: #000525;
+    --brand-color-30: #1C2566;
+    --brand-color-40: #3846A7;
+    --brand-color-50: #5E71FE;
+    --brand-color-60: #9DA9FE;
+    --brand-color-70: #BFC6FF;
+    --brand-color-80: #CCD2FF;
+    --brand-color-90: #EBEEFF;
+    --brand-color-100: #7E8DFE;
+
+    --headline-light-text: #F4F4F4;
+    --headline-dark-text: #1D1D1D;
+    --body-light-text: #F1F1F1;
+    --body-dark-text: #2E2E2E;
+
+    --bg-color-10: #F6F6F6;
+    --bg-color-20: #ECECEC;
+    --bg-color-30: #E3E3E3;
+    --bg-color-40: #C7C7C7;
+    --bg-color-50: #7F7E82;
+    --bg-color-60: #818181;
+    --bg-color-70: #616161;
+    --bg-color-80: #404040;
+    --bg-color-90: #181818;
+    --bg-color-100: #131313;
+
+    --gradient-color: #B8C1FF 0%, var(--brand-color-100) 47%, var(--brand-color-50) 94%;
+
+    --error-color: #DD7B7E;
+
+    /* Font families */
+    --headline-text-font: 'Red Hat Display', sans-serif;
+    --body-text-font: 'Nunito Sans', sans-serif;
+
+    /* Font weights */
+    --regular: 200;
+    --semi-medium: 300;
+    --medium: 400;
+    --semi-bold: 550;
+    --bold: 700;
+  }

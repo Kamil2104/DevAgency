@@ -1,5 +1,5 @@
 .solomon h1.title {
-    font-family: var(--red-hat-display);
+    font-family: var(--headline-text-font);
     font-size: 50px;
     font-weight: var(--semi-bold);
     color: var(--headline-light-text);

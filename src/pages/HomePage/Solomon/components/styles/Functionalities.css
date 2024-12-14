@@ -19,14 +19,14 @@
 }
 
 .solomon .solomonColumns .functionalities .functionalityCard h4 {
-    font-family: var(--red-hat-display);
+    font-family: var(--headline-text-font);
     font-weight: var(--bold);
     font-size: 26px;
     color: var(--headline-light-text);
 }
 
 .solomon .solomonColumns .functionalities .functionalityCard p {
-    font-family: var(--nunito-sans);
+    font-family: var(--body-text-font);
     font-weight: var(--medium);
     font-size: 16px;
     color: var(--bg-color-50);

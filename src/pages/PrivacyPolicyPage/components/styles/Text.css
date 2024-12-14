@@ -1,5 +1,5 @@
 .privacyPolicyContent p {
-    font-family: var(--nunito-sans);
+    font-family: var(--body-text-font);
     font-weight: var(--regular);
     font-size: 18px;
     color: #F1F1F1;

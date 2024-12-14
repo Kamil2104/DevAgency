@@ -6,7 +6,7 @@
 }
 
 .getInTouch .getInTouchContent .firstColumn .getInTouchHeading h2 {
-    font-family: var(--red-hat-display);
+    font-family: var(--headline-text-font);
     font-weight: var(--semi-bold);
     font-size: 52px;
 

@@ -5,7 +5,7 @@ button.originalBtn {
     align-items: center;
     gap: .5em;
 
-    font-family: var(--nunito-sans);
+    font-family: var(--body-text-font);
     font-size: 18px;
     font-weight: var(--bold);
     color: var(--headline-dark-text);

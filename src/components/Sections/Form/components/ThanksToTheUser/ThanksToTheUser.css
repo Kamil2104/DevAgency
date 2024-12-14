@@ -47,14 +47,14 @@
 }
 
 .thanksToTheUserContentMain h1 {
-    font-family: var(--red-hat-display);
+    font-family: var(--headline-text-font);
     font-weight: var(--semi-bold);
     font-size: 68px;
     color: var(--headline-light-text);
 }
 
 .thanksToTheUserContentMain h4 {
-    font-family: var(--nunito-sans);
+    font-family: var(--body-text-font);
     font-weight: var(--semi-medium);
     font-size: 22px;
     color: var(--headline-light-text);
@@ -64,7 +64,7 @@
 }
 
 .thanksToTheUserContentMain button {
-    font-family: var(--nunito-sans);
+    font-family: var(--body-text-font);
     font-weight: var(--semi-bold);
     font-size: 18px;
     color: var(--headline-light-text);
@@ -101,7 +101,7 @@
 }
 
 .thanksToTheUserContentFooter p {
-    font-family: var(--nunito-sans);
+    font-family: var(--body-text-font);
     font-weight: var(--semi-bold);
     font-size: 22px;
     color: var(--bg-color-70);

@@ -36,7 +36,7 @@
 }
 
 .cards .card .cardHeader h4 {
-    font-family: var(--red-hat-display);
+    font-family: var(--headline-text-font);
     font-weight: var(--semi-bold);
     font-size: 30px;
 }
@@ -50,7 +50,7 @@
 }
 
 .cards .card .cardDescription p {
-    font-family: var(--nunito-sans);
+    font-family: var(--body-text-font);
     font-weight: var(--semi-medium);
     font-size: 17px;
 }

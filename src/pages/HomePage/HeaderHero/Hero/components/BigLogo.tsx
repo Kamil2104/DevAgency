@@ -9,14 +9,23 @@ const BigLogo: React.FC = () => {
   const { windowWidth } = useIsMobileView()
   const { scrollProgress } = useScrollProgress()
 
-
   const [bigLogoSecondPartTranslation, setBigLogoSecondPartTranslation] = useState([0, 0])
 
   useEffect(() => {
-    if (windowWidth > 1450) { setBigLogoSecondPartTranslation([scrollProgress * 65 - 12, 55])}
-    else if (windowWidth > 1150) { setBigLogoSecondPartTranslation([scrollProgress * 65 - 11, 45])}
-    else if (windowWidth > 900) { setBigLogoSecondPartTranslation([scrollProgress * 65 - 11, 35])}
-    else { setBigLogoSecondPartTranslation([scrollProgress * 65 - 12, 30])}
+    switch (true) {
+        case (windowWidth > 1450):
+            setBigLogoSecondPartTranslation([scrollProgress * 65 - 12, 55]);
+            break;
+        case (windowWidth > 1150):
+            setBigLogoSecondPartTranslation([scrollProgress * 65 - 11, 45]);
+            break;
+        case (windowWidth > 900):
+            setBigLogoSecondPartTranslation([scrollProgress * 65 - 11, 35]);
+            break;
+        default:
+            setBigLogoSecondPartTranslation([scrollProgress * 65 - 12, 30]);
+            break;
+    }
   }, [windowWidth, scrollProgress])
 
   return (

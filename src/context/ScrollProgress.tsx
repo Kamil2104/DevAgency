@@ -12,10 +12,10 @@ export const ScrollProgressProvider = ({ children }: { children: ReactNode }) =>
     const handleScroll = () => {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
         const windowHeight = window.innerHeight;
-
         const progress = Math.min(scrollTop / (windowHeight * 0.8), 1);
-        setScrollProgress(progress);
-    };
+
+        requestAnimationFrame(() => setScrollProgress(progress));
+    }
 
     useEffect(() => {
         if (isMobileView) {
@@ -30,7 +30,7 @@ export const ScrollProgressProvider = ({ children }: { children: ReactNode }) =>
             window.addEventListener("scroll", handleScroll);
             return () => window.removeEventListener("scroll", handleScroll);
         }
-    }, [isMobileView, scrollProgress]);
+    }, [isMobileView, scrollProgress])
 
     return (
         <ScrollProgressContext.Provider value={{ scrollProgress }}>

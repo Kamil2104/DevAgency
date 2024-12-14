@@ -10,6 +10,8 @@
 .bigLogo svg {
     min-width: 429px;
     min-height: 159px;
+
+    will-change: transform;
 }
 
 .bigLogo svg.bigLogoSecondPart {
@@ -17,4 +19,6 @@
 
     min-width: 833px;
     min-height: 204px;
+
+    will-change: transform;
 }

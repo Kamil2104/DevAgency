@@ -1,0 +1,267 @@
+@media screen and (max-width: 1450px) {
+    .solomonBackgroundContainer {
+        height: 750px;
+        width: 1000px;
+    }
+
+    .solomon {
+        transform: translateY(-110px);
+    }
+
+    .solomon .solomonColumns .aboutSolomon button.originalBtn {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .solomonBackgroundContainer {
+        height: 675px;
+        width: 800px;
+    }
+
+    .solomon {
+        transform: translateY(-95px);
+    }
+
+
+    .solomon h1.title {
+        font-size: 44px;
+        width: 800px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon {
+        width: 58%;
+    }
+
+    .solomon .solomonColumns .aboutSolomon h3 {
+        font-size: 30px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon p.description {
+        font-size: 20px;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard {
+        width: 250px;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard h4 {
+        font-size: 22px;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard p {
+        font-size: 16px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon button.originalBtn {
+        width: 40%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .solomonBackgroundContainer {
+        height: 625px;
+        width: 700px;
+    }
+
+    .solomon {
+        transform: translateY(-85px);
+    }
+
+
+    .solomon h1.title {
+        font-size: 40px;
+        width: 700px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon h3 {
+        font-size: 26px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon p.description {
+        font-size: 18px;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard {
+        width: 250px;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard h4 {
+        font-size: 20px;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard p {
+        font-size: 15px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon button.originalBtn {
+        width: 45%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .solomon {
+        width: 90%;
+
+        transform: translateY(0);
+    }
+
+    .solomon h1.title {
+        width: 460px;
+    }
+
+    .solomon .videoContainer {
+        width: 90%;
+    }
+
+    .solomon .solomonColumns {
+        flex-direction: column;
+    }
+
+    .solomon .solomonColumns .aboutSolomon {
+        width: 100%;
+    }
+
+    .solomon .solomonColumns .aboutSolomon h3 {
+        font-size: 24px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon p.description {
+        font-size: 18px;
+        width: 95%;
+        margin-top: .4em;
+    }
+
+    .solomon .solomonColumns .aboutSolomon .buttonContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .solomon .solomonColumns .aboutSolomon .buttonContainer button.originalBtn {
+        width: 180px;
+    }
+
+    .solomon .solomonColumns .functionalities {
+        align-items: center;
+        gap: 2em;
+        width: 100%;
+
+        margin-top: 3em;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        padding: 0;
+        border-left: 0;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard .dividerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1.5px;
+        width: 100%;
+
+        margin-bottom: .75em;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard .dividerContainer .divider {
+        height: 1.5px;
+        width: 25%;
+        background-color: var(--bg-color-10);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .solomon {
+        gap: 2em;
+    }
+
+    .solomon .solomonColumns .aboutSolomon .buttonContainer button.originalBtn {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .solomon h1.title {
+        width: 105%;
+        font-size: 33.75px;
+    }
+
+    .solomon .videoContainer {
+        width: 85%;
+    }
+
+    .solomon .solomonColumns .aboutSolomon h3 {
+        font-size: 24px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon p.description {
+        font-size: 17px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon .buttonContainer button.originalBtn {
+        width: 150px;
+        padding: .4em 0em;
+    }
+
+    .solomon .solomonColumns .functionalities {
+        margin-top: 2em;
+        gap: 1.5em;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard h4 {
+        font-size: 18px;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard .dividerContainer {
+        margin-bottom: .5em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .solomon h1.title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .solomon h1.title {
+        font-size: 27.5px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon h3 {
+        font-size: 22px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon p.description {
+        margin-top: .25em;
+        font-size: 16px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon .buttonContainer button.originalBtn {
+        width: 130px;
+        font-size: 14px;
+    }
+
+    .solomon .solomonColumns .aboutSolomon .buttonContainer button.originalBtn svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard h4 {
+        font-size: 17px;
+    }
+
+    .solomon .solomonColumns .functionalities .functionalityCard p {
+        font-size: 14px;
+        text-align: center;
+    }
+}

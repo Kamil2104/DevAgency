@@ -1,5 +1,7 @@
 import React from "react";
 
+import useIsMobileView from "../../../hooks/useIsMobileView";
+
 import Video from "./components/Video";
 import Title from "./components/Title";
 import AboutSolomon from "./components/AboutSolomon";
@@ -11,6 +13,8 @@ import "./Solomon.css";
 import "./SolomonResponsiveness.css";
 
 const Solomon: React.FC = () => {
+  const { isMobileView } = useIsMobileView();
+
   const functionalities: FunctionalityCard[] = [
     {
       title: "Conduct risk analysis",
@@ -27,16 +31,29 @@ const Solomon: React.FC = () => {
   ];
 
   return (
-    <section className="solomonBackgroundContainer">
-      <section className="solomon" >
-        <Video />
-        <Title />
-        <div className="solomonColumns">
-          <AboutSolomon />
-          <Functionalities functionalities={functionalities} />
-        </div>
-      </section>
-    </section>
+    <>
+      {isMobileView ? (
+        <section className="solomon" id="solomon">
+          <Title />
+          <Video />
+          <div className="solomonColumns">
+            <AboutSolomon />
+            <Functionalities functionalities={functionalities} />
+          </div>
+        </section>
+      ) : (
+        <section className="solomonBackgroundContainer">
+          <section className="solomon" id="solomon">
+            <Video />
+            <Title />
+            <div className="solomonColumns">
+              <AboutSolomon />
+              <Functionalities functionalities={functionalities} />
+            </div>
+          </section>
+        </section>
+      )}
+    </>
   );
 };
 

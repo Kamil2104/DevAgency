@@ -5,6 +5,7 @@ import LargeDescription from './components/LargeDescription'
 import SmallDescription from './components/SmallDescription'
 
 import './WhyUs.css'
+import './WhyUsResponsiveness.css'
 
 const WhyUs: React.FC = () => {
   return (

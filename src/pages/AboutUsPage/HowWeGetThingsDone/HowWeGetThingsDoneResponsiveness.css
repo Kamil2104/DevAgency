@@ -1,0 +1,347 @@
+@media screen and (max-width: 1450px) {
+    .howWeGetThingsDoneContent {
+        width: 1050px;
+    }
+
+    .howWeGetThingsDone h1 {
+        font-size: 68px;
+    }
+
+    .howWeGetThingsDoneContent .stepsCards,
+    .productCreationAxis,
+    .timeLine {
+        width: 900px;
+    }
+
+    .productCreationAxis {
+        margin-top: 2em;
+    }
+
+    .stepsCards .card {
+        width: 165px;
+        gap: .5em;
+    }
+
+    .stepsCards .card svg,
+    .stepsCards .card img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .stepsCards .card p {
+        font-size: 17px;
+    }
+
+    .stepSection {
+        width: 165px;
+    }
+
+    .rightArrowButton, .leftArrowButton {
+        height: 27.5px;
+        width: 27.5px;
+    }
+
+    .rightArrowButton svg, .leftArrowButton svg {
+        height: 13px;
+        width: 27.5px;
+    }
+
+    .rightArrowButton {
+        right: -5.5%;
+    }
+
+    .leftArrowButton {
+        left: -5.5%;
+    }
+
+    .timeLinePoint {
+        height: 18px;
+        width: 18px;
+    }
+
+    .timeLinePointDescription {
+        height: 110px;
+        width: calc(165px - .5em);
+
+        padding: 0em .25em;
+    }
+
+    .timeLinePointDescription p {
+        font-size: 16px;
+
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .howWeGetThingsDone {
+        padding: 4.5em 0em;
+    }
+
+    .howWeGetThingsDoneContent {
+        width: 800px;
+    }
+
+    .howWeGetThingsDone h1 {
+        font-size: 52px;
+        width: 70%;
+    }
+
+    .howWeGetThingsDoneContent .stepsCards,
+    .productCreationAxis,
+    .timeLine {
+        width: 700px;
+    }
+
+    .productCreationAxis {
+        margin-top: 1.5em;
+    }
+
+    .howWeGetThingsDone .stepsCards {
+        margin-top: 4em;
+    }
+
+    .stepsCards .card {
+        width: 140px;
+        gap: .5em;
+    }
+
+    .stepsCards .card svg,
+    .stepsCards .card img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .stepsCards .card p {
+        font-size: 15.5px;
+    }
+
+    .stepSection {
+        width: 140px;
+    }
+
+    .rightArrowButton, .leftArrowButton {
+        height: 24px;
+        width: 24px;
+    }
+
+    .rightArrowButton svg, .leftArrowButton svg {
+        height: 12px;
+        width: 24px;
+    }
+
+    .timeLinePoint {
+        height: 16px;
+        width: 16px;
+    }
+
+    .timeLinePointDescription {
+        height: 100px;
+        width: calc(140px - .5em);
+    }
+
+    .timeLinePointDescription p {
+        font-size: 14px;
+
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .howWeGetThingsDone {
+        padding: 3em 0em;
+    }
+
+    .howWeGetThingsDoneContent {
+        width: 800px;
+    }
+
+    .howWeGetThingsDone h1 {
+        font-size: 48px;
+        width: 60%;
+    }
+
+    .howWeGetThingsDoneContent .stepsCards,
+    .productCreationAxis,
+    .timeLine {
+        width: 600px;
+    }
+
+    .productCreationAxis {
+        margin-top: 1.5em;
+    }
+
+    .howWeGetThingsDone .stepsCards {
+        margin-top: 4em;
+    }
+
+    .stepsCards .card {
+        width: 125px;
+        gap: .5em;
+    }
+
+    .stepsCards .card svg,
+    .stepsCards .card img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .stepsCards .card p {
+        font-size: 14px;
+    }
+
+    .stepSection {
+        width: 125px;
+    }
+
+    .rightArrowButton, .leftArrowButton {
+        height: 20px;
+        width: 20px;
+    }
+
+    .rightArrowButton svg, .leftArrowButton svg {
+        height: 10px;
+        width: 20px;
+    }
+
+    .timeLinePoint {
+        height: 15px;
+        width: 15px;
+    }
+
+    .timeLinePointDescription {
+        height: 90px;
+        width: calc(125px - .5em);
+    }
+
+    .timeLinePointDescription p {
+        font-size: 13.5px;
+
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .howWeGetThingsDone {
+        padding: 0;
+        background-color: var(--bg-color-100);
+    }
+
+    .howWeGetThingsDoneContent {
+        width: 90%;
+    }
+
+    .howWeGetThingsDone .howWeGetThingsDoneContent h1 {
+        font-size: 48px;
+        width: 400px;
+    }
+
+    .howWeGetThingsDone .stepsCards {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3em;
+        width: 90%;
+    }
+
+    .stepsCards .card {
+        width: 200px;
+        gap: .5em;
+    }
+
+    .stepsCards .card svg,
+    .stepsCards .card img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .stepsCards .card p {
+        font-weight: var(--medium);
+        font-size: 22px;
+
+        margin-top: .5em;
+    }
+
+    .stepsCards .card span {
+        font-family: var(--body-text-font);
+        font-weight: var(--regular);
+        font-size: 17px;
+        color: var(--body-light-text);
+        text-align: center;
+
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .howWeGetThingsDone .howWeGetThingsDoneContent h1 {
+        font-size: 44px;
+    }
+
+    .howWeGetThingsDone .stepsCards {
+        gap: 2em;
+    }
+
+    .stepsCards .card {
+        width: 150px;
+        gap: .5em;
+    }
+
+    .stepsCards .card svg,
+    .stepsCards .card img {
+        height: 65px;
+        width: 65px;
+    }
+
+    .stepsCards .card p {
+        font-size: 17px;
+    }
+
+    .stepsCards .card span {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .howWeGetThingsDone .howWeGetThingsDoneContent h1 {
+        font-size: 38px;
+        width: 300px;
+    }
+
+    .stepsCards .card {
+        width: 132px;
+        gap: .5em;
+    }
+
+    .stepsCards .card svg,
+    .stepsCards .card img {
+        height: 55px;
+        width: 55px;
+    }
+
+    .stepsCards .card p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .stepsCards .card span {
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .howWeGetThingsDone .stepsCards {
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .howWeGetThingsDone .howWeGetThingsDoneContent h1 {
+        width: 100%;
+        font-size: 34px;
+    }
+
+    .howWeGetThingsDone .stepsCards {
+        margin-top: .75em;
+    }
+}

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import useIsMobileView from '../../../../hooks/useIsMobileView';
+
 import './styles/ProductCreationAxis.css'
 
 const ProductCreationAxis: React.FC<{ activeCard: number, setActiveCard: (card: number) => void }> = React.memo(({ activeCard, setActiveCard }) => {
@@ -7,7 +9,7 @@ const ProductCreationAxis: React.FC<{ activeCard: number, setActiveCard: (card: 
     { value: 0, description: 'We start by understanding your vision and goals.' },
     { value: 1, description: 'But also the leap into electronic typesetting.' },
     { value: 2, description: 'It was popularised in the 1960s with the release.' },
-    { value: 3, description: 'Lorem ipsum passages, and most recently with' }
+    { value: 3, description: 'Lorem ipsum passages, and most recently' }
   ];
 
   const arrowIcons: { [key: string]: JSX.Element } = {
@@ -51,8 +53,23 @@ const TimeLinePoint: React.FC<{ activeCard: number, setActiveCard: (card: number
 })
 
 const TimeLinePointDescription: React.FC<{ cardValue: number, description: string }> = React.memo(({ cardValue, description }) => {
+  const { windowWidth } = useIsMobileView()
+
   const [isExiting, setIsExiting] = useState(false);
   const [currentDescription, setCurrentDescription] = useState(description);
+
+  const timeLinePointDescriptionTranslation =
+    windowWidth > 1450 ? 285 :
+    windowWidth > 1150 ? 245 :
+    windowWidth > 900 ? 185 :
+    windowWidth > 768 ? 155
+    : 0
+
+  const finalTimeLinePointDescriptionTranslation =
+    cardValue > 1 && windowWidth > 1450 ? timeLinePointDescriptionTranslation + 5 :
+    cardValue === 2 && windowWidth > 768 && windowWidth < 900 ? timeLinePointDescriptionTranslation + 2 :
+    cardValue === 3 && windowWidth > 768 && windowWidth < 900 ? timeLinePointDescriptionTranslation + 2.25
+    : timeLinePointDescriptionTranslation
 
   useEffect(() => {
     setIsExiting(true);
@@ -69,10 +86,9 @@ const TimeLinePointDescription: React.FC<{ cardValue: number, description: strin
     <div
       className="timeLinePointDescription"
       style={{
-        transform: `translateX(calc(${cardValue * 285}px))`,
+        transform: `translateX(calc(${cardValue * finalTimeLinePointDescriptionTranslation}px))`,
       }}
     >
-
       <p className={`text ${isExiting ? 'exiting' : ''}`}>{currentDescription}</p>
       <p className={`text ${!isExiting ? 'entering' : ''}`}>{description}</p>
     </div>

@@ -335,6 +335,16 @@
     }
 }
 
+@media screen and (max-width: 360px) {
+    .stepsCards .card {
+        width: 80%;
+    }
+
+    .stepsCards .card span {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 350px) {
     .howWeGetThingsDone .howWeGetThingsDoneContent h1 {
         width: 100%;

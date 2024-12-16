@@ -77,3 +77,24 @@ p, h1, h2, h3, h4, h5, h6 {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .app .homePage,
+  .app .aboutUsPage {
+    gap: 6em;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .app .homePage,
+  .app .aboutUsPage {
+    gap: 4.5em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .app .homePage,
+  .app .aboutUsPage {
+    gap: 4em;
+  }
+}

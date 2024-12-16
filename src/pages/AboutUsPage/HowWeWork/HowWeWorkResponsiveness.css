@@ -1,0 +1,544 @@
+@media screen and (max-width: 1450px) {
+    .howWeWork {
+        width: 1050px;
+    }
+
+    .howWeWork h1 {
+        font-size: 68px;
+        width: 70%;
+    }
+
+    .serviceCreationAxis {
+        gap: 1.5em;
+        width: 40%;
+    }
+
+    .axis .servicesTimeLine {
+        height: 440px;
+    }
+
+    .axis .servicesTimeLine .servicesTimeLineSegment {
+        height: 110px;
+    }
+
+    .servicesTimeLineSegment.first {
+        transform: translateY(0);
+    }
+
+    .servicesTimeLineSegment.second {
+        transform: translateY(110px);
+    }
+
+    .servicesTimeLineSegment.third {
+        transform: translateY(220px);
+    }
+
+    .servicesTimeLineSegment.fourth {
+        transform: translateY(330px);
+    }
+
+    .service {
+        height: 110px;
+        gap: .75em;
+    }
+
+    .service svg {
+        height: 33px;
+        width: 33px;
+    }
+
+    .service p {
+        font-size: 25px;
+    }
+
+    .serviceDescription {
+        width: 55%;
+    }
+
+    .leftColumn {
+        gap: 1em;
+    }
+
+    .leftColumn h4 {
+        font-size: 28px;
+    }
+
+    .stepPoint p {
+        font-size: 20px;
+    }
+
+    .icon {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .howWeWork {
+        width: 800px;
+    }
+
+    .howWeWork h1 {
+        font-size: 54px;
+        width: 70%;
+    }
+
+    .serviceCreationAxis {
+        gap: 1em;
+        width: 40%;
+    }
+
+    .axis .servicesTimeLine {
+        height: 380px;
+    }
+
+    .axis .servicesTimeLine .servicesTimeLineSegment {
+        height: 95px;
+    }
+
+    .axis .downArrowButton,
+    .axis .upArrowButton {
+        height: 25px;
+        width: 25px;
+    }
+
+    .axis .downArrowButton svg,
+    .axis .upArrowButton svg {
+        height: 12px;
+        width: 12px;
+    }
+
+    .servicesTimeLineSegment.first {
+        transform: translateY(0);
+    }
+
+    .servicesTimeLineSegment.second {
+        transform: translateY(95px);
+    }
+
+    .servicesTimeLineSegment.third {
+        transform: translateY(190px);
+    }
+
+    .servicesTimeLineSegment.fourth {
+        transform: translateY(285px);
+    }
+
+    .service {
+        height: 95px;
+    }
+
+    .service svg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .service p {
+        font-size: 23px;
+    }
+
+    .serviceDescription {
+        width: 50%;
+    }
+
+    .serviceDescriptionContent {
+        padding: 1.5em 2em;
+        width: calc(100% - 4em);
+    }
+
+    .leftColumn {
+        gap: 1em;
+        width: 100%;
+    }
+
+    .leftColumn h4 {
+        font-size: 25px;
+    }
+
+    .stepPoint {
+        gap: .75em;
+    }
+
+    .stepPoint svg {
+        height: 15px;
+        width: 15px;
+
+        transform: translateY(3px);
+    }
+
+    .stepPoint p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .howWeWork {
+        width: 700px;
+        gap: 1em;
+    }
+
+    .howWeWork h1 {
+        font-size: 48px;
+        width: 70%;
+    }
+
+    .serviceCreationAxis {
+        gap: .75em;
+    }
+
+    .axis .servicesTimeLine {
+        height: 320px;
+    }
+
+    .axis .servicesTimeLine .servicesTimeLineSegment {
+        height: 80px;
+    }
+
+    .axis .downArrowButton,
+    .axis .upArrowButton {
+        height: 22px;
+        width: 22px;
+    }
+
+    .axis .downArrowButton svg,
+    .axis .upArrowButton svg {
+        height: 11px;
+        width: 11px;
+    }
+
+    .servicesTimeLineSegment.first {
+        transform: translateY(0);
+    }
+
+    .servicesTimeLineSegment.second {
+        transform: translateY(80px);
+    }
+
+    .servicesTimeLineSegment.third {
+        transform: translateY(160px);
+    }
+
+    .servicesTimeLineSegment.fourth {
+        transform: translateY(240px);
+    }
+
+    .service {
+        height: 80px;
+        gap: .5em;
+    }
+
+    .service svg {
+        height: 26px;
+        width: 26px;
+    }
+
+    .service p {
+        font-size: 20px;
+    }
+
+    .serviceDescription {
+        width: 52%;
+    }
+
+    .serviceDescriptionContent {
+        padding: 1.5em 2em;
+        width: calc(100% - 4em);
+    }
+
+    .leftColumn {
+        gap: 1em;
+        width: 100%;
+    }
+
+    .leftColumn h4 {
+        font-size: 22px;
+    }
+
+    .stepPoint {
+        gap: .75em;
+    }
+
+    .stepPoint svg {
+        height: 13px;
+        width: 13px;
+
+        transform: translateY(4px);
+    }
+
+    .stepPoint p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .howWeWork {
+        width: 90%;
+        gap: 3em;
+    }
+
+    .howWeWork h1 {
+        font-size: 44px;
+        width: 500px;
+    }
+
+    .services {
+        justify-content: center;
+        gap: 3em;
+    }
+
+    .serviceCreationAxis {
+        width: auto;
+        gap: 1.25em;
+    }
+
+    .axis .servicesTimeLine {
+        height: 360px;
+    }
+
+    .servicesTimeLineSegment {
+        height: 90px;
+    }
+
+    .servicesTimeLineSegment.first {
+        transform: translateY(0);
+    }
+
+    .servicesTimeLineSegment.second {
+        transform: translateY(90px);
+    }
+
+    .servicesTimeLineSegment.third {
+        transform: translateY(180px);
+    }
+
+    .servicesTimeLineSegment.fourth {
+        transform: translateY(270px);
+    }
+
+    .service {
+        height: 90px;
+    }
+
+    .service svg {
+        height: 40px;
+        width: 40px;
+    }
+
+    .serviceCreationAxis {
+        flex-direction: row-reverse;
+        width: auto;
+    }
+
+    .serviceDescription {
+        height: 360px;
+        width: 350px;
+        justify-content: flex-start;
+    }
+
+    .serviceDescriptionContent {
+        height: 360px;
+        width: auto;
+
+        padding: 0;
+        background-color: var(--bg-color-100);
+    }
+
+    .leftColumn {
+        height: 360px;
+    }
+
+    .leftColumn h4 {
+        font-size: 32px;
+    }
+
+    .stepPoint svg {
+        transform: translateY(6px);
+    }
+
+    .stepPoint p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .howWeWork {
+        gap: 2.5em;
+    }
+
+    .howWeWork h1 {
+        font-size: 40px;
+        width: 400px;
+    }
+
+    .services {
+        gap: 2em;
+    }
+
+    .serviceCreationAxis {
+        width: auto;
+        gap: 1.25em;
+    }
+
+    .axis .servicesTimeLine {
+        height: 320px;
+    }
+
+    .servicesTimeLineSegment {
+        height: 80px;
+    }
+
+    .servicesTimeLineSegment.first {
+        transform: translateY(0);
+    }
+
+    .servicesTimeLineSegment.second {
+        transform: translateY(80px);
+    }
+
+    .servicesTimeLineSegment.third {
+        transform: translateY(160px);
+    }
+
+    .servicesTimeLineSegment.fourth {
+        transform: translateY(240px);
+    }
+
+    .service {
+        height: 80px;
+    }
+
+    .service svg {
+        height: 36px;
+        width: 36px;
+    }
+
+    .serviceDescription {
+        height: 320px;
+        width: 350px;
+    }
+
+    .serviceDescriptionContent {
+        height: 320px;
+    }
+
+    .leftColumn {
+        height: 320px;
+    }
+
+    .leftColumn h4 {
+        font-size: 28px;
+    }
+
+    .stepPoint svg {
+        transform: translateY(5px);
+    }
+
+    .stepPoint p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .howWeWork {
+        gap: 2.5em;
+    }
+
+    .howWeWork h1 {
+        font-size: 32px;
+        width: 300px;
+    }
+
+    .services {
+        height: auto;
+        gap: 1em;
+    }
+
+    .serviceCreationAxis {
+        gap: .75em;
+    }
+
+    .axis .servicesTimeLine {
+        height: 280px;
+        width: 4px;
+    }
+
+    .servicesTimeLineSegment {
+        height: 70px !important;
+    }
+
+    .servicesTimeLineSegment.first {
+        transform: translateY(0);
+    }
+
+    .servicesTimeLineSegment.second {
+        transform: translateY(70px);
+    }
+
+    .servicesTimeLineSegment.third {
+        transform: translateY(140px);
+    }
+
+    .servicesTimeLineSegment.fourth {
+        transform: translateY(210px);
+    }
+
+    .service {
+        height: 70px;
+    }
+
+    .service svg {
+        height: 28px;
+        width: 28px;
+    }
+
+    .serviceDescription {
+        height: auto;
+        width: auto;
+    }
+
+    .serviceDescriptionContent {
+        height: auto;
+    }
+
+    .leftColumn {
+        height: auto;
+        width: 240px;
+    }
+
+    .leftColumn h4 {
+        font-size: 20px;
+    }
+
+    .stepPoint {
+        gap: .5em;
+    }
+
+    .stepPoint svg {
+        height: 10px;
+        width: 10px;
+        transform: translateY(4px);
+    }
+
+    .stepPoint p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .serviceCreationAxis {
+        gap: .5em;
+    }
+
+    .leftColumn {
+        width: 210px;
+    }
+
+    .stepPoint svg {
+        height: 9px;
+        width: 9px;
+    }
+
+    .stepPoint p {
+        font-size: 13px;
+    }
+}

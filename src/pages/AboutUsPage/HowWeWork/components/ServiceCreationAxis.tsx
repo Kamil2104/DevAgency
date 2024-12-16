@@ -2,9 +2,13 @@ import React, { useState, useEffect } from 'react'
 
 import { OurServices } from './interfaces/interfaces'
 
+import useIsMobileView from '../../../../hooks/useIsMobileView'
+
 import './styles/ServiceCreationAxis.css'
 
 const ServiceCreationAxis: React.FC<{ activeService: number, setActiveService: (service: number) => void, ourServices: OurServices[] }> = React.memo(({ activeService, setActiveService, ourServices }) => {
+  const { isMobileView } = useIsMobileView()
+
   const arrowIcons: { [key: string]: JSX.Element } = {
     disabledUpArrow: <svg viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11 19.5L2 10.5L11 1.5" stroke="#A1A1A1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/> </svg>,
     enabledUpArrow: <svg viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11 19.5L2 10.5L11 1.5" stroke="#F4F4F4" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/> </svg>,
@@ -15,9 +19,11 @@ const ServiceCreationAxis: React.FC<{ activeService: number, setActiveService: (
   return (
     <div className='serviceCreationAxis'>
       <div className='axis'>
-        <div className={`downArrowButton ${activeService === 0 ? 'disabled' : ''}`} onClick={activeService !== 0 ? () => setActiveService(activeService - 1) : () => {}}>
-          {activeService === 0 ? arrowIcons.disabledUpArrow : arrowIcons.enabledUpArrow}
-        </div>
+        {!isMobileView &&
+          <div className={`downArrowButton ${activeService === 0 ? 'disabled' : ''}`} onClick={activeService !== 0 ? () => setActiveService(activeService - 1) : () => {}}>
+            {activeService === 0 ? arrowIcons.disabledUpArrow : arrowIcons.enabledUpArrow}
+          </div>
+        }
 
         <div className='servicesTimeLine'>
           <div className={
@@ -26,20 +32,24 @@ const ServiceCreationAxis: React.FC<{ activeService: number, setActiveService: (
           </div>
         </div>
 
-        <div className={`upArrowButton ${activeService === 3 ? 'disabled' : ''}`} onClick={activeService !== 3 ? () => setActiveService(activeService + 1) : () => {}}>
-          {activeService === 3 ? arrowIcons.disabledDownArrow : arrowIcons.enabledDownArrow}
-        </div>
+        {!isMobileView &&
+          <div className={`upArrowButton ${activeService === 3 ? 'disabled' : ''}`} onClick={activeService !== 3 ? () => setActiveService(activeService + 1) : () => {}}>
+            {activeService === 3 ? arrowIcons.disabledDownArrow : arrowIcons.enabledDownArrow}
+          </div>
+        }
       </div>
       <div className='servicesTimeLineDescription'>
         {ourServices.map((service) => (
-          <Service key={service.text} activeIcon={service.activeIcon} unactiveIcon={service.unactiveIcon} text={service.text} isActive={service.isActive} onClick={service.onClick} />
+          <Service key={service.title} activeIcon={service.activeIcon} unactiveIcon={service.unactiveIcon} title={service.title} isActive={service.isActive} onClick={service.onClick} />
         ))}
       </div>
     </div>
   )
 })
 
-const Service: React.FC<Partial<OurServices>> = React.memo(({ activeIcon, unactiveIcon, text, isActive, onClick }) => {
+const Service: React.FC<Partial<OurServices>> = React.memo(({ activeIcon, unactiveIcon, title, isActive, onClick }) => {
+  const { isMobileView } = useIsMobileView()
+
   const [delayedIsActive, setDelayedIsActive] = useState(isActive);
 
   useEffect(() => {
@@ -57,7 +67,7 @@ const Service: React.FC<Partial<OurServices>> = React.memo(({ activeIcon, unacti
   return (
     <div className='service' onClick={onClick}>
       {delayedIsActive ? activeIcon : unactiveIcon}
-      <p className={`${delayedIsActive ? 'active' : ''}`}> {text} </p>
+      {!isMobileView && <p className={`${delayedIsActive ? 'active' : ''}`}> {title} </p> }
     </div>
   );
 });

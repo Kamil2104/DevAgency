@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from 'react';
+
+import useIsMobileView from '../../../../hooks/useIsMobileView';
+
 import { OurServices } from './interfaces/interfaces';
+
 import './styles/ServiceDescription.css';
 
-const ServiceDescription: React.FC<Partial<OurServices>> = React.memo(({ steps, activeIcon }) => {
+const ServiceDescription: React.FC<Partial<OurServices>> = React.memo(({ steps, activeIcon, title }) => {
+  const { isMobileView, windowWidth } = useIsMobileView()
+
   const [isExiting, setIsExiting] = useState(false);
+
+  const [currentTitle, setCurrentTitle] = useState<string | undefined>(title);
   const [currentSteps, setCurrentSteps] = useState(steps);
   const [currentIcon, setCurrentIcon] = useState(activeIcon);
 
@@ -13,26 +21,29 @@ const ServiceDescription: React.FC<Partial<OurServices>> = React.memo(({ steps, 
     const timeout = setTimeout(() => {
       setCurrentSteps(steps);
       setCurrentIcon(activeIcon);
+      setCurrentTitle(title)
       setIsExiting(false);
     }, 300);
 
     return () => clearTimeout(timeout);
-  }, [steps, activeIcon]);
+  }, [steps, activeIcon, title]);
 
   return (
     <div className="serviceDescription">
       <div className="serviceDescriptionContent">
         <div className="leftColumn">
-          <h4>Service includes</h4>
+          {isMobileView ? <h4 className={isExiting ? 'exiting' : 'entering'}> {currentTitle} </h4> : <h4> Service includes </h4>}
           {currentSteps?.map((step, index) => (
             <StepPoint key={index} pointDescription={step} isExiting={isExiting} />
           ))}
         </div>
-        <div className="rightColumn">
-          <div className={isExiting ? 'icon exiting' : 'icon entering'}>
-            {currentIcon}
-          </div>
-        </div>
+        {windowWidth > 1150 ?
+          <div className="rightColumn">
+            <div className={isExiting ? 'icon exiting' : 'icon entering'}>
+              {currentIcon}
+            </div>
+          </div> : null
+        }
       </div>
     </div>
   );

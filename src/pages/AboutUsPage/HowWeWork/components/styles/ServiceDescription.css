@@ -14,7 +14,7 @@
     width: calc(100% - 2em);
     padding: 2em 3em;
     border-radius: 2em;
-    background-color: #202020;
+    background-color: var(--bg-color-90);
 }
 
 .leftColumn {
@@ -33,6 +33,8 @@
     font-size: 30px;
     color: var(--headline-light-text);
     margin-bottom: .5em;
+
+    transition: opacity .25s linear;
 }
 
 .rightColumn {
@@ -61,7 +63,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 1em;
 }
 
@@ -75,13 +77,16 @@
     font-weight: var(--semi-medium);
     font-size: 20px;
     color: var(--body-light-text);
+
     transition: opacity .25s linear;
 }
 
-.stepPoint p.exiting {
+.stepPoint p.exiting,
+.leftColumn h4.exiting {
     opacity: 0.25;
 }
 
-.stepPoint p.entering {
+.stepPoint p.entering,
+.leftColumn h4.entering {
     opacity: 1;
 }

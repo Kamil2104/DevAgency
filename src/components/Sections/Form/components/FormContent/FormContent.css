@@ -1,9 +1,10 @@
 .form .formContent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     min-height: calc(100dvh - 3em);
+    max-height: calc(100dvh - 3em);
     width: 100%;
 
     position: absolute;
@@ -16,6 +17,8 @@
     opacity: 1;
 
     transition: opacity 0.3s linear;
+
+    overflow-y: auto;
 }
 
 .form .formContent.hide {

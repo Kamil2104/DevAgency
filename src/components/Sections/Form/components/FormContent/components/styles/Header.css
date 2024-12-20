@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 10dvh;
+    min-height: 100px;
     width: calc(100% - 6em);
 
     padding: 0em 3em;

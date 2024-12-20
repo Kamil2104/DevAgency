@@ -3,14 +3,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    min-height: calc(100dvh - 3em);
-    max-height: calc(100dvh - 3em);
+    min-height: calc(100dvh - 2em);
+    max-height: calc(100dvh - 2em);
     width: 100%;
 
     position: absolute;
     top: 0;
 
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 
     z-index: 1;
 

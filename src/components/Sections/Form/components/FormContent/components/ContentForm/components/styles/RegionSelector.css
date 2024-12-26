@@ -22,7 +22,7 @@
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelector .regionSelectorButton,
 .form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .regionSelectorSelected .regionSelectorButton {
     height: 64px;
-    width: 101%;
+    width: 101.5%;
 
     border: .15em solid var(--bg-color-100);
     border-radius: 1em;

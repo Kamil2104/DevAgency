@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: .1em;
     width: 100%;
 
     margin-bottom: 7px;
@@ -94,15 +93,12 @@
 }
 
 .productRequirementsOptions {
-    position: absolute;
-    top: 66.75%;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: .5em;
-    width: calc(48% - 2em);
+    width: calc(100% - 2em);
     padding: 0em 1em 0em 1em;
 
     border-bottom-left-radius: 1em;
@@ -148,4 +144,5 @@
 .productRequirementsOptions.open .productRequirementsOptionRow:nth-child(1),
 .productRequirementsOptions.closed .productRequirementsOptionRow:nth-child(1) {
     padding-top: .75em;
+    border-top: .1em solid var(--bg-color-70);
 }

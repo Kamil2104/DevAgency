@@ -75,31 +75,6 @@ const Header: React.FC = () => {
     setIsMenuOpen(prev => !prev);
   }
 
-  const handleScrollingToSolomon = () => {
-    const currentPath = window.location.pathname;
-
-    const scrollToSolomon = () => {
-      const targetComponent = document.getElementById('solomon');
-      if (targetComponent) {
-        const offset = 100;
-        const elementPosition = targetComponent.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - offset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }
-    };
-
-    if (currentPath === '/') {
-      scrollToSolomon();
-    } else {
-      navigate('/');
-      setTimeout(scrollToSolomon, 500);
-    }
-  };
-
   const handleLetsTalkButtonClick = () => {
     if (displayedFormContent === 'FormFields') {
       setIsFormDisplayed(true);
@@ -114,7 +89,7 @@ const Header: React.FC = () => {
   }
 
   const navbarOptions: NavbarOption[] = [
-    { text: 'Our product', type: 'text', onClick: () => handleScrollingToSolomon() },
+    { text: 'Our product', type: 'text', onClick: () => navigate('/Solomon') },
     { text: 'About us', type: 'text', onClick: () => navigate('/AboutUs') },
     { text: "Let's talk", type: 'button', onClick: () => handleLetsTalkButtonClick() },
   ];

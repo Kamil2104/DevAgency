@@ -1,4 +1,5 @@
 .form .formHeader {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,5 +19,7 @@
 }
 
 .form .formHeader svg.formClose {
+    width: 20px;
+
     cursor: pointer;
 }

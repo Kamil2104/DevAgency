@@ -8,12 +8,18 @@
 .form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: .5em;
 }
 
 .form .formContent .formColumns .rightColumn .rightColumnContent .privacyPolicyCheckboxContainer .privacyPolicyCheckboxContainerContent svg {
+    min-height: 24px;
+    min-width: 24px;
+
+    max-height: 24px;
+    max-width: 24px;
+
     cursor: pointer;
 }
 

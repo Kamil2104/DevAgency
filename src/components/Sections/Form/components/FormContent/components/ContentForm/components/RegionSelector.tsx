@@ -7,7 +7,7 @@ import { RegionSelectorProps } from './interfaces/interfaces';
 import './styles/RegionSelector.css'
 
 const RegionSelector: React.FC<RegionSelectorProps> = React.memo(({ selectedCountryCode, onSelect, error }) => {
-    return (
+  return (
     <div className='regionSelectorContainer'>
       <ReactFlagsSelect
           id='regionSelector'

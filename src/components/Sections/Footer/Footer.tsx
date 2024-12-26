@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
   const { isMobileView } = useIsMobileView();
 
   const options: footerOption[] = [
-    { text: "Let's talk", onClick: () => { setIsFormDisplayed(true) } },
-    { text: "Solomon", onClick: () => { alert('Solomon website is in building stages') } },
+    { text: "Let's talk", onClick: () => setIsFormDisplayed(true) },
+    { text: "Solomon", onClick: () => navigate('/Solomon') },
     { text: "LinkedIn", onClick: () => { window.open('https://www.linkedin.com/company/devagencyai/', '_blank') } }
   ]
 

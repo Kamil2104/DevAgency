@@ -8,6 +8,7 @@ import ThanksToTheUser from './components/ThanksToTheUser/ThanksToTheUser';
 import useFormContext from '../../../hooks/useFormContext';
 
 import './Form.css';
+import './FormResponsiveness.css'
 
 const Form: React.FC<{ isFormDisplayed: boolean }> = React.memo(({ isFormDisplayed }) => {
   const { displayedFormContent } = useFormContext()

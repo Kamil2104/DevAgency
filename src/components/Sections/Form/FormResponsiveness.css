@@ -1,0 +1,76 @@
+@media screen and (max-width: 1450px) {
+
+}
+
+@media screen and (max-width: 1150px) {
+    .form .formHeader {
+        min-height: 80px;
+    }
+
+    .form .formHeader svg {
+        height: 18px;
+    }
+
+    .form .formHeader svg.formHeaderLogo {
+        width: 110px;
+    }
+
+    .form .formHeader svg.formClose {
+        width: 18px;
+    }
+
+    .form .formContent .formColumns {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .form .formHeader {
+        min-height: 70px;
+    }
+
+    .form .formHeader svg {
+        height: 16px;
+    }
+
+    .form .formHeader svg.formHeaderLogo {
+        width: 100px;
+    }
+
+    .form .formHeader svg.formClose {
+        width: 16px;
+    }
+
+    .form .formContent .formColumns {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .form .formHeader {
+        width: calc(100% - 4em);
+        padding: 0em 2em;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .form .formHeader {
+        min-height: 60px;
+    }
+
+    .form .formHeader svg {
+        height: 14px;
+    }
+
+    .form .formHeader svg.formHeaderLogo {
+        width: 90px;
+    }
+
+    .form .formHeader svg.formClose {
+        width: 14px;
+    }
+
+    .form .formContent .formColumns {
+        margin-top: 60px;
+    }
+}

@@ -29,7 +29,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .app .homePage,
-.app .aboutUsPage {
+.app .aboutUsPage,
+.app .solomonPage {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -6,6 +6,7 @@ import useFormVisibility from '../../hooks/useFormVisibility'
 import HeaderHero from './HeaderHero/HeaderHero'
 const Comparison = React.lazy(() => import('./Comparison/Comparison'))
 const DataSafety = React.lazy(() => import('./DataSafety/DataSafety'))
+const AddingContext = React.lazy(() => import('./AddingContext/AddingContext'))
 const GetInTouch = React.lazy(() => import('../../components/Sections/GetInTouch/GetInTouch'))
 const Footer = React.lazy(() => import('../../components/Sections/Footer/Footer'))
 import Form from '../../components/Sections/Form/Form'
@@ -24,6 +25,7 @@ const SolomonPage: React.FC = () => {
         <Suspense fallback={<div>Loading...</div>}>
           <Comparison />
           <DataSafety />
+          <AddingContext />
           <GetInTouch />
           <Footer />
         </Suspense>

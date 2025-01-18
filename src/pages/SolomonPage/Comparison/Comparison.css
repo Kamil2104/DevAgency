@@ -5,6 +5,8 @@
     align-items: center;
     gap: 6em;
     width: 1265px;
+
+    padding: 4em 0em;
 }
 
 .comparison h1 {

@@ -1,0 +1,39 @@
+.dataSafety {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    padding: 7.5em 0em;
+
+    background-color: var(--bg-color-90);
+}
+
+.dataSafety .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1265px;
+}
+
+.dataSafety .content .leftColumn,
+.dataSafety .content .rightColumn {
+    width: 45%;
+}
+
+.dataSafety .content .leftColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.dataSafety .content .rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}

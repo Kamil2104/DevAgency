@@ -1,0 +1,6 @@
+.dataSafety .content .leftColumn p {
+    font-family: var(--body-text-font);
+    font-weight: var(--medium);
+    font-size: 20px;
+    color: var(--body-light-text);
+}

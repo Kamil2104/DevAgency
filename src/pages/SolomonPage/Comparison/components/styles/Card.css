@@ -4,8 +4,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1em;
-    padding: 0em 1em;
-    width: calc(30% - 2em);
+    width: 27.5%;
 }
 
 .comparison .languageModels .row {

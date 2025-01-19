@@ -1,0 +1,23 @@
+.intuitiveDesign {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1265px;
+}
+
+.intuitiveDesign .leftColumn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 55%;
+}
+
+.intuitiveDesign .rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1em;
+    width: 45%;
+}

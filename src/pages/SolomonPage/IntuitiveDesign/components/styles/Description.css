@@ -1,0 +1,11 @@
+.intuitiveDesign .rightColumn p {
+    font-family: var(--headline-text-font);
+    font-weight: var(--bold);
+    font-size: 18px;
+    color: var(--bg-color-50);
+    width: 85%;
+}
+
+.intuitiveDesign .rightColumn p span.whiteText {
+    color: var(--body-light-text);
+}

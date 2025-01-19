@@ -1,0 +1,26 @@
+.solomonPage .headerHero .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    height: 90dvh;
+    width: 1265px;
+}
+
+.solomonPage .headerHero .hero h1 {
+    font-family: var(--headline-text-font);
+    font-weight: var(--semi-bold);
+    font-size: 72px;
+    color: var(--headline-light-text);
+}
+
+.solomonPage .headerHero .hero h3 {
+    font-family: var(--headline-text-font);
+    font-weight: var(--semi-bold);
+    font-size: 28px;
+    color: var(--headline-light-text);
+    text-align: center;
+
+    width: 80%;
+}

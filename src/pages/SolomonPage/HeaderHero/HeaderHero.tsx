@@ -15,7 +15,10 @@ const HeaderHero: React.FC = () => {
 
 const Hero: React.FC = () => {
   return (
-    <div> Hero </div>
+    <section className='hero'>
+      <h1> Solomon </h1>
+      <h3> An AI-powered legal tool that streamlines risk analysis, document summaries, and legal research. </h3>
+    </section>
   )
 }
 

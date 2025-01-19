@@ -3,6 +3,8 @@ import React, { Suspense, useEffect } from "react";
 import useFormContext from "../../hooks/useFormContext";
 import useFormVisibility from "../../hooks/useFormVisibility";
 
+import Loader from "../../components/SmallComponents/Loader/Loader";
+
 import HeaderHero from "./HeaderHero/HeaderHero";
 const Solomon = React.lazy(() => import("./Solomon/Solomon"));
 const Boosts = React.lazy(() => import("./Boosts/Boosts"));
@@ -22,7 +24,7 @@ const HomePage: React.FC = () => {
   return (
     <section className="homePage">
       <HeaderHero />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Solomon />
         <Boosts />
         <AboutUs />

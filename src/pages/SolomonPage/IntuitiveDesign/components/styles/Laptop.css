@@ -1,13 +1,13 @@
 .intuitiveDesign .leftColumn .laptopContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     aspect-ratio: 2 / 1.2;
     width: 90%;
     border-radius: 1.5em;
-    background-color: rgb(224, 224, 224);
 }
 
-.intuitiveDesign .leftColumn .laptopContainer h1 {
-    font-size: 2em;
+.intuitiveDesign .leftColumn .laptopContainer svg {
+    width: 650px;
+    transform: translateX(-50px);
 }

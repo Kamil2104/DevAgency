@@ -1,11 +1,15 @@
 import React from 'react'
 
+import { ReactSVG } from 'react-svg'
+
+import SolomonContext from './assets/Video.svg'
+
 import './styles/Video.css'
 
 const Video: React.FC = React.memo(() => {
   return (
     <div className='videoContainer'>
-      <h1> Video </h1>
+      <ReactSVG src={SolomonContext}/>
     </div>
   )
 })

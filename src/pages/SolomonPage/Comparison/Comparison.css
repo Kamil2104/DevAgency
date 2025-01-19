@@ -1,0 +1,28 @@
+.comparison {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+    width: 1265px;
+
+    padding: 4em 0em;
+}
+
+.comparison h1 {
+    font-family: var(--headline-text-font);
+    font-weight: var(--semi-bold);
+    font-size: 74px;
+    color: var(--headline-light-text);
+    
+    width: 100%;
+    text-align: center;
+}
+
+.comparison .languageModels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

@@ -1,0 +1,42 @@
+.comparison .languageModels .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    width: 27.5%;
+}
+
+.comparison .languageModels .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .75em;
+}
+
+.comparison .languageModels .card .row h4 {
+    font-family: var(--headline-text-font);
+    font-weight: var(--semi-bold);
+    font-size: 28px;
+    color: var(--headline-light-text);
+
+    line-height: 1;
+}
+
+.comparison .languageModels .card .row svg {
+    height: 32px;
+    width: 32px;
+}
+
+.comparison .languageModels .card .divider {
+    height: 1px;
+    width: 100%;
+}
+
+.comparison .languageModels .card p {
+    font-family: var(--body-text-font);
+    font-weight: var(--medium);
+    font-size: 19px;
+    color: var(--body-light-text);
+}

@@ -1,0 +1,7 @@
+.addingContext .leftColumn h5 {
+    font-family: var(--body-text-font);
+    font-weight: var(--semi-medium);
+    font-size: 22px;
+    color: var(--headline-light-text);
+    line-height: 1;
+}

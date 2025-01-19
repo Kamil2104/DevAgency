@@ -1,0 +1,29 @@
+.addingContext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1265px;
+}
+
+.addingContext .leftColumn {
+    width: 40%;
+}
+
+.addingContext .rightColumn {
+    width: 55%;
+}
+
+.addingContext .leftColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.addingContext .rightColumn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

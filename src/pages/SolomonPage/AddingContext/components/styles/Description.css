@@ -1,0 +1,9 @@
+.addingContext .leftColumn p {
+    font-family: var(--body-text-font);
+    font-weight: var(--medium);
+    font-size: 18px;
+    color: var(--body-light-text);
+    width: 100%;
+
+    margin-top: 2em;
+}

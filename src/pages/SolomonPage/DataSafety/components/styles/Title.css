@@ -1,0 +1,14 @@
+.dataSafety .content .leftColumn h1 {
+    font-family: var(--headline-text-font);
+    font-weight: var(--semi-bold);
+    font-size: 74px;
+    color: var(--headline-light-text);
+    line-height: 1;
+}
+
+.dataSafety .content .leftColumn h1 span.gradientedTitle {
+    background: linear-gradient(to left, var(--gradient-color));
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

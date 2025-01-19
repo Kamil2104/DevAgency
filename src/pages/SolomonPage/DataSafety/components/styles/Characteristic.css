@@ -1,0 +1,25 @@
+.dataSafety .content .rightColumn .characteristic {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2em;
+    width: 100%;
+
+    padding-bottom: 2em;
+    border-bottom: .1em solid var(--bg-color-10);
+}
+
+.dataSafety .content .rightColumn .characteristic h4 {
+    font-family: var(--headline-text-font);
+    font-weight: var(--semi-bold);
+    font-size: 24px;
+    color: var(--brand-color-60);
+}
+
+.dataSafety .content .rightColumn .characteristic p {
+    font-family: var(--body-text-font);
+    font-weight: var(--medium);
+    font-size: 16px;
+    color: var(--body-light-text);
+}

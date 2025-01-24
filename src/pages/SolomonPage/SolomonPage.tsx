@@ -26,9 +26,9 @@ const SolomonPage: React.FC = () => {
     <section className='solomonPage'>
       <HeaderHero />
       <Suspense fallback={<Loader />}>
-        <Comparison />
         <DataSafety />
         <AddingContext />
+        <Comparison />
         <IntuitiveDesign />
         <GetInTouch />
         <Footer />

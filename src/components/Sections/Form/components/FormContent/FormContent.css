@@ -55,3 +55,75 @@
     align-items: center;
     width: 60%;
 }
+
+.form .formContent .formColumns .rightColumn .rightColumnContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    flex: 1;
+    width: 80%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent h2 {
+    width: 100%;
+
+    font-family: var(--headline-text-font);
+    font-weight: var(--semi-bold);
+    font-size: 44px;
+    color: var(--bg-color-10);
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent h3 {
+    width: 100%;
+
+    font-family: var(--headline-text-font);
+    font-weight: var(--medium);
+    font-size: 24px;
+    color: var(--body-light-text);
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent p.errorMessage {
+    font-family: var(--body-text-font);
+    font-weight: var(--bold);
+    font-size: 14px;
+
+    padding-top: .5em;
+
+    color: var(--error-color);
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent p.errorMessage.formError {
+    font-size: 16px;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: .75em;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .row {
+    position: relative;
+}
+
+.form .formContent .formColumns .rightColumn .rightColumnContent .contentForm .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}

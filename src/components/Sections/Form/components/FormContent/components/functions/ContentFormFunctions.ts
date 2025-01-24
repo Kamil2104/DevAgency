@@ -1,13 +1,12 @@
 import { useCallback, useMemo } from "react";
 
-import useFormContext from "../../../../../../../../hooks/useFormContext";
-import useIsMobileView from "../../../../../../../../hooks/useIsMobileView";
+import useFormContext from "../../../../../../../hooks/useFormContext";
 
-import { isUserDataCorrectlyFulfilled } from "../../validation/validateFormUserData";
+import { isUserDataCorrectlyFulfilled } from "../validation/validateFormUserData";
 
-import { UserData } from "../../hooks/useFormUserData";
-import { UserDataErrors } from "../../hooks/useFormUserDataErrors";
-import { UserDataSelectedProducts } from "../../hooks/useFormUserSelectedProducts";
+import { UserData } from "../hooks/useFormUserData";
+import { UserDataErrors } from "../hooks/useFormUserDataErrors";
+import { UserDataSelectedProducts } from "../hooks/useFormUserSelectedProducts";
 
 interface ContentFormFunctionsProps {
   userData: UserData,
@@ -23,7 +22,6 @@ interface ContentFormFunctionsProps {
 
 const useContentFormFunctions = ({ userData, setUserData, userDataErrors, setUserDataErrors, setSelectedCountryCode,  userSelectedProducts, setUserSelectedProducts, isProductRequirementsSelectOpened, setIsProductRequirementsSelectOpened }: ContentFormFunctionsProps) => {
   const { setDisplayedFormContent } = useFormContext();
-  const { windowWidth } = useIsMobileView()
 
   const handleValueChangeInFormField = useCallback((userDataName: string, newUserDataValue: string, userDataErrorName: string, inputFieldID: string) => {
       setUserData({ ...userData, [userDataName]: newUserDataValue });
@@ -75,10 +73,10 @@ const useContentFormFunctions = ({ userData, setUserData, userDataErrors, setUse
   const handleFormSubmition = useCallback(() => {
       handleClosingProductRequirementsSelect();
 
-      if (isUserDataCorrectlyFulfilled(windowWidth, userData, setUserDataErrors)) {
+      if (isUserDataCorrectlyFulfilled(userData, setUserDataErrors)) {
         setDisplayedFormContent("ThanksToTheUser");
       }
-  }, [ windowWidth, userData, setUserDataErrors, handleClosingProductRequirementsSelect, setDisplayedFormContent ]);
+  }, [ userData, setUserDataErrors, handleClosingProductRequirementsSelect, setDisplayedFormContent ]);
 
   return useMemo(
     () => ({

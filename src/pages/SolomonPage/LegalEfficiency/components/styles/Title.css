@@ -1,0 +1,17 @@
+.legalEfficiency h1 {
+    font-family: var(--headline-text-font);
+    font-weight: var(--semi-bold);
+    font-size: 72px;
+    color: var(--headline-light-text);
+
+    text-align: center;
+    line-height: 1.2;
+    width: 100%;
+}
+
+.legalEfficiency p.gradientedTitle {
+    background: linear-gradient(to left, var(--gradient-color));
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

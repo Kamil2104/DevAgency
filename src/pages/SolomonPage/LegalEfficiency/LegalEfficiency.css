@@ -1,0 +1,17 @@
+.legalEfficiency {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1265px;
+    gap: 5em;
+}
+
+.legalEfficiency .enhancements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}

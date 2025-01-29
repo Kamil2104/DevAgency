@@ -1,11 +1,13 @@
 .solomonPage .headerHero .hero {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 1em;
     height: 90dvh;
     width: 1265px;
+
+    padding-top: 3em;
 }
 
 .solomonPage .headerHero .hero h1 {
@@ -23,4 +25,15 @@
     text-align: center;
 
     width: 80%;
+}
+
+.solomonPage .headerHero .hero .solomonDesktop {
+    position: absolute;
+    width: 1500px;
+    z-index: -5;
+}
+
+.solomonPage .headerHero .hero .solomonDesktop svg {
+    width: 100%;
+    margin-top: 2em;
 }

@@ -2,4 +2,5 @@
     font-family: var(--headline-text-font);
     font-weight: var(--medium);
     font-size: 22px;
+    line-height: 1;
 }

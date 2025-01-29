@@ -15,7 +15,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 1265px;
-    gap: 1em;
+    gap: .5em;
 
     color: var(--body-light-text);
 }

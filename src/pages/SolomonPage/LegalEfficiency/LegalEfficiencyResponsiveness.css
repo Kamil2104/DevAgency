@@ -136,6 +136,10 @@
     .legalEfficiency h1 {
         font-size: 36px;
     }
+
+    .legalEfficiency .enhancements {
+        gap: 1.5em;
+    }
 }
 
 @media screen and (max-width: 475px) {

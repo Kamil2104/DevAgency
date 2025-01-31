@@ -6,6 +6,7 @@ import Enhancement from "./components/Enhancement"
 import { LegalEfficiencyEnhancement } from "./interfaces/interfaces"
 
 import './LegalEfficiency.css'
+import './LegalEfficiencyResponsiveness.css'
 
 const LegalEfficiency: React.FC = React.memo(() => {
     const enhancements: LegalEfficiencyEnhancement[] = [

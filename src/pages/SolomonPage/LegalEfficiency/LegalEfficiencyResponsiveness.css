@@ -1,0 +1,169 @@
+@media screen and (max-width: 1450px) {
+    .legalEfficiency {
+        width: 1050px;
+    }
+
+    .legalEfficiency h1 {
+        font-size: 68px;
+    }
+
+    .legalEfficiency .enhancements .enhancement:nth-child(4) h5 {
+        height: 85px;
+    }
+
+    .legalEfficiency .enhancements .enhancement:nth-child(4) h5,
+    .legalEfficiency .enhancements .enhancement:nth-child(5) h5,
+    .legalEfficiency .enhancements .enhancement:last-child h5 {
+        margin-top: 1.75em;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .legalEfficiency {
+        width: 850px;
+        gap: 4em;
+    }
+
+    .legalEfficiency h1 {
+        font-size: 52px;
+    }
+
+    .legalEfficiency .enhancements .enhancement h5 {
+        font-size: 25px;
+    }
+
+    .legalEfficiency .enhancements .enhancement:nth-child(4) h5 {
+        height: 85px;
+    }
+
+    .legalEfficiency .enhancements .enhancement:nth-child(4) h5,
+    .legalEfficiency .enhancements .enhancement:nth-child(5) h5,
+    .legalEfficiency .enhancements .enhancement:last-child h5 {
+        margin-top: 1.75em;
+    }
+
+    .legalEfficiency .enhancements .enhancement {
+        width: 30%;
+    }
+
+    .legalEfficiency .enhancements .enhancement p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .legalEfficiency {
+        width: 700px;
+    }
+
+    .legalEfficiency .enhancements .enhancement {
+        width: 45%;
+    }
+
+    .legalEfficiency .enhancements .enhancement:nth-child(3) h5,
+    .legalEfficiency .enhancements .enhancement:nth-child(4) h5,
+    .legalEfficiency .enhancements .enhancement:nth-child(5) h5,
+    .legalEfficiency .enhancements .enhancement:last-child h5 {
+        margin-top: 2em;
+    }
+
+    .legalEfficiency .enhancements .enhancement:nth-child(4) h5 {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .legalEfficiency {
+        width: 90%;
+        gap: 3.5em;
+    }
+
+    .legalEfficiency h1 {
+        font-size: 38px;
+    }
+
+    .legalEfficiency .enhancements {
+        flex-wrap: wrap;
+    }
+
+    .legalEfficiency .enhancements .enhancement {
+        width: 290px;
+    }
+
+    .legalEfficiency .enhancements .enhancement h5 {
+        font-weight: var(--semi-bold);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .legalEfficiency {
+        gap: 3em;
+    }
+    
+    .legalEfficiency .enhancements {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.25em;
+    }
+
+    .legalEfficiency .enhancements .enhancement {
+        width: 80%;
+    }
+
+    .legalEfficiency .enhancements .enhancement h5 {
+        font-size: 22px;
+    }
+
+    .legalEfficiency .enhancements .enhancement p {
+        font-size: 17px;
+    }
+
+    .legalEfficiency .enhancements .enhancement:first-child h5,
+    .legalEfficiency .enhancements .enhancement:nth-child(2) h5,
+    .legalEfficiency .enhancements .enhancement:nth-child(3) h5,
+    .legalEfficiency .enhancements .enhancement:nth-child(4) h5,
+    .legalEfficiency .enhancements .enhancement:nth-child(5) h5,
+    .legalEfficiency .enhancements .enhancement:last-child h5 {
+        height: auto;
+        margin-top: 0;
+        margin-bottom: .3em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .legalEfficiency h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .legalEfficiency .enhancements {
+        gap: 1.75;
+    }
+
+    .legalEfficiency .enhancements .enhancement {
+        width: 90%;
+    }
+
+    .legalEfficiency .enhancements .enhancement h5 {
+        font-size: 20px;
+    }
+
+    .legalEfficiency .enhancements .enhancement p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .legalEfficiency h1 {
+        font-size: 34px;
+    }
+} 
+
+@media screen and (max-width: 367px) {
+    .legalEfficiency {
+        gap: 2.25em;
+    }
+}

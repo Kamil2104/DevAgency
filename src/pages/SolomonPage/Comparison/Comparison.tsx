@@ -5,6 +5,7 @@ import { LanguageModel } from './interfaces/interfaces'
 import Card from './components/Card'
 
 import './Comparison.css'
+import './ComparisonResponsiveness.css'
 
 const Comparison: React.FC = React.memo(() => {
   const languageModels: LanguageModel[] = [
@@ -33,7 +34,7 @@ const Comparison: React.FC = React.memo(() => {
         <h1> Comparison of language models </h1>
         <section className='languageModels'>
             {languageModels.map((model) => (
-                <Card key={model.name} model={model} />     
+                <Card key={model.name} model={model} />
             ))}
         </section>
     </section>

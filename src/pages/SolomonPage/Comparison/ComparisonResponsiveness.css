@@ -1,0 +1,138 @@
+@media screen and (max-width: 1450px) {
+    .comparison {
+        width: 1050px;
+    }
+
+    .comparison h1 {
+        font-size: 68px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .comparison {
+        width: 850px;
+        gap: 4em;
+    }
+
+    .comparison h1 {
+        font-size: 52px;
+    }
+
+    .comparison .languageModels .card .row {
+        gap: .65em;
+    }
+
+    .comparison .languageModels .card .row h4 {
+        font-size: 26px;
+    }
+
+    .comparison .languageModels .card .row svg {
+        height: 28px;
+        width: 28px;
+    }
+
+    .comparison .languageModels .card p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .comparison {
+        width: 700px;
+        gap: 3em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .comparison {
+        width: 90%;
+    }
+
+    .comparison h1 {
+        font-size: 38px;
+    }
+
+    .comparison .languageModels {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3em;
+    }
+
+    .comparison .languageModels .card {
+        width: 225px;
+    }
+
+    .comparison .languageModels .card .row h4 {
+        font-size: 23px;
+    }
+
+    .comparison .languageModels .card .row svg {
+        height: 24px;
+        width: 24px;
+    }
+
+    .comparison .languageModels .card p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .comparison h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .comparison .languageModels {
+        flex-direction: column;
+    }
+
+    .comparison .languageModels .card {
+        width: 80%;
+    }
+
+    .comparison .languageModels .card .row {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .comparison .languageModels .card .row h4 {
+        font-size: 25px;
+    }
+
+    .comparison .languageModels .card .row svg {
+        height: 26px;
+        width: 26px;
+    }
+
+    .comparison .languageModels .card p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .comparison h1 {
+        font-size: 34px;
+    }
+
+    .comparison .languageModels {
+        gap: 2em;
+    }
+
+    .comparison .languageModels .card {
+        gap: .75em;
+    }
+
+    .comparison .languageModels .card .row h4 {
+        font-size: 23px;
+    }
+
+    .comparison .languageModels .card .row svg {
+        height: 22px;
+        width: 22px;
+    }
+
+    .comparison .languageModels .card p {
+        font-size: 16px;
+    }
+}

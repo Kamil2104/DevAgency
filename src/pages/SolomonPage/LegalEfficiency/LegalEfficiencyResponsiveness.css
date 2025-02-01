@@ -99,7 +99,7 @@
     .legalEfficiency {
         gap: 3em;
     }
-    
+
     .legalEfficiency .enhancements {
         flex-wrap: nowrap;
         flex-direction: column;
@@ -164,7 +164,7 @@
     .legalEfficiency h1 {
         font-size: 34px;
     }
-} 
+}
 
 @media screen and (max-width: 367px) {
     .legalEfficiency {

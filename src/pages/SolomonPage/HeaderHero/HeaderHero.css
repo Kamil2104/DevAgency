@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 1em;
-    height: 90dvh;
+    min-height: 90dvh;
     width: 1265px;
 
     padding-top: 3em;
@@ -27,13 +27,17 @@
     width: 80%;
 }
 
+.solomonPage .headerHero .hero {
+    max-height: 90dvh;
+}
+
 .solomonPage .headerHero .hero .solomonDesktop {
-    position: absolute;
-    width: 1500px;
-    z-index: -5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-120px, -180px);
 }
 
 .solomonPage .headerHero .hero .solomonDesktop svg {
-    width: 100%;
-    margin-top: 2em;
+    width: 120%;
 }

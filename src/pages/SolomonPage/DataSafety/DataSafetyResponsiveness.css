@@ -1,0 +1,134 @@
+@media screen and (max-width: 1450px) {
+    .dataSafety {
+        padding: 6em 0em;
+    }
+
+    .dataSafety .content {
+        width: 1050px;
+    }
+
+    .dataSafety .content .leftColumn h1 {
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .dataSafety {
+        padding: 5em 0em;
+    }
+
+    .dataSafety .content {
+        width: 800px;
+    }
+
+    .dataSafety .content .leftColumn h1 {
+        font-size: 49px;
+    }
+
+    .dataSafety .content .leftColumn p {
+        font-size: 19px;
+    }
+
+    .dataSafety .content .rightColumn {
+        gap: 1.25em;
+    }
+
+    .dataSafety .content .rightColumn .characteristic {
+        padding-bottom: 1.25em;
+    }
+
+    .dataSafety .content .rightColumn .characteristic h4 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .dataSafety .content {
+        width: 700px;
+    }
+
+    .dataSafety .content .leftColumn {
+        gap: 1.5em;
+    }
+
+    .dataSafety .content .leftColumn h1 {
+        font-size: 43px;
+    }
+
+    .dataSafety .content .rightColumn .characteristic h4 {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dataSafety {
+        padding: 4em 0em;
+    }
+
+    .dataSafety .content {
+        flex-direction: column;
+        gap: 3em;
+        width: 90%;
+    }
+
+    .dataSafety .content .leftColumn {
+        gap: 1.5em;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .dataSafety .content .leftColumn h1 {
+        font-size: 45px;
+    }
+
+    .dataSafety .content .rightColumn {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1.75em;
+    }
+
+    .dataSafety .content .rightColumn .characteristic {
+        padding-bottom: 1.75em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dataSafety {
+        padding: 3em 0em;
+    }
+
+    .dataSafety .content {
+        gap: 1.5em;
+    }
+
+    .dataSafety .content .leftColumn {
+        gap: 1em;
+    }
+
+    .dataSafety .content .leftColumn h1 {
+        font-size: 34px;
+    }
+
+    .dataSafety .content .leftColumn p {
+        font-size: 17px;
+    }
+
+    .dataSafety .content .leftColumn h1 {
+        font-size: 38px;
+    }
+
+    .dataSafety .content .rightColumn {
+        gap: 1.25em;
+    }
+
+    .dataSafety .content .rightColumn .characteristic {
+        flex-direction: column;
+        gap: .5em;
+        padding-bottom: .75em;
+    }
+
+    .dataSafety .content .rightColumn .characteristic h4 {
+        font-size: 19px;
+    }
+}

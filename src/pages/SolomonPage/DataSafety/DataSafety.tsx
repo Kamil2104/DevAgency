@@ -7,6 +7,7 @@ import Description from './components/Description'
 import Characteristic from './components/Characteristic'
 
 import './DataSafety.css'
+import './DataSafetyResponsiveness.css'
 
 const DataSafety: React.FC = React.memo(() => {
   const characteristics: CharacteristicType[] = [

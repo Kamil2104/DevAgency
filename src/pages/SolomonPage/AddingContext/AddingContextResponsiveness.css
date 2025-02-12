@@ -1,0 +1,139 @@
+@media screen and (max-width: 1450px) {
+    .addingContext {
+        width: 1050px;
+    }
+
+    .addingContext .titles h1 {
+        font-size: 64px;
+    }
+
+    .addingContext .cards .card {
+        width: 450px;
+    }
+
+    .addingContext .cards .card .content h4 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .addingContext {
+        gap: 3em;
+        width: 800px;
+    }
+
+    .addingContext .titles h3 {
+        font-size: 20px;
+    }
+
+    .addingContext .titles h1 {
+        font-size: 49px;
+    }
+
+    .addingContext .cards .card {
+        padding: 2em 1.5em;
+        width: 330px;
+    }
+
+    .addingContext .cards .card .content h4 {
+        font-size: 21px;
+    }
+
+    .addingContext .cards .card .content p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .addingContext {
+        width: 700px;
+    }
+
+    .addingContext .cards .card:nth-child(1),
+    .addingContext .cards .card:nth-child(2) {
+        margin-bottom: 2em;
+    }
+
+    .addingContext .cards .card {
+        padding: 2em 1.5em;
+        width: 280px;
+    }
+
+    .addingContext .cards .card .content h4 {
+        font-size: 20px;
+    }
+
+    .addingContext .cards .card .content p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .addingContext {
+        width: 90%;
+        gap: 2.5em;
+    }
+
+    .addingContext .titles {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addingContext .titles h3 {
+        font-size: 18px;
+    }
+
+    .addingContext .titles h1 {
+        font-size: 45px;
+    }
+
+    .addingContext .cards {
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .addingContext .cards .card {
+        width: 80%;
+        padding: 1.5em 1em;
+    }
+
+    .addingContext .cards .card:nth-child(1),
+    .addingContext .cards .card:nth-child(2) {
+        margin-bottom: 0em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .addingContext .titles h3 {
+        font-size: 17px;
+    }
+
+    .addingContext .titles h1 {
+        font-size: 38px;
+    }
+
+    .addingContext .cards .card .content h4 {
+        font-size: 19px;
+    }
+
+    .addingContext .cards .card .content p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .addingContext .cards .card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .addingContext .cards .card .content h4 {
+        font-size: 18px;
+    }
+
+    .addingContext .cards .card .content p {
+        font-size: 14px;
+    }
+}

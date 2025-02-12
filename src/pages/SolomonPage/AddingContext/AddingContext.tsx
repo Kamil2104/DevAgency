@@ -6,6 +6,7 @@ import Card from './components/Card'
 import { AddingContextPositivesInterface } from './interfaces/interfaces'
 
 import './AddingContext.css'
+import './AddingContextResponsiveness.css'
 
 const AddingContext: React.FC = React.memo(() => {
   const addingContextPositives: AddingContextPositivesInterface[] = [

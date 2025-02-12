@@ -1,0 +1,49 @@
+.addingContext .cards .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25em;
+    width: 540px;
+    padding: 2.5em 1.5em;
+
+    border-radius: 1em;
+    background-color: var(--bg-color-90);
+}
+
+.addingContext .cards .card svg {
+    width: 65px;
+}
+
+.addingContext .cards .card:nth-child(1),
+.addingContext .cards .card:nth-child(2) {
+    margin-bottom: 4em;
+}
+
+.addingContext .cards .card .divider {
+    height: 100px;
+    width: 1px;
+    background-color: var(--bg-color-10);
+}
+
+.addingContext .cards .card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5em;
+}
+
+.addingContext .cards .card .content h4 {
+    font-family: var(--headline-text-font);
+    font-weight: var(--semibold);
+    font-size: 30px;
+    color: var(--headline-light-text);
+}
+
+.addingContext .cards .card .content p {
+    font-family: var(--body-text-font);
+    font-weight: var(--medium);
+    font-size: 19px;
+    color: var(--bg-color-50);
+}

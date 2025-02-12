@@ -1,0 +1,29 @@
+.addingContext .titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .25em;
+}
+
+.addingContext .titles h3 {
+    font-family: var(--body-text-font);
+    font-weight: var(--medium);
+    font-size: 22px;
+    color: var(--headline-light-text);
+}
+
+.addingContext .titles h1 {
+    font-family: var(--headline-text-font);
+    font-weight: var(--semi-bold);
+    font-size: 72px;
+    color: var(--headline-light-text);
+    line-height: 1;
+}
+
+.addingContext .titles h1 span.gradientedTitle {
+    background: linear-gradient(to left, var(--gradient-color));
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

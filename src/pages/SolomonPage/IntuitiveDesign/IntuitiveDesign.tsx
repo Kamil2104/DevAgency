@@ -4,6 +4,7 @@ import Title from './components/Title'
 import Description from './components/Description'
 
 import './IntuitiveDesign.css'
+import './IntuitiveDesignResponsiveness.css'
 
 const IntuitiveDesign: React.FC = React.memo(() => {
   return (

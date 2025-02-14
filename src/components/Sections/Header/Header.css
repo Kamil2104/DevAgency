@@ -1,4 +1,4 @@
-.header {
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,20 +14,10 @@
     color: var(--headline-light-text);
     background-color: var(--bg-color-100);
 
-    transition: transform 0.3s ease;
-
     z-index: 999;
 }
 
-.header.hidden {
-    transform: translateY(-100%);
-}
-
-.header.visible {
-    transform: translateY(0);
-}
-
-.header .row {
+header .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

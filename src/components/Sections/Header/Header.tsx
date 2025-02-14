@@ -20,9 +20,6 @@ const Header: React.FC = () => {
   const { displayedFormContent, setIsFormDisplayed } = useFormContext();
   const { isMobileView } = useIsMobileView();
 
-  const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [displayedIcon, setDisplayedIcon] = useState('Hamburger')
 
@@ -49,28 +46,6 @@ const Header: React.FC = () => {
     };
   }, [isMenuOpen])
 
-  /* Displaying and hiding header when menu is not opened */
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-
-      setLastScrollY(currentScrollY);
-    };
-
-    if (!isMenuOpen) {
-      window.addEventListener('scroll', handleScroll);
-      setLastScrollY(window.scrollY);
-
-      return () => window.removeEventListener('scroll', handleScroll);
-    }
-  }, [lastScrollY, isMenuOpen]);
-
   const toggleIsMenuOpen = () => {
     setIsMenuOpen(prev => !prev);
   }
@@ -95,7 +70,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
+    <header>
       <section className='row'>
         <Logo />
         {isMobileView

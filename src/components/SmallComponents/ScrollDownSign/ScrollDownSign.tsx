@@ -18,33 +18,33 @@ const ScrollDownSign: React.FC<{ page: string; componentID: string }> =
         const offset = 200;
         const elementPosition = targetComponent.getBoundingClientRect().top + window.scrollY;
         const offsetPosition = elementPosition - offset;
-        
+
         const startPosition = window.scrollY;
         const distance = offsetPosition - startPosition;
         const duration = 400;
         let startTime: number | null = null;
-    
+
         const easeOutQuad = (t: number) => t * (2 - t);
-    
+
         const scrollAnimation = (currentTime: number) => {
           if (!startTime) startTime = currentTime;
           const timeElapsed = currentTime - startTime;
           const progress = Math.min(timeElapsed / duration, 1);
-    
+
           const easedProgress = easeOutQuad(progress);
           const scrollPosition = startPosition + distance * easedProgress;
-          
+
           window.scrollTo(0, scrollPosition);
-    
+
           if (progress < 1) {
             requestAnimationFrame(scrollAnimation);
           }
         };
-    
+
         requestAnimationFrame(scrollAnimation);
       }
     };
-    
+
 
     const svgAnimation =
       page === "HomePage"

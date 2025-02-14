@@ -4,7 +4,7 @@ import './styles/Title.css'
 
 const Title: React.FC = React.memo(() => {
   return (
-    <h2> <span className='gradientedTitle'> Intuitive design </span> for seamless workflow </h2>
+    <h2> <p className='gradientedTitle'> Intuitive design </p> for seamless workflow </h2>
   )
 })
 

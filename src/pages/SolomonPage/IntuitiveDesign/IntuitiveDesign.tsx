@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Laptop from './components/Laptop'
 import Title from './components/Title'
 import Description from './components/Description'
 
@@ -10,10 +9,9 @@ const IntuitiveDesign: React.FC = React.memo(() => {
   return (
     <section className='intuitiveDesign'>
         <div className='leftColumn'>
-            <Laptop />
+            <Title />
         </div>
         <div className='rightColumn'>
-            <Title />
             <Description />
         </div>
     </section>

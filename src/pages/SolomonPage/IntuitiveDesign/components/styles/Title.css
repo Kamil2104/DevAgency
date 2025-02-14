@@ -1,15 +1,13 @@
-.intuitiveDesign .rightColumn h2 {
+.intuitiveDesign .leftColumn h2 {
     font-family: var(--headline-text-font);
     font-weight: var(--semi-bold);
-    font-size: 48px;
+    font-size: 62px;
     color: var(--headline-light-text);
 
     line-height: 1.2;
-
-    margin-left: 1.95em;
 }
 
-.intuitiveDesign .rightColumn h2 span.gradientedTitle {
+.intuitiveDesign .leftColumn h2 p.gradientedTitle {
     background: linear-gradient(to left, var(--gradient-color));
     background-clip: initial;
     -webkit-background-clip: text;

@@ -31,7 +31,7 @@
 @media screen and (max-width: 768px) {
     .intuitiveDesign {
         flex-direction: column;
-        gap: 1em;
+        gap: 0em;
         width: 90%;
     }
 

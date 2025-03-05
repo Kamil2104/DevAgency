@@ -4,6 +4,15 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 1265px;
+    min-height: fit-content;
+    gap: 0;
+}
+
+.intuitiveDesign .leftColumn,
+.intuitiveDesign .rightColumn {
+    min-height: fit-content;
+    height: 100%;
+    margin: 0;
 }
 
 .intuitiveDesign .leftColumn {

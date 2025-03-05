@@ -30,7 +30,7 @@
                 border-color .4s ease;
 }
 
-@media screen and (min-width: 769px) {
+@media (hover: hover) {
     .aboutUs .secondRow .rightColumn button.originalBtn:hover {
         color: var(--brand-color-50);
         border-color: var(--brand-color-50);

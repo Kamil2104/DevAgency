@@ -54,9 +54,11 @@
 
     transition: color .4s ease,
                 border-color .4s ease;
+
+    cursor: pointer;
 }
 
-@media screen and (min-width: 769px) {
+@media (hover:hover) {
     .solomon .solomonColumns .aboutSolomon button.originalBtn:hover {
         color: var(--brand-color-50);
         border-color: var(--brand-color-50);

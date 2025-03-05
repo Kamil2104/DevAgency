@@ -24,7 +24,7 @@ button.originalBtn {
                 background-color 0.4s ease;
 }
 
-@media screen and (min-width: 769px) {
+@media (hover: hover) {
     button.originalBtn:hover {
         color: var(--headline-light-text);
         background-color: var(--brand-color-50);

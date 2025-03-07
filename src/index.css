@@ -37,7 +37,7 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   width: 100%;
   min-height: 100dvh;
-  gap: 7em;
+  gap: 4em;
 
   animation: showContent 1s ease;
 }
@@ -83,7 +83,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .app .homePage,
   .app .aboutUsPage,
   .solomonPage {
-    gap: 6em;
+    gap: 3em;
   }
 }
 
@@ -91,7 +91,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .app .homePage,
   .app .aboutUsPage,
   .solomonPage {
-    gap: 4.5em;
+    gap: 2em;
   }
 }
 
@@ -99,6 +99,6 @@ p, h1, h2, h3, h4, h5, h6 {
   .app .homePage,
   .app .aboutUsPage,
   .solomonPage {
-    gap: 4em;
+    gap: 1em;
   }
 }

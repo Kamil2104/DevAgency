@@ -120,7 +120,7 @@
 
     .aboutUs .aboutUsContent {
         width: 90%;
-        gap: .5em;
+        gap: 0.5em;
     }
 
     .aboutUs .firstRow h5 {
@@ -129,7 +129,9 @@
 
     .aboutUs .aboutUsContent .secondRow {
         flex-direction: column;
-        gap: 1.5em;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
     }
 
     .aboutUs .secondRow .leftColumn {

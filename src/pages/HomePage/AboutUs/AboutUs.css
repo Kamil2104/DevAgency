@@ -17,11 +17,18 @@
     width: 1265px;
     gap: .5em;
 
+    min-height: fit-content;
+
     color: var(--body-light-text);
 }
 
 .aboutUs .aboutUsContent .firstRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
     width: 100%;
+    gap: 0;
 }
 
 .aboutUs .aboutUsContent .secondRow {

@@ -1,4 +1,5 @@
 import React, { Suspense, useEffect } from 'react'
+import SolomonOnDesktop from './HeaderHero/assets/Desktop - Solomon.svg'
 
 import useFormContext from '../../hooks/useFormContext'
 import useFormVisibility from '../../hooks/useFormVisibility'
@@ -20,7 +21,8 @@ const SolomonPage: React.FC = () => {
   const { isFormVisible } = useFormVisibility();
 
   useEffect(() => {
-    document.body.classList.remove('no-scroll');
+    const img = new Image();
+    img.src = SolomonOnDesktop;
   }, [])
 
   return (

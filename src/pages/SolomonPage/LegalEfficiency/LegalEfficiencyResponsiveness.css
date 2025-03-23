@@ -105,11 +105,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2.25em;
+        gap: 1.5em;
     }
 
     .legalEfficiency .enhancements .enhancement {
-        width: 80%;
+        width: 100%;
     }
 
     .legalEfficiency .enhancements .enhancement h5 {

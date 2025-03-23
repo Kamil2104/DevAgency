@@ -82,7 +82,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .app .homePage,
   .app .aboutUsPage,
-  .solomonPage {
+  .app .solomonPage {
     gap: 3em;
   }
 }
@@ -90,7 +90,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 475px) {
   .app .homePage,
   .app .aboutUsPage,
-  .solomonPage {
+  .app .solomonPage {
     gap: 2em;
   }
 }
@@ -98,7 +98,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 350px) {
   .app .homePage,
   .app .aboutUsPage,
-  .solomonPage {
+  .app .solomonPage {
     gap: 1em;
   }
 }

@@ -1,6 +1,6 @@
-# Solomon — AI-Powered Legal & Business Intelligence ⚖️
+# DevAgency — Tech Startup & Software House Website 🚀
 
-A high-end, conversion-focused platform designed for a legal-tech startup. This project showcases a "Corporate Minimalist" aesthetic, focusing on data clarity, intuitive user flow, and high-performance animations.
+A high-end, modernist corporate website built for a next-generation software house. This project is a comprehensive digital ecosystem designed to showcase the studio's capabilities, internal workflows, and flagship products like **Solomon**.
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -8,34 +8,34 @@ A high-end, conversion-focused platform designed for a legal-tech startup. This 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 [![Deploy with Vercel](https://vercel.com/button)](https://twoj-link-z-vercela.vercel.app)
 
-> **Project Status**: 98% Complete. Development paused due to startup restructuring. This repository serves as a showcase of a production-ready frontend architecture.
+> **Project Status**: 98% Complete. This site serves as a production-ready marketing platform for a tech startup. Development was paused during the final integration phase, but the frontend architecture is fully scalable and optimized.
 
 ## ✨ Key Features
 
-- **Product Showcase (Solomon)**: Dedicated product pages highlighting complex functionalities like `LegalEfficiency`, `IntuitiveDesign`, and `DataSafety`.
-- **Interactive Form Engine**: A sophisticated multi-step contact and requirement gathering system (`src/components/Sections/Form`) with real-time validation and custom error handling.
-- **Context-Aware Navigation**: A custom-built Header that manages visibility and transitions based on user scroll behavior (`useFormVisibility`).
-- **Dynamic Background Transitions**: Smooth, scroll-triggered aesthetic shifts using a dedicated `BackgroundTransition` component to maintain visual engagement.
-- **Process Visualization**: Detailed "How We Work" and "Service Creation Axis" components that translate abstract backend processes into clear, linear user journeys.
-- **Privacy-First Architecture**: Built-in comprehensive Privacy Policy modules and data safety characteristics, reflecting the startup's commitment to legal standards.
+- **Strategic Service Showcase**: Detailed sections explaining the startup's expertise through components like `HowWeWork` and `WhyUs`, focusing on transparency and value delivery.
+- **Product Spotlight (Solomon)**: A dedicated sub-page and integrated sections for the startup's internal product, featuring advanced modules like `LegalEfficiency` and `DataSafety`.
+- **Interactive Multi-Step Lead Engine**: A custom-built contact system (`src/components/Sections/Form`) with intelligent validation, designed to gather precise project requirements from B2B clients.
+- **Workflow Visualization**: Unique, animated "Creation Axes" (`ServiceCreationAxis`, `ProductCreationAxis`) that visually represent the startup's methodology from idea to deployment.
+- **Modernist Visual Identity**: A strictly curated aesthetic using custom background transitions, scroll-triggered visibility hooks, and a mobile-first responsive grid.
+- **Enterprise-Grade Privacy Module**: A modularly built `PrivacyPolicyPage`, reflecting the startup's focus on data security and legal compliance.
 
 ## 🛠️ Tech Stack
 
-- **Framework**: React 18 + Vite for rapid development and optimized bundling.
-- **Typing**: Strict TypeScript implementation for enterprise-grade stability and developer experience.
-- **Styling**: Modular CSS approach with a centralized `StylingVariables.css` system, ensuring design tokens are consistent across all sub-pages.
-- **State Management**: Context API (`FormContext`, `ScrollProgress`) used to manage global application state without the overhead of heavy external libraries.
-- **Animations**: Custom CSS transitions and logic-driven visibility hooks for a lightweight, performant feel.
+- **Framework**: React 18 + Vite for high-performance rendering and rapid development.
+- **Typing**: Strict TypeScript for maintainable, self-documenting code.
+- **Styling Strategy**: Modular CSS combined with a centralized `StylingVariables.css` system for consistent branding across all sub-pages.
+- **State Management**: 
+  - `FormContext`: Orchestrating complex user data across multi-step interactions.
+  - `ScrollProgress`: Powering the dynamic UI transitions and header behaviors.
+- **Performance Hooks**: Custom implementation of viewport detection (`useIsMobileView`) and interaction logic (`useFormVisibility`).
 
 ## 📂 Project Structure
 
-The architecture follows a strictly modular and responsive-first pattern:
-
-- `src/pages/`: Multi-page routing including `HomePage`, `SolomonPage`, `AboutUsPage`, and `PrivacyPolicyPage`.
-- `src/context/`: Global providers managing form data and scroll-based progress tracking.
-- `src/components/SmallComponents/`: Atomic elements like `Loader`, `Button`, and `ScrollDownSign`.
-- `src/hooks/`: Custom hooks for viewport detection (`useIsMobileView`) and form logic.
-- `src/components/Sections/`: Heavy-duty, reusable sections (Header, Footer, Form) with encapsulated styles and business logic.
+- `src/pages/`: Core views including `HomePage`, `AboutUsPage`, and the `SolomonPage` product showcase.
+- `src/components/Sections/`: Encapsulated, high-level modules like the interactive `Form` and responsive `Header`/`Footer`.
+- `src/context/`: Global providers for cross-component state (Forms, Scroll tracking).
+- `src/hooks/`: Business logic for UI states, responsiveness, and visibility management.
+- `src/components/SmallComponents/`: Atomic elements (Buttons, Loaders, SVG assets).
 
 ## 🚦 Getting Started
 
@@ -46,11 +46,10 @@ The architecture follows a strictly modular and responsive-first pattern:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-username/solomon-startup.git](https://github.com/your-username/solomon-startup.git)
+   git clone [https://github.com/your-username/startup-website.git](https://github.com/your-username/startup-website.git)
 2. Install dependencies:
    ```bash
    npm install
 3. Start the development server:
    ```bash
    npm run dev
-
